@@ -337,6 +337,12 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
+		
+        .menu-id {
+			font-size: 0.75rem;
+			color: rgba(255,255,255,0.8);
+			margin-top: 0.1rem;
+        }		
         
         /* Category Progress */
         .category-progress-bar {
@@ -1396,6 +1402,7 @@
                                     <div class="menu-text">
                                         <span class="menu-jp">${text.title.jp}</span>
                                         <span class="menu-reading">${text.title.reading}</span>
+										<span class="menu-id">${text.title.id}</span>
                                     </div>
                                 </div>
                             `).join('')}

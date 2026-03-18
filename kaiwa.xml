@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jlpt-n5-kaiwa>
+  <texts>
+    <!-- Percakapan 1: Di Restoran -->
+    <text id="1">
+      <title>
+        <jp>レストランで</jp>
+        <reading>れすとらんで</reading>
+        <id>Di Restoran</id>
+      </title>
+      <content>
+        <dialogue>
+          <speaker>A</speaker>
+          <line>
+            <segment><kanji>何</kanji><furigana>なに</furigana></segment>にしますか。
+          </line>
+        </dialogue>
+        <dialogue>
+          <speaker>B</speaker>
+          <line>
+            <segment><kanji>私</kanji><furigana>わたし</furigana></segment>は<segment><kanji>寿司</kanji><furigana>すし</furigana></segment>にします。
+          </line>
+        </dialogue>
+        <dialogue>
+          <speaker>A</speaker>
+          <line>
+            <segment><kanji>飲</kanji><furigana>の</furigana></segment>み<segment><kanji>物</kanji><furigana>もの</furigana></segment>は？
+          </line>
+        </dialogue>
+        <dialogue>
+          <speaker>B</speaker>
+          <line>
+            お<segment><kanji>茶</kanji><furigana>ちゃ</furigana></segment>をお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
+          </line>
+        </dialogue>
+        <dialogue>
+          <speaker>A</speaker>
+          <line>
+            かしこまりました。
+          </line>
+        </dialogue>
+        <dialogue>
+          <speaker>B</speaker>
+          <line>
+            お<segment><kanji>会計</kanji><furigana>かいけい</furigana></segment>お<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
+          </line>
+        </dialogue>
+        <dialogue>
+          <speaker>A</speaker>
+          <line>
+            <segment><kanji>二千円</kanji><furigana>にせんえん</furigana></segment>です。
+          </line>
+        </dialogue>
+      </content>
+      <translation>
+        <p><strong>A:</strong> Apa yang akan Anda pesan?</p>
+        <p><strong>B:</strong> Saya akan pesan sushi.</p>
+        <p><strong>A:</strong> Minumannya?</p>
+        <p><strong>B:</strong> Teh, tolong.</p>
+        <p><strong>A:</strong> Baik, dipahami.</p>
+        <p><strong>B:</strong> Minta bon, tolong.</p>
+        <p><strong>A:</strong> 2000 yen.</p>
+      </translation>
+      <vocabulary>
+        <item>
+          <word>何</word>
+          <reading>なに</reading>
+          <romaji>nani</romaji>
+          <meaning>Apa</meaning>
+        </item>
+        <item>
+          <word>寿司</word>
+          <reading>すし</reading>
+          <romaji>sushi</romaji>
+          <meaning>Sushi</meaning>
+        </item>
+        <item>
+          <word>飲み物</word>
+          <reading>のみもの</reading>
+          <romaji>nomimono</romaji>
+          <meaning>Minuman</meaning>
+        </item>
+        <item>
+          <word>お茶</word>
+          <reading>おちゃ</reading>
+          <romaji>ocha</romaji>
+          <meaning>Teh</meaning>
+        </item>
+        <item>
+          <word>お願いします</word>
+          <reading>おねがいします</reading>
+          <romaji>onegaishimasu</romaji>
+          <meaning>Tolong</meaning>
+        </item>
+        <item>
+          <word>お会計</word>
+          <reading>おかいけい</reading>
+          <romaji>okaikei</romaji>
+          <meaning>Pembayaran/Bon</meaning>
+        </item>
+      </vocabulary>
+    </text>
+
+    <!-- Percakapan 2: Di Toko -->
+    <text id="2">
+      <title>
+        <jp>買い物</jp>
+        <reading>かいもの</reading>
+        <id>Belanja</id>
+      </title>
+      <content>
+        <dialogue>
+          <speaker>A</speaker>
+          <line>
+            いらっしゃいませ。
+          </line>
+        </dialogue>
+        <dialogue>
+          <speaker>B</speaker>
+          <line>
+            すみません。この<segment><kanji>本</kanji><furigana>ほん</furigana></segment>はいくらですか。
+          </line>
+        </dialogue>
+        <dialogue>
+          <speaker>A</speaker>
+          <line>
+            <segment><kanji>千円</kanji><furigana>せんえん</furigana></segment>です。
+          </line>
+        </dialogue>
+        <dialogue>
+          <speaker>B</speaker>
+          <line>
+            じゃあ、これを<segment><kanji>下</kanji><furigana>くだ</furigana></segment>さい。
+          </line>
+        </dialogue>
+        <dialogue>
+          <speaker>A</speaker>
+          <line>
+            ありがとうございます。<segment><kanji>袋</kanji><furigana>ふくろ</furigana></segment>はいりますか。
+          </line>
+        </dialogue>
+        <dialogue>
+          <speaker>B</speaker>
+          <line>
+            はい、お<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
+          </line>
+        </dialogue>
+        <dialogue>
+          <speaker>A</speaker>
+          <line>
+            <segment><kanji>一千円</kanji><furigana>いっせんえん</furigana></segment>になります。
+          </line>
+        </dialogue>
+      </content>
+      <translation>
+        <p><strong>A:</strong> Selamat datang.</p>
+        <p><strong>B:</strong> Permisi. Berapa harga buku ini?</p>
+        <p><strong>A:</strong> 1000 yen.</p>
+        <p><strong>B:</strong> Kalau begitu, ini tolong.</p>
+        <p><strong>A:</strong> Terima kasih. Apakah perlu kantong?</p>
+        <p><strong>B:</strong> Ya, tolong.</p>
+        <p><strong>A:</strong> Totalnya 1000 yen.</p>
+      </translation>
+      <vocabulary>
+        <item>
+          <word>いらっしゃいませ</word>
+          <reading>いらっしゃいませ</reading>
+          <romaji>irasshaimase</romaji>
+          <meaning>Selamat datang</meaning>
+        </item>
+        <item>
+          <word>いくら</word>
+          <reading>いくら</reading>
+          <romaji>ikura</romaji>
+          <meaning>Berapa harga</meaning>
+        </item>
+        <item>
+          <word>千円</word>
+          <reading>せんえん</reading>
+          <romaji>sen'en</romaji>
+          <meaning>1000 yen</meaning>
+        </item>
+        <item>
+          <word>ください</word>
+          <reading>ください</reading>
+          <romaji>kudasai</romaji>
+          <meaning>Tolong berikan</meaning>
+        </item>
+        <item>
+          <word>袋</word>
+          <reading>ふくろ</reading>
+          <romaji>fukuro</romaji>
+          <meaning>Kantong/plastik</meaning>
+        </item>
+        <item>
+          <word>本</word>
+          <reading>ほん</reading>
+          <romaji>hon</romaji>
+          <meaning>Buku</meaning>
+        </item>
+      </vocabulary>
+    </text>
+  </texts>
+</jlpt-n5-kaiwa>

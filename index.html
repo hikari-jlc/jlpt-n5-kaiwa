@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JLPT N5 Kaiwa - Chat Style</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+Indonesian:wght@400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #e74c3c;
+            --secondary: #2c3e50;
+            --accent: #f39c12;
+            --bg: #f5f5f0;
+            --card: #ffffff;
+            --text: #2c3e50;
+            --highlight: #fff3cd;
+            --active-highlight: #ffeb3b;
+            --sidebar-width: 280px;
+            --chat-a: #e3f2fd;
+            --chat-b: #f3e5f5;
+            --chat-a-border: #2196f3;
+            --chat-b-border: #9c27b0;
+        }
+        
+        body {
+            font-family: 'Noto Sans Indonesian', 'Noto Sans JP', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--secondary) 0%, #34495e 100%);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* Menu Toggle Button */
+        .menu-toggle {
+            position: fixed;
+            top: 100px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.5rem;
+            z-index: 999;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .menu-toggle:hover {
+            transform: scale(1.1);
+            background: #c0392b;
+        }
+        
+        .menu-toggle.active {
+            left: calc(var(--sidebar-width) + 20px);
+        }
+        
+        /* Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 998;
+        }
+        
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Sidebar Menu */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: calc(-1 * var(--sidebar-width));
+            width: var(--sidebar-width);
+            height: 100vh;
+            background: linear-gradient(180deg, #2c3e50 0%, #34495e 100%);
+            z-index: 999;
+            transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow-y: auto;
+            box-shadow: 5px 0 25px rgba(0,0,0,0.2);
+        }
+        
+        .sidebar.active {
+            left: 0;
+        }
+        
+        .sidebar-header {
+            padding: 2rem 1.5rem 1.5rem;
+            background: rgba(0,0,0,0.2);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .sidebar-title {
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .sidebar-subtitle {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.85rem;
+            margin-top: 0.3rem;
+        }
+        
+        .sidebar-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            color: rgba(255,255,255,0.7);
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        
+        .sidebar-close:hover {
+            color: white;
+        }
+        
+        /* Menu List */
+        .menu-list {
+            padding: 1rem 0;
+        }
+        
+        .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            color: rgba(255,255,255,0.85);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+            position: relative;
+        }
+        
+        .menu-item:hover {
+            background: rgba(255,255,255,0.1);
+            color: white;
+            padding-left: 1.8rem;
+        }
+        
+        .menu-item.active {
+            background: rgba(231, 76, 60, 0.2);
+            color: white;
+            border-left-color: var(--primary);
+        }
+        
+        .menu-item.active::before {
+            content: '▶';
+            position: absolute;
+            right: 1rem;
+            font-size: 0.8rem;
+            color: var(--primary);
+            animation: pulse 1.5s infinite;
+        }
+        
+        .menu-number {
+            width: 32px;
+            height: 32px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-right: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .menu-item.active .menu-number {
+            background: var(--primary);
+            transform: scale(1.1);
+        }
+        
+        .menu-text {
+            flex: 1;
+        }
+        
+        .menu-jp {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            display: block;
+        }
+        
+        .menu-reading {
+            font-size: 0.75rem;
+            opacity: 0.7;
+            display: block;
+            margin-top: 0.2rem;
+        }
+        
+        /* Progress indicator in sidebar */
+        .menu-progress {
+            padding: 1rem 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: auto;
+        }
+        
+        .progress-bar-container {
+            background: rgba(255,255,255,0.1);
+            height: 6px;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+        }
+        
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+        
+        .progress-text {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.8rem;
+            text-align: center;
+        }
+        
+        /* Main Content */
+        .main-content {
+            margin-top: 100px;
+            padding: 2rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            transition: margin-left 0.4s ease;
+        }
+        
+        .main-content.shifted {
+            margin-left: calc(var(--sidebar-width) + 20px);
+        }
+        
+        /* Reading Card */
+        .reading-card {
+            background: var(--card);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            position: relative;
+            overflow: hidden;
+            scroll-margin-top: 120px;
+        }
+        
+        .reading-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+        }
+        
+        .text-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .text-title {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .text-number {
+            background: var(--primary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .audio-controls {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+        
+        .btn-play {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+        }
+        
+        .btn-play:hover {
+            background: #c0392b;
+            transform: scale(1.05);
+        }
+        
+        .btn-play.playing {
+            background: #27ae60;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(39, 174, 96, 0.4); }
+            50% { box-shadow: 0 0 0 10px rgba(39, 174, 96, 0); }
+        }
+        
+        .speed-control {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #ecf0f1;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+        
+        .speed-control select {
+            border: none;
+            background: transparent;
+            font-weight: 600;
+            color: var(--secondary);
+            cursor: pointer;
+        }
+        
+        /* CHAT STYLE - Japanese Text */
+        .japanese-text {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+            border-radius: 20px;
+            border: 2px solid #ecf0f1;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        /* Chat Bubble Container */
+        .chat-bubble {
+            display: flex;
+            flex-direction: column;
+            max-width: 80%;
+            position: relative;
+            animation: fadeInUp 0.5s ease;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Speaker A - Left aligned */
+        .chat-bubble.speaker-a {
+            align-self: flex-start;
+            align-items: flex-start;
+        }
+        
+        /* Speaker B - Right aligned */
+        .chat-bubble.speaker-b {
+            align-self: flex-end;
+            align-items: flex-end;
+        }
+        
+        /* Speaker Label */
+        .speaker-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+            padding: 0.2rem 0.8rem;
+            border-radius: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .speaker-a .speaker-label {
+            background: var(--chat-a-border);
+            color: white;
+        }
+        
+        .speaker-b .speaker-label {
+            background: var(--chat-b-border);
+            color: white;
+        }
+        
+        /* Chat Message Bubble */
+        .chat-message {
+            padding: 1rem 1.3rem;
+            border-radius: 18px;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        
+        .chat-message:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+        
+        .chat-message.highlight {
+            animation: highlightPulse 1s ease;
+            box-shadow: 0 0 20px rgba(255, 235, 59, 0.6);
+        }
+        
+        @keyframes highlightPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        
+        /* Speaker A bubble - Blue */
+        .speaker-a .chat-message {
+            background: var(--chat-a);
+            border: 2px solid var(--chat-a-border);
+            border-bottom-left-radius: 4px;
+        }
+        
+        /* Speaker B bubble - Purple */
+        .speaker-b .chat-message {
+            background: var(--chat-b);
+            border: 2px solid var(--chat-b-border);
+            border-bottom-right-radius: 4px;
+        }
+        
+        /* Styling untuk ruby yang benar dalam chat */
+        ruby {
+            ruby-align: center;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: bottom;
+            line-height: 1;
+            margin: 2px 1px;
+        }
+        
+        rb {
+            font-size: 1.3rem;
+            line-height: 1.2;
+            font-weight: 500;
+        }
+        
+        rt {
+            font-size: 0.55rem;
+            color: #666;
+            line-height: 1;
+            margin-bottom: 2px;
+        }
+        
+        /* Play indicator */
+        .chat-message::after {
+            content: '🔊';
+            position: absolute;
+            bottom: -8px;
+            font-size: 0.8rem;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .speaker-a .chat-message::after {
+            right: -10px;
+        }
+        
+        .speaker-b .chat-message::after {
+            left: -10px;
+        }
+        
+        .chat-message:hover::after {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+        
+        /* Translation */
+        .translation {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #e8f4f8 0%, #f0f9ff 100%);
+            border-radius: 15px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .translation h3 {
+            color: #2980b9;
+            margin-bottom: 0.8rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .translation p {
+            margin-bottom: 0.5rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed rgba(52, 152, 219, 0.2);
+        }
+        
+        .translation p:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .translation strong {
+            color: var(--secondary);
+            display: inline-block;
+            min-width: 30px;
+        }
+        
+        /* Vocab Section */
+        .vocab-section {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px dashed #ecf0f1;
+        }
+        
+        .vocab-section h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .vocab-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .vocab-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 12px;
+            border: 2px solid #ecf0f1;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .vocab-item:hover {
+            border-color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .vocab-jp {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 1.2rem;
+            color: var(--secondary);
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+        
+        .vocab-reading {
+            color: #7f8c8d;
+            font-size: 0.85rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        .vocab-meaning {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        
+        .loading-container {
+            text-align: center;
+            padding: 3rem;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            color: #7f8c8d;
+        }
+        
+        /* Chat participants indicator */
+        .chat-participants {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            padding: 0.8rem;
+            background: white;
+            border-radius: 50px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .participant {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .participant-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .participant.a .participant-dot {
+            background: var(--chat-a-border);
+        }
+        
+        .participant.b .participant-dot {
+            background: var(--chat-b-border);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            :root {
+                --sidebar-width: 260px;
+            }
+            
+            header h1 { font-size: 1.4rem; }
+            
+            .menu-toggle {
+                top: 90px;
+                left: 15px;
+                width: 45px;
+                height: 45px;
+                font-size: 1.3rem;
+            }
+            
+            .menu-toggle.active {
+                left: 15px;
+                z-index: 1001;
+            }
+            
+            .main-content { 
+                padding: 1rem; 
+                margin-top: 80px; 
+            }
+            
+            .main-content.shifted {
+                margin-left: 0;
+            }
+            
+            .reading-card { padding: 1.5rem; }
+            .japanese-text { padding: 1rem; }
+            .text-header { flex-direction: column; align-items: flex-start; }
+            
+            .sidebar {
+                width: 100%;
+                left: -100%;
+            }
+            
+            .chat-bubble {
+                max-width: 90%;
+            }
+            
+            .vocab-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+    
+    <!-- Menu Toggle Button -->
+    <button class="menu-toggle" id="menuToggle" onclick="toggleSidebar()">☰</button>
+    
+    <!-- Sidebar Menu -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="sidebar-close" onclick="toggleSidebar()">×</button>
+            <div class="sidebar-title">💬 Daftar Percakapan</div>
+            <div class="sidebar-subtitle">Pilih percakapan untuk navigasi</div>
+        </div>
+        
+        <div class="menu-list" id="menuList">
+            <!-- Menu items will be generated here -->
+        </div>
+        
+        <div class="menu-progress">
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill" id="menuProgressBar" style="width: 0%"></div>
+            </div>
+            <div class="progress-text" id="menuProgressText">0% selesai</div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>💬 JLPT N5 会話</h1>
+        <p>Belajar Percakapan Bahasa Jepang dengan Furigana</p>
+    </header>
+
+    <div class="main-content" id="mainContent">
+        <div class="loading-container">
+            <div class="spinner"></div>
+            <p>Memuat percakapan...</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 JLPT N5 Kaiwa Learning</p>
+    </footer>
+
+    <script>
+        let textsData = [];
+        let isPlaying = false;
+        let currentTextId = null;
+        let currentDialogueIndex = 0;
+        let speechRate = 1;
+        let currentActiveIndex = 0;
+        let sidebarOpen = false;
+
+        // Parse line content dengan segment kanji/furigana
+        function parseLineContent(lineElement) {
+            let html = '';
+            let readingText = '';
+            
+            const nodes = lineElement.childNodes;
+            
+            for (let node of nodes) {
+                if (node.nodeType === Node.TEXT_NODE) {
+                    const text = node.textContent.trim();
+                    if (text) {
+                        html += `<span class="okurigana">${text}</span>`;
+                        readingText += text;
+                    }
+                } else if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'segment') {
+                    const kanji = node.getElementsByTagName('kanji')[0]?.textContent || '';
+                    const furigana = node.getElementsByTagName('furigana')[0]?.textContent || '';
+                    
+                    html += `<ruby><rb>${kanji}</rb><rt>${furigana}</rt></ruby>`;
+                    readingText += furigana;
+                }
+            }
+            
+            return { html, reading: readingText };
+        }
+
+        // Toggle Sidebar
+        function toggleSidebar() {
+            sidebarOpen = !sidebarOpen;
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
+            const menuToggle = document.getElementById('menuToggle');
+            const mainContent = document.getElementById('mainContent');
+            
+            sidebar.classList.toggle('active', sidebarOpen);
+            overlay.classList.toggle('active', sidebarOpen);
+            menuToggle.classList.toggle('active', sidebarOpen);
+            mainContent.classList.toggle('shifted', sidebarOpen && window.innerWidth > 768);
+            
+            menuToggle.textContent = sidebarOpen ? '✕' : '☰';
+        }
+
+        // Update active menu item
+        function updateActiveMenu(index) {
+            currentActiveIndex = index;
+            
+            document.querySelectorAll('.menu-item').forEach((item, i) => {
+                item.classList.toggle('active', i === index);
+            });
+            
+            // Update progress bar
+            const progress = ((index + 1) / textsData.length) * 100;
+            document.getElementById('menuProgressBar').style.width = progress + '%';
+            document.getElementById('menuProgressText').textContent = 
+                `Percakapan ${index + 1} dari ${textsData.length}`;
+        }
+
+        // Navigate to text
+        function navigateToText(index) {
+            const element = document.getElementById(`text-${textsData[index].id}`);
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            updateActiveMenu(index);
+            
+            // Close sidebar on mobile after navigation
+            if (window.innerWidth <= 768 && sidebarOpen) {
+                toggleSidebar();
+            }
+        }
+
+        // Load XML data
+        async function loadXMLData() {
+            try {
+                const response = await fetch('kaiwa.xml');
+                const xmlText = await response.text();
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+                
+                const texts = xmlDoc.getElementsByTagName('text');
+                textsData = Array.from(texts).map(text => {
+                    const dialogueElements = Array.from(text.getElementsByTagName('dialogue'));
+                    const dialogues = dialogueElements.map(dialogueEl => {
+                        const speaker = dialogueEl.getElementsByTagName('speaker')[0]?.textContent || 'A';
+                        const lineEl = dialogueEl.getElementsByTagName('line')[0];
+                        const parsed = parseLineContent(lineEl);
+                        return {
+                            speaker: speaker,
+                            html: parsed.html,
+                            reading: parsed.reading
+                        };
+                    });
+                    
+                    const vocabItems = Array.from(text.getElementsByTagName('item')).map(item => ({
+                        word: item.getElementsByTagName('word')[0]?.textContent || '',
+                        reading: item.getElementsByTagName('reading')[0]?.textContent || '',
+                        romaji: item.getElementsByTagName('romaji')[0]?.textContent || '',
+                        meaning: item.getElementsByTagName('meaning')[0]?.textContent || ''
+                    }));
+                    
+                    return {
+                        id: text.getAttribute('id'),
+                        title: {
+                            jp: text.getElementsByTagName('jp')[0]?.textContent || '',
+                            reading: text.getElementsByTagName('reading')[0]?.textContent || '',
+                            id: text.getElementsByTagName('id')[0]?.textContent || ''
+                        },
+                        dialogues: dialogues,
+                        translation: text.getElementsByTagName('translation')[0]?.innerHTML || '',
+                        vocabulary: vocabItems
+                    };
+                });
+                
+                renderMenu();
+                renderContent();
+                setupScrollSpy();
+                updateActiveMenu(0);
+            } catch (error) {
+                console.error('Error loading XML:', error);
+                document.getElementById('mainContent').innerHTML = 
+                    '<div class="loading-container"><p>Gagal memuat data. Pastikan file kaiwa.xml ada di folder yang sama.</p></div>';
+            }
+        }
+
+        // Render Menu
+        function renderMenu() {
+            const menuList = document.getElementById('menuList');
+            menuList.innerHTML = textsData.map((text, index) => `
+                <div class="menu-item ${index === 0 ? 'active' : ''}" 
+                     onclick="navigateToText(${index})"
+                     data-index="${index}">
+                    <div class="menu-number">${text.id}</div>
+                    <div class="menu-text">
+                        <span class="menu-jp">${text.title.jp}</span>
+                        <span class="menu-reading">${text.title.reading} — ${text.title.id}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Render content dengan CHAT STYLE
+        function renderContent() {
+            const container = document.getElementById('mainContent');
+            container.innerHTML = textsData.map((text, index) => `
+                <div class="reading-card" id="text-${text.id}" data-index="${index}">
+                    <div class="text-header">
+                        <h2 class="text-title">
+                            <span class="text-number">${text.id}</span>
+                            ${text.title.jp}（${text.title.reading}）
+                        </h2>
+                        <div class="audio-controls">
+                            <div class="speed-control">
+                                <label>Kecepatan:</label>
+                                <select id="speed-${text.id}" onchange="changeSpeed(${text.id})">
+                                    <option value="0.7">0.7x</option>
+                                    <option value="1" selected>1x</option>
+                                    <option value="1.2">1.2x</option>
+                                </select>
+                            </div>
+                            <button class="btn-play" id="play-${text.id}" onclick="toggleAudio(${text.id})">
+                                <span id="icon-${text.id}">▶</span>
+                                <span id="text-btn-${text.id}">Dengarkan</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Chat Participants Indicator -->
+                    <div class="chat-participants">
+                        <div class="participant a">
+                            <div class="participant-dot"></div>
+                            <span>Pihak A (Biru)</span>
+                        </div>
+                        <div class="participant b">
+                            <div class="participant-dot"></div>
+                            <span>Pihak B (Ungu)</span>
+                        </div>
+                    </div>
+
+                    <!-- CHAT BUBBLE CONTAINER -->
+                    <div class="japanese-text" id="text-content-${text.id}">
+                        ${text.dialogues.map((dialogue, dIndex) => `
+                            <div class="chat-bubble speaker-${dialogue.speaker.toLowerCase()}" data-index="${dIndex}">
+                                <div class="speaker-label">${dialogue.speaker}</div>
+                                <div class="chat-message" onclick="speakSingleDialogue(${text.id}, ${dIndex})">
+                                    ${dialogue.html}
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+
+                    <div class="translation">
+                        <h3>📝 Terjemahan</h3>
+                        ${text.translation}
+                    </div>
+
+                    <div class="vocab-section">
+                        <h3>📚 Kosakata Penting</h3>
+                        <div class="vocab-grid">
+                            ${text.vocabulary.map(vocab => `
+                                <div class="vocab-item" onclick="speakWord('${vocab.reading}')">
+                                    <div class="vocab-jp">${vocab.word}</div>
+                                    <div class="vocab-reading">${vocab.reading} (${vocab.romaji})</div>
+                                    <div class="vocab-meaning">${vocab.meaning}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Setup Scroll Spy untuk update menu aktif saat scroll
+        function setupScrollSpy() {
+            const options = {
+                root: null,
+                rootMargin: '-20% 0px -60% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const index = parseInt(entry.target.dataset.index);
+                        updateActiveMenu(index);
+                    }
+                });
+            }, options);
+
+            document.querySelectorAll('.reading-card').forEach(card => {
+                observer.observe(card);
+            });
+        }
+
+        // Change speech speed
+        function changeSpeed(textId) {
+            const select = document.getElementById(`speed-${textId}`);
+            speechRate = parseFloat(select.value);
+        }
+
+        // Toggle audio playback
+        function toggleAudio(textId) {
+            if (isPlaying && currentTextId === textId) {
+                stopAudio();
+            } else {
+                playAudio(textId);
+            }
+        }
+
+        // Play audio with highlighting
+        function playAudio(textId) {
+            if (!window.speechSynthesis) {
+                alert('Browser Anda tidak mendukung fitur audio.');
+                return;
+            }
+
+            stopAudio();
+            currentTextId = textId;
+            isPlaying = true;
+            currentDialogueIndex = 0;
+            
+            const text = textsData.find(t => t.id == textId);
+            
+            // Update UI
+            const btn = document.getElementById(`play-${textId}`);
+            const icon = document.getElementById(`icon-${textId}`);
+            const textBtn = document.getElementById(`text-btn-${textId}`);
+            
+            btn.classList.add('playing');
+            icon.textContent = '⏸';
+            textBtn.textContent = 'Berhenti';
+            
+            // Clear previous highlights
+            document.querySelectorAll(`#text-content-${textId} .chat-message`).forEach(p => {
+                p.classList.remove('highlight');
+            });
+            
+            speakNextDialogue(textId, text);
+        }
+
+        // Speak next dialogue
+        function speakNextDialogue(textId, text) {
+            if (!isPlaying || currentTextId !== textId) return;
+            
+            if (currentDialogueIndex >= text.dialogues.length) {
+                setTimeout(() => stopAudio(), 1000);
+                return;
+            }
+            
+            const dialogue = text.dialogues[currentDialogueIndex];
+            const utterance = new SpeechSynthesisUtterance(dialogue.reading);
+            
+            utterance.lang = 'ja-JP';
+            utterance.rate = speechRate;
+            utterance.pitch = 1;
+            
+            // Highlight current dialogue bubble
+            const dialogueElements = document.querySelectorAll(`#text-content-${textId} .chat-message`);
+            if (dialogueElements[currentDialogueIndex]) {
+                dialogueElements[currentDialogueIndex].classList.add('highlight');
+                dialogueElements[currentDialogueIndex].scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center' 
+                });
+            }
+            
+            utterance.onend = () => {
+                if (dialogueElements[currentDialogueIndex]) {
+                    dialogueElements[currentDialogueIndex].classList.remove('highlight');
+                }
+                currentDialogueIndex++;
+                speakNextDialogue(textId, text);
+            };
+            
+            utterance.onerror = () => {
+                stopAudio();
+            };
+            
+            window.speechSynthesis.speak(utterance);
+        }
+
+        // Speak single dialogue
+        function speakSingleDialogue(textId, dialogueIndex) {
+            if (!window.speechSynthesis) return;
+            
+            const text = textsData.find(t => t.id == textId);
+            const dialogue = text.dialogues[dialogueIndex];
+            
+            const utterance = new SpeechSynthesisUtterance(dialogue.reading);
+            utterance.lang = 'ja-JP';
+            utterance.rate = 0.8;
+            window.speechSynthesis.speak(utterance);
+            
+            // Visual feedback
+            const element = document.querySelector(`#text-content-${textId} .chat-bubble[data-index="${dialogueIndex}"] .chat-message`);
+            element.style.transform = 'scale(1.05)';
+            setTimeout(() => {
+                element.style.transform = '';
+            }, 200);
+        }
+
+        // Stop audio
+        function stopAudio() {
+            window.speechSynthesis.cancel();
+            isPlaying = false;
+            currentTextId = null;
+            
+            textsData.forEach(text => {
+                const btn = document.getElementById(`play-${text.id}`);
+                const icon = document.getElementById(`icon-${text.id}`);
+                const textBtn = document.getElementById(`text-btn-${text.id}`);
+                
+                if (btn) {
+                    btn.classList.remove('playing');
+                    icon.textContent = '▶';
+                    textBtn.textContent = 'Dengarkan';
+                }
+                
+                document.querySelectorAll(`#text-content-${text.id} .chat-message`).forEach(p => {
+                    p.classList.remove('highlight');
+                });
+            });
+        }
+
+        // Speak individual word
+        function speakWord(reading) {
+            if (!window.speechSynthesis) return;
+            
+            const utterance = new SpeechSynthesisUtterance(reading);
+            utterance.lang = 'ja-JP';
+            utterance.rate = 0.8;
+            window.speechSynthesis.speak(utterance);
+        }
+
+        // Handle resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth <= 768 && sidebarOpen) {
+                document.getElementById('mainContent').classList.remove('shifted');
+            } else if (window.innerWidth > 768 && sidebarOpen) {
+                document.getElementById('mainContent').classList.add('shifted');
+            }
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', loadXMLData);
+        
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden && isPlaying) {
+                stopAudio();
+            }
+        });
+    </script>
+</body>
+</html>

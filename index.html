@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JLPT N5 Kaiwa</title>
+    <title>JLPT N5 Kaiwa - 100 Percakapan</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+Indonesian:wght@400;600;700&display=swap');
         
@@ -22,7 +22,7 @@
             --text: #2c3e50;
             --highlight: #fff3cd;
             --active-highlight: #ffeb3b;
-            --sidebar-width: 280px;
+            --sidebar-width: 320px;
             --chat-a: #e3f2fd;
             --chat-b: #f3e5f5;
             --chat-a-border: #2196f3;
@@ -43,6 +43,7 @@
             color: white;
             padding: 1.5rem;
             text-align: center;
+            position: fixed;
             top: 0;
             left: 0;
             right: 0;
@@ -131,6 +132,9 @@
             padding: 2rem 1.5rem 1.5rem;
             background: rgba(0,0,0,0.2);
             border-bottom: 1px solid rgba(255,255,255,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
         
         .sidebar-title {
@@ -164,91 +168,204 @@
             color: white;
         }
         
-        /* Menu List */
-        .menu-list {
-            padding: 1rem 0;
+        /* Category Section */
+        .category-section {
+            margin-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
         }
         
-        .menu-item {
+        /* Category Header */
+        .category-header {
             display: flex;
             align-items: center;
-            padding: 1rem 1.5rem;
-            color: rgba(255,255,255,0.85);
+            padding: 1rem 1.2rem;
             cursor: pointer;
             transition: all 0.3s ease;
+            background: rgba(0,0,0,0.2);
             border-left: 4px solid transparent;
             position: relative;
         }
         
-        .menu-item:hover {
+        .category-header:hover {
             background: rgba(255,255,255,0.1);
+            border-left-color: var(--primary);
+        }
+        
+        .category-header.active-category {
+            background: rgba(231, 76, 60, 0.2);
+            border-left-color: var(--primary);
+        }
+        
+        .category-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            margin-right: 0.8rem;
+            flex-shrink: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+        
+        .category-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+        
+        .category-jp {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
             color: white;
-            padding-left: 1.8rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .category-reading {
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.6);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .category-id {
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.8);
+            margin-top: 0.1rem;
+        }
+        
+        .category-toggle {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.7rem;
+            transition: transform 0.3s;
+            margin-left: 0.5rem;
+        }
+        
+        .category-toggle.expanded {
+            transform: rotate(180deg);
+        }
+        
+        /* Category Content (Expandable) */
+        .category-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            background: rgba(0,0,0,0.15);
+        }
+        
+        .category-content.expanded {
+            max-height: 1500px;
+        }
+        
+        /* Menu Item dalam Category */
+        .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 0.8rem 1rem 0.8rem 2.5rem;
+            color: rgba(255,255,255,0.85);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+            position: relative;
+        }
+        
+        .menu-item:hover {
+            background: rgba(255,255,255,0.08);
+            padding-left: 2.8rem;
         }
         
         .menu-item.active {
-            background: rgba(231, 76, 60, 0.2);
+            background: rgba(231, 76, 60, 0.15);
             color: white;
             border-left-color: var(--primary);
         }
         
-        .menu-item.active::before {
+        .menu-item.active::after {
             content: '▶';
             position: absolute;
             right: 1rem;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             color: var(--primary);
-            animation: pulse 1.5s infinite;
         }
         
         .menu-number {
-            width: 32px;
-            height: 32px;
-            background: rgba(255,255,255,0.1);
+            width: 26px;
+            height: 26px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 700;
-            font-size: 0.9rem;
-            margin-right: 1rem;
+            font-size: 0.8rem;
+            margin-right: 0.8rem;
+            flex-shrink: 0;
+            background: rgba(255,255,255,0.15);
+            color: white;
             transition: all 0.3s;
         }
         
         .menu-item.active .menu-number {
-            background: var(--primary);
             transform: scale(1.1);
         }
         
         .menu-text {
             flex: 1;
+            min-width: 0;
         }
         
         .menu-jp {
             font-family: 'Noto Sans JP', sans-serif;
-            font-size: 1.1rem;
+            font-size: 0.9rem;
             font-weight: 500;
             display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         
         .menu-reading {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             opacity: 0.7;
             display: block;
-            margin-top: 0.2rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         
-        /* Progress indicator in sidebar */
+        /* Category Progress */
+        .category-progress-bar {
+            height: 3px;
+            background: rgba(255,255,255,0.1);
+            margin: 0 1.2rem;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        
+        .category-progress-fill {
+            height: 100%;
+            border-radius: 2px;
+            transition: width 0.3s ease;
+        }
+        
+        /* Global Progress */
         .menu-progress {
             padding: 1rem 1.5rem;
             border-top: 1px solid rgba(255,255,255,0.1);
-            margin-top: auto;
+            background: rgba(0,0,0,0.2);
+            position: sticky;
+            bottom: 0;
         }
         
         .progress-bar-container {
             background: rgba(255,255,255,0.1);
-            height: 6px;
-            border-radius: 3px;
+            height: 8px;
+            border-radius: 4px;
             overflow: hidden;
             margin-bottom: 0.5rem;
         }
@@ -256,14 +373,22 @@
         .progress-bar-fill {
             height: 100%;
             background: linear-gradient(90deg, var(--primary), var(--accent));
-            border-radius: 3px;
+            border-radius: 4px;
             transition: width 0.3s ease;
         }
         
         .progress-text {
-            color: rgba(255,255,255,0.7);
-            font-size: 0.8rem;
+            color: rgba(255,255,255,0.9);
+            font-size: 0.85rem;
             text-align: center;
+            font-weight: 600;
+        }
+        
+        .progress-detail {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.75rem;
+            text-align: center;
+            margin-top: 0.3rem;
         }
         
         /* Main Content */
@@ -280,16 +405,77 @@
             margin-left: calc(var(--sidebar-width) + 20px);
         }
         
+        /* Category Divider */
+        .category-divider {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 16px;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-left: 5px solid;
+            scroll-margin-top: 120px;
+        }
+        
+        .category-badge {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .category-title-group {
+            flex: 1;
+        }
+        
+        .category-title-jp {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin-bottom: 0.2rem;
+        }
+        
+        .category-title-reading {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+        
+        .category-description {
+            font-size: 0.85rem;
+            color: #95a5a6;
+            margin: 0;
+        }
+        
+        .category-count {
+            background: rgba(0,0,0,0.05);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #7f8c8d;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        
         /* Reading Card */
         .reading-card {
             background: var(--card);
             border-radius: 20px;
             padding: 2rem;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
             box-shadow: 0 10px 40px rgba(0,0,0,0.08);
             position: relative;
             overflow: hidden;
             scroll-margin-top: 120px;
+            border-left: 4px solid var(--category-color, var(--primary));
         }
         
         .reading-card::before {
@@ -297,9 +483,10 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 5px;
-            height: 100%;
-            background: linear-gradient(to bottom, var(--primary), var(--accent));
+            width: 100%;
+            height: 4px;
+            background: var(--category-color, var(--primary));
+            opacity: 0.3;
         }
         
         .text-header {
@@ -312,7 +499,7 @@
         }
         
         .text-title {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             color: var(--secondary);
             display: flex;
             align-items: center;
@@ -320,25 +507,27 @@
         }
         
         .text-number {
-            background: var(--primary);
+            background: var(--category-color, var(--primary));
             color: white;
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: bold;
+            font-size: 0.9rem;
         }
         
         .audio-controls {
             display: flex;
             gap: 0.5rem;
             align-items: center;
+            flex-wrap: wrap;
         }
         
         .btn-play {
-            background: var(--primary);
+            background: var(--category-color, var(--primary));
             color: white;
             border: none;
             padding: 0.8rem 1.5rem;
@@ -349,12 +538,12 @@
             align-items: center;
             gap: 0.5rem;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
         
         .btn-play:hover {
-            background: #c0392b;
             transform: scale(1.05);
+            filter: brightness(1.1);
         }
         
         .btn-play.playing {
@@ -382,9 +571,10 @@
             font-weight: 600;
             color: var(--secondary);
             cursor: pointer;
+            font-size: 0.9rem;
         }
         
-        /* CHAT STYLE - Japanese Text */
+        /* Chat Style */
         .japanese-text {
             font-family: 'Noto Sans JP', sans-serif;
             font-size: 1.2rem;
@@ -396,52 +586,38 @@
             border: 2px solid #ecf0f1;
             display: flex;
             flex-direction: column;
-            gap: 0.5rem;
+            gap: 0.8rem;
         }
         
-        /* Chat Bubble Container */
         .chat-bubble {
             display: flex;
             flex-direction: column;
-            max-width: 80%;
+            max-width: 85%;
             position: relative;
             animation: fadeInUp 0.5s ease;
         }
         
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
-        /* Speaker A - Left aligned */
-		.chat-bubble.speaker-a {
-			align-self: flex-start;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-		}
+        .chat-bubble.speaker-a {
+            align-self: flex-start;
+            align-items: flex-start;
+        }
         
-        /* Speaker B - Right aligned */
-		.chat-bubble.speaker-b {
-			align-self: flex-end;
-			align-items: flex-end;
-			display: flex;
-			flex-direction: column;
-		}	
+        .chat-bubble.speaker-b {
+            align-self: flex-end;
+            align-items: flex-end;
+        }
         
-        /* Speaker Label */
         .speaker-label {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 700;
-            margin: -0.3rem -0.3rem;
-            padding: 0.2rem 0.8rem;
-            border-radius: 12px;
+            margin-bottom: 0.2rem;
+            padding: 0.15rem 0.6rem;
+            border-radius: 10px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -456,7 +632,6 @@
             color: white;
         }
         
-        /* Chat Message Bubble */
         .chat-message {
             padding: 1rem 1.3rem;
             border-radius: 18px;
@@ -464,6 +639,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            font-size: 1.15rem;
         }
         
         .chat-message:hover {
@@ -481,21 +657,18 @@
             50% { transform: scale(1.02); }
         }
         
-        /* Speaker A bubble - Blue */
         .speaker-a .chat-message {
             background: var(--chat-a);
             border: 2px solid var(--chat-a-border);
             border-bottom-left-radius: 4px;
         }
         
-        /* Speaker B bubble - Purple */
         .speaker-b .chat-message {
             background: var(--chat-b);
             border: 2px solid var(--chat-b-border);
             border-bottom-right-radius: 4px;
         }
         
-        /* Styling untuk ruby yang benar dalam chat */
         ruby {
             ruby-align: center;
             display: inline-flex;
@@ -503,11 +676,11 @@
             align-items: center;
             vertical-align: bottom;
             line-height: 1;
-            margin: -5px 1px;
+            margin: 0 1px;
         }
         
         rb {
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             line-height: 1.2;
             font-weight: 500;
         }
@@ -519,7 +692,6 @@
             margin-bottom: 2px;
         }
         
-        /* Play indicator */
         .chat-message::after {
             content: '🔊';
             position: absolute;
@@ -540,6 +712,40 @@
         .chat-message:hover::after {
             opacity: 1;
             transform: scale(1.2);
+        }
+        
+        /* Chat Participants */
+        .chat-participants {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            padding: 0.8rem;
+            background: white;
+            border-radius: 50px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .participant {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        .participant-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .participant.a .participant-dot {
+            background: var(--chat-a-border);
+        }
+        
+        .participant.b .participant-dot {
+            background: var(--chat-b-border);
         }
         
         /* Translation */
@@ -605,7 +811,7 @@
         }
         
         .vocab-item:hover {
-            border-color: var(--primary);
+            border-color: var(--category-color, var(--primary));
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
@@ -625,11 +831,12 @@
         }
         
         .vocab-meaning {
-            color: var(--primary);
+            color: var(--category-color, var(--primary));
             font-weight: 600;
             font-size: 0.95rem;
         }
         
+        /* Loading */
         .loading-container {
             text-align: center;
             padding: 3rem;
@@ -650,50 +857,17 @@
             100% { transform: rotate(360deg); }
         }
         
+        /* Footer */
         footer {
             text-align: center;
             padding: 3rem 2rem;
             color: #7f8c8d;
         }
         
-        /* Chat participants indicator */
-        .chat-participants {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 1.5rem;
-            padding: 0.8rem;
-            background: white;
-            border-radius: 50px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        
-        .participant {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
-        
-        .participant-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
-        
-        .participant.a .participant-dot {
-            background: var(--chat-a-border);
-        }
-        
-        .participant.b .participant-dot {
-            background: var(--chat-b-border);
-        }
-        
         /* Responsive */
         @media (max-width: 768px) {
             :root {
-                --sidebar-width: 260px;
+                --sidebar-width: 280px;
             }
             
             header h1 { font-size: 1.4rem; }
@@ -721,8 +895,9 @@
             }
             
             .reading-card { padding: 1.5rem; }
-            .japanese-text { padding: 0.5rem; }
+            .japanese-text { padding: 1rem; font-size: 1.1rem; }
             .text-header { flex-direction: column; align-items: flex-start; }
+            .btn-play { width: 100%; justify-content: center; }
             
             .sidebar {
                 width: 100%;
@@ -735,6 +910,16 @@
             
             .vocab-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .category-divider {
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem;
+            }
+            
+            .category-count {
+                width: 100%;
             }
         }
     </style>
@@ -751,11 +936,11 @@
         <div class="sidebar-header">
             <button class="sidebar-close" onclick="toggleSidebar()">×</button>
             <div class="sidebar-title">💬 Daftar Percakapan</div>
-            <div class="sidebar-subtitle">Pilih percakapan untuk navigasi</div>
+            <div class="sidebar-subtitle">Pilih kategori dan percakapan</div>
         </div>
         
         <div class="menu-list" id="menuList">
-            <!-- Menu items will be generated here -->
+            <!-- Generated by JavaScript -->
         </div>
         
         <div class="menu-progress">
@@ -763,12 +948,13 @@
                 <div class="progress-bar-fill" id="menuProgressBar" style="width: 0%"></div>
             </div>
             <div class="progress-text" id="menuProgressText">0% selesai</div>
+            <div class="progress-detail" id="menuProgressDetail">0 / 0 percakapan</div>
         </div>
     </nav>
 
     <header>
         <h1>💬 JLPT N5 会話</h1>
-        <p>Belajar Percakapan Bahasa Jepang</p>
+        <p>100 Percakapan Bahasa Jepang Per Kategori</p>
     </header>
 
     <div class="main-content" id="mainContent">
@@ -779,38 +965,53 @@
     </div>
 
     <footer>
-        <p>© 2026 JLPT N5 Kaiwa Learning</p>
+        <p>© 2026 JLPT N5 Kaiwa Learning | 100 Percakapan dalam 10 Kategori</p>
     </footer>
 
     <script>
-        let textsData = [];
+        // Data structures
+        let categoriesData = [];
+        let allTextsData = [];
+        let textsByCategory = new Map();
         let isPlaying = false;
         let currentTextId = null;
         let currentDialogueIndex = 0;
         let speechRate = 1;
-        let currentActiveIndex = 0;
+        let currentGlobalIndex = 0;
         let sidebarOpen = false;
+        let expandedCategories = new Set();
 
         // Parse line content dengan segment kanji/furigana
         function parseLineContent(lineElement) {
             let html = '';
             let readingText = '';
             
+            if (!lineElement) return { html: '', reading: '' };
+            
             const nodes = lineElement.childNodes;
             
             for (let node of nodes) {
                 if (node.nodeType === Node.TEXT_NODE) {
-                    const text = node.textContent.trim();
+                    const text = node.textContent;
                     if (text) {
-                        html += `<span class="okurigana">${text}</span>`;
+                        html += `<span class="plain-text">${text}</span>`;
                         readingText += text;
                     }
-                } else if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'segment') {
-                    const kanji = node.getElementsByTagName('kanji')[0]?.textContent || '';
-                    const furigana = node.getElementsByTagName('furigana')[0]?.textContent || '';
-                    
-                    html += `<ruby><rb>${kanji}</rb><rt>${furigana}</rt></ruby>`;
-                    readingText += furigana;
+                } else if (node.nodeType === Node.ELEMENT_NODE) {
+                    if (node.tagName === 'segment') {
+                        const kanji = node.getElementsByTagName('kanji')[0]?.textContent || '';
+                        const furigana = node.getElementsByTagName('furigana')[0]?.textContent || '';
+                        
+                        if (kanji) {
+                            html += `<ruby><rb>${kanji}</rb><rt>${furigana}</rt></ruby>`;
+                            readingText += furigana || kanji;
+                        }
+                    } else {
+                        // Handle nested elements recursively
+                        const result = parseLineContent(node);
+                        html += result.html;
+                        readingText += result.reading;
+                    }
                 }
             }
             
@@ -833,45 +1034,175 @@
             menuToggle.textContent = sidebarOpen ? '✕' : '☰';
         }
 
-        // Update active menu item
-        function updateActiveMenu(index) {
-            currentActiveIndex = index;
+        // Toggle Category Expand/Collapse
+        function toggleCategory(categoryId) {
+            const content = document.getElementById(`category-${categoryId}`);
+            const toggle = document.getElementById(`toggle-${categoryId}`);
+            const header = document.getElementById(`header-${categoryId}`);
             
-            document.querySelectorAll('.menu-item').forEach((item, i) => {
-                item.classList.toggle('active', i === index);
-            });
-            
-            // Update progress bar
-            const progress = ((index + 1) / textsData.length) * 100;
-            document.getElementById('menuProgressBar').style.width = progress + '%';
-            document.getElementById('menuProgressText').textContent = 
-                `Percakapan ${index + 1} dari ${textsData.length}`;
-        }
-
-        // Navigate to text
-        function navigateToText(index) {
-            const element = document.getElementById(`text-${textsData[index].id}`);
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            updateActiveMenu(index);
-            
-            // Close sidebar on mobile after navigation
-            if (window.innerWidth <= 768 && sidebarOpen) {
-                toggleSidebar();
+            if (expandedCategories.has(categoryId)) {
+                expandedCategories.delete(categoryId);
+                content.classList.remove('expanded');
+                toggle.classList.remove('expanded');
+            } else {
+                // Expand this category
+                expandedCategories.add(categoryId);
+                content.classList.add('expanded');
+                toggle.classList.add('expanded');
+                
+                // Optional: collapse others for accordion effect
+                // expandedCategories.forEach(id => {
+                //     if (id !== categoryId) {
+                //         document.getElementById(`category-${id}`)?.classList.remove('expanded');
+                //         document.getElementById(`toggle-${id}`)?.classList.remove('expanded');
+                //     }
+                // });
             }
         }
 
-        // Load XML data
+        // Navigate to specific text
+        function navigateToText(textId) {
+            const element = document.getElementById(`text-${textId}`);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                
+                // Find global index
+                const globalIndex = allTextsData.findIndex(t => t.id === textId);
+                if (globalIndex !== -1) {
+                    updateActiveMenu(globalIndex);
+                }
+                
+                // Close sidebar on mobile
+                if (window.innerWidth <= 768 && sidebarOpen) {
+                    toggleSidebar();
+                }
+            }
+        }
+
+        // Update active menu item
+        function updateActiveMenu(globalIndex) {
+            currentGlobalIndex = globalIndex;
+            
+            // Remove all active classes
+            document.querySelectorAll('.menu-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            document.querySelectorAll('.category-header').forEach(header => {
+                header.classList.remove('active-category');
+            });
+            
+            // Add active to current
+            const currentText = allTextsData[globalIndex];
+            if (currentText) {
+                const menuItem = document.querySelector(`[data-text-id="${currentText.id}"]`);
+                if (menuItem) {
+                    menuItem.classList.add('active');
+                    
+                    // Expand parent category
+                    const categoryId = currentText.categoryId;
+                    if (!expandedCategories.has(categoryId)) {
+                        toggleCategory(categoryId);
+                    }
+                    
+                    // Highlight category header
+                    const header = document.getElementById(`header-${categoryId}`);
+                    if (header) header.classList.add('active-category');
+                }
+            }
+            
+            updateProgress();
+        }
+
+        // Update progress bars
+        function updateProgress() {
+            const total = allTextsData.length;
+            const progress = ((currentGlobalIndex + 1) / total) * 100;
+            
+            document.getElementById('menuProgressBar').style.width = progress + '%';
+            document.getElementById('menuProgressText').textContent = `${Math.round(progress)}% selesai`;
+            document.getElementById('menuProgressDetail').textContent = 
+                `${currentGlobalIndex + 1} / ${total} percakapan`;
+            
+            // Update per-category progress
+            categoriesData.forEach(category => {
+                const categoryTexts = allTextsData.filter(t => t.categoryId === category.id);
+                const viewedCount = categoryTexts.filter((t, idx) => {
+                    const globalIdx = allTextsData.findIndex(at => at.id === t.id);
+                    return globalIdx <= currentGlobalIndex;
+                }).length;
+                
+                const catProgress = (viewedCount / categoryTexts.length) * 100;
+                const fill = document.getElementById(`cat-fill-${category.id}`);
+                if (fill) {
+                    fill.style.width = `${catProgress}%`;
+                }
+            });
+        }
+
+        // Load XML Data
         async function loadXMLData() {
             try {
                 const response = await fetch('kaiwa.xml');
+                if (!response.ok) throw new Error('Failed to load XML');
+                
                 const xmlText = await response.text();
                 const parser = new DOMParser();
                 const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
                 
-                const texts = xmlDoc.getElementsByTagName('text');
-                textsData = Array.from(texts).map(text => {
-                    const dialogueElements = Array.from(text.getElementsByTagName('dialogue'));
-                    const dialogues = dialogueElements.map(dialogueEl => {
+                // Check for parsing errors
+                const parserError = xmlDoc.querySelector('parsererror');
+                if (parserError) {
+                    throw new Error('XML parsing error');
+                }
+                
+                parseXMLData(xmlDoc);
+                
+            } catch (error) {
+                console.error('Error loading XML:', error);
+                document.getElementById('mainContent').innerHTML = 
+                    `<div class="loading-container">
+                        <p style="color: #e74c3c;">Gagal memuat data.</p>
+                        <p style="font-size: 0.9rem; margin-top: 1rem;">Pastikan file kaiwa.xml ada di folder yang sama.</p>
+                        <p style="font-size: 0.8rem; color: #7f8c8d; margin-top: 0.5rem;">${error.message}</p>
+                    </div>`;
+            }
+        }
+
+        // Parse XML Data
+        function parseXMLData(xmlDoc) {
+            const categories = xmlDoc.getElementsByTagName('category');
+            
+            if (categories.length === 0) {
+                // Fallback: try old structure
+                parseOldStructure(xmlDoc);
+                return;
+            }
+            
+            categoriesData = Array.from(categories).map(category => {
+                const categoryId = category.getAttribute('id');
+                const categoryOrder = parseInt(category.getAttribute('order')) || 999;
+                
+                // Parse category metadata
+                const nameEl = category.getElementsByTagName('name')[0];
+                const categoryName = {
+                    jp: nameEl?.getElementsByTagName('jp')[0]?.textContent || 'Untitled',
+                    reading: nameEl?.getElementsByTagName('reading')[0]?.textContent || '',
+                    id: nameEl?.getElementsByTagName('id')[0]?.textContent || 'Untitled'
+                };
+                
+                const icon = category.getElementsByTagName('icon')[0]?.textContent || '📝';
+                const color = category.getElementsByTagName('color')[0]?.textContent || '#e74c3c';
+                const description = category.getElementsByTagName('description')[0]?.textContent || '';
+                
+                // Parse texts
+                const texts = category.getElementsByTagName('text');
+                const categoryTexts = Array.from(texts).map(text => {
+                    const textId = text.getAttribute('id');
+                    const textOrder = parseInt(text.getAttribute('order')) || 1;
+                    
+                    // Parse dialogues
+                    const dialogueElements = text.getElementsByTagName('dialogue');
+                    const dialogues = Array.from(dialogueElements).map(dialogueEl => {
                         const speaker = dialogueEl.getElementsByTagName('speaker')[0]?.textContent || 'A';
                         const lineEl = dialogueEl.getElementsByTagName('line')[0];
                         const parsed = parseLineContent(lineEl);
@@ -882,6 +1213,7 @@
                         };
                     });
                     
+                    // Parse vocabulary
                     const vocabItems = Array.from(text.getElementsByTagName('item')).map(item => ({
                         word: item.getElementsByTagName('word')[0]?.textContent || '',
                         reading: item.getElementsByTagName('reading')[0]?.textContent || '',
@@ -889,118 +1221,289 @@
                         meaning: item.getElementsByTagName('meaning')[0]?.textContent || ''
                     }));
                     
-                    return {
-                        id: text.getAttribute('id'),
+                    const titleEl = text.getElementsByTagName('title')[0];
+                    const textData = {
+                        id: textId,
+                        order: textOrder,
+                        categoryId: categoryId,
+                        categoryColor: color,
                         title: {
-                            jp: text.getElementsByTagName('jp')[0]?.textContent || '',
-                            reading: text.getElementsByTagName('reading')[0]?.textContent || '',
-                            id: text.getElementsByTagName('id')[0]?.textContent || ''
+                            jp: titleEl?.getElementsByTagName('jp')[0]?.textContent || '',
+                            reading: titleEl?.getElementsByTagName('reading')[0]?.textContent || '',
+                            id: titleEl?.getElementsByTagName('id')[0]?.textContent || ''
                         },
                         dialogues: dialogues,
                         translation: text.getElementsByTagName('translation')[0]?.innerHTML || '',
                         vocabulary: vocabItems
                     };
+                    
+                    allTextsData.push(textData);
+                    return textData;
                 });
                 
-                renderMenu();
-                renderContent();
-                setupScrollSpy();
-                updateActiveMenu(0);
-            } catch (error) {
-                console.error('Error loading XML:', error);
-                document.getElementById('mainContent').innerHTML = 
-                    '<div class="loading-container"><p>Gagal memuat data. Pastikan file kaiwa.xml ada di folder yang sama.</p></div>';
+                textsByCategory.set(categoryId, categoryTexts);
+                
+                return {
+                    id: categoryId,
+                    order: categoryOrder,
+                    name: categoryName,
+                    icon: icon,
+                    color: color,
+                    description: description,
+                    texts: categoryTexts,
+                    textCount: categoryTexts.length
+                };
+            });
+            
+            // Sort categories and texts
+            categoriesData.sort((a, b) => a.order - b.order);
+            categoriesData.forEach(cat => {
+                cat.texts.sort((a, b) => a.order - b.order);
+            });
+            
+            // Rebuild allTextsData in correct order
+            allTextsData = [];
+            categoriesData.forEach(cat => {
+                cat.texts.forEach((text, idx) => {
+                    text.globalIndex = allTextsData.length;
+                    allTextsData.push(text);
+                });
+            });
+            
+            // Expand first category by default
+            if (categoriesData.length > 0) {
+                expandedCategories.add(categoriesData[0].id);
             }
+            
+            renderMenuWithCategories();
+            renderContentWithCategories();
+            setupScrollSpy();
+            updateActiveMenu(0);
         }
 
-        // Render Menu
-        function renderMenu() {
+        // Fallback for old XML structure
+        function parseOldStructure(xmlDoc) {
+            const texts = xmlDoc.getElementsByTagName('text');
+            if (texts.length === 0) {
+                throw new Error('No texts found in XML');
+            }
+            
+            // Create single default category
+            const defaultTexts = Array.from(texts).map((text, idx) => {
+                const textId = text.getAttribute('id') || (idx + 1).toString();
+                
+                const dialogueElements = text.getElementsByTagName('dialogue');
+                const dialogues = Array.from(dialogueElements).map(dialogueEl => {
+                    const speaker = dialogueEl.getElementsByTagName('speaker')[0]?.textContent || 'A';
+                    const lineEl = dialogueEl.getElementsByTagName('line')[0];
+                    const parsed = parseLineContent(lineEl);
+                    return {
+                        speaker: speaker,
+                        html: parsed.html,
+                        reading: parsed.reading
+                    };
+                });
+                
+                const vocabItems = Array.from(text.getElementsByTagName('item')).map(item => ({
+                    word: item.getElementsByTagName('word')[0]?.textContent || '',
+                    reading: item.getElementsByTagName('reading')[0]?.textContent || '',
+                    romaji: item.getElementsByTagName('romaji')[0]?.textContent || '',
+                    meaning: item.getElementsByTagName('meaning')[0]?.textContent || ''
+                }));
+                
+                const titleEl = text.getElementsByTagName('title')[0];
+                
+                return {
+                    id: textId,
+                    order: idx + 1,
+                    categoryId: 'default',
+                    categoryColor: '#e74c3c',
+                    title: {
+                        jp: titleEl?.getElementsByTagName('jp')[0]?.textContent || '',
+                        reading: titleEl?.getElementsByTagName('reading')[0]?.textContent || '',
+                        id: titleEl?.getElementsByTagName('id')[0]?.textContent || ''
+                    },
+                    dialogues: dialogues,
+                    translation: text.getElementsByTagName('translation')[0]?.innerHTML || '',
+                    vocabulary: vocabItems,
+                    globalIndex: idx
+                };
+            });
+            
+            categoriesData = [{
+                id: 'default',
+                order: 1,
+                name: {
+                    jp: 'JLPT N5 会話',
+                    reading: 'えぬご かいわ',
+                    id: 'Percakapan JLPT N5'
+                },
+                icon: '💬',
+                color: '#e74c3c',
+                description: 'Kumpulan percakapan bahasa Jepang level N5',
+                texts: defaultTexts,
+                textCount: defaultTexts.length
+            }];
+            
+            allTextsData = defaultTexts;
+            textsByCategory.set('default', defaultTexts);
+            expandedCategories.add('default');
+            
+            renderMenuWithCategories();
+            renderContentWithCategories();
+            setupScrollSpy();
+            updateActiveMenu(0);
+        }
+
+        // Render Menu dengan Kategori
+        function renderMenuWithCategories() {
             const menuList = document.getElementById('menuList');
-            menuList.innerHTML = textsData.map((text, index) => `
-                <div class="menu-item ${index === 0 ? 'active' : ''}" 
-                     onclick="navigateToText(${index})"
-                     data-index="${index}">
-                    <div class="menu-number">${text.id}</div>
-                    <div class="menu-text">
-                        <span class="menu-jp">${text.title.jp}</span>
-                        <span class="menu-reading">${text.title.reading} — ${text.title.id}</span>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        // Render content dengan CHAT STYLE
-        function renderContent() {
-            const container = document.getElementById('mainContent');
-            container.innerHTML = textsData.map((text, index) => `
-                <div class="reading-card" id="text-${text.id}" data-index="${index}">
-                    <div class="text-header">
-                        <h2 class="text-title">
-                            <span class="text-number">${text.id}</span>
-                            ${text.title.jp}（${text.title.reading}）
-                        </h2>
-                        <div class="audio-controls">
-                            <div class="speed-control">
-                                <label>Kecepatan:</label>
-                                <select id="speed-${text.id}" onchange="changeSpeed(${text.id})">
-                                    <option value="0.7">0.7x</option>
-                                    <option value="1" selected>1x</option>
-                                    <option value="1.2">1.2x</option>
-                                </select>
+            
+            let html = '';
+            categoriesData.forEach(category => {
+                const isExpanded = expandedCategories.has(category.id);
+                
+                html += `
+                    <div class="category-section">
+                        <div class="category-header ${isExpanded ? 'active-category' : ''}" 
+                             id="header-${category.id}"
+                             onclick="toggleCategory('${category.id}')">
+                            <div class="category-icon" style="background: ${category.color}">
+                                ${category.icon}
                             </div>
-                            <button class="btn-play" id="play-${text.id}" onclick="toggleAudio(${text.id})">
-                                <span id="icon-${text.id}">▶</span>
-                                <span id="text-btn-${text.id}">Dengarkan</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Chat Participants Indicator -->
-                    <div class="chat-participants">
-                        <div class="participant a">
-                            <div class="participant-dot"></div>
-                            <span>Pihak A (Biru)</span>
-                        </div>
-                        <div class="participant b">
-                            <div class="participant-dot"></div>
-                            <span>Pihak B (Ungu)</span>
-                        </div>
-                    </div>
-
-                    <!-- CHAT BUBBLE CONTAINER -->
-                    <div class="japanese-text" id="text-content-${text.id}">
-                        ${text.dialogues.map((dialogue, dIndex) => `
-                            <div class="chat-bubble speaker-${dialogue.speaker.toLowerCase()}" data-index="${dIndex}">
-                                <div class="speaker-label">${dialogue.speaker}</div>
-                                <div class="chat-message" onclick="speakSingleDialogue(${text.id}, ${dIndex})">
-                                    ${dialogue.html}
-                                </div>
+                            <div class="category-info">
+                                <span class="category-jp">${category.name.jp}</span>
+                                <span class="category-reading">${category.name.reading}</span>
+                                <span class="category-id">${category.name.id}</span>
                             </div>
-                        `).join('')}
-                    </div>
-
-                    <div class="translation">
-                        <h3>📝 Terjemahan</h3>
-                        ${text.translation}
-                    </div>
-
-                    <div class="vocab-section">
-                        <h3>📚 Kosakata Penting</h3>
-                        <div class="vocab-grid">
-                            ${text.vocabulary.map(vocab => `
-                                <div class="vocab-item" onclick="speakWord('${vocab.reading}')">
-                                    <div class="vocab-jp">${vocab.word}</div>
-                                    <div class="vocab-reading">${vocab.reading} (${vocab.romaji})</div>
-                                    <div class="vocab-meaning">${vocab.meaning}</div>
+                            <div class="category-toggle ${isExpanded ? 'expanded' : ''}" id="toggle-${category.id}">▼</div>
+                        </div>
+                        
+                        <div class="category-progress-bar">
+                            <div class="category-progress-fill" id="cat-fill-${category.id}" 
+                                 style="width: 0%; background: ${category.color}"></div>
+                        </div>
+                        
+                        <div class="category-content ${isExpanded ? 'expanded' : ''}" id="category-${category.id}">
+                            ${category.texts.map(text => `
+                                <div class="menu-item" 
+                                     data-text-id="${text.id}"
+                                     data-global-index="${text.globalIndex}"
+                                     onclick="event.stopPropagation(); navigateToText('${text.id}')">
+                                    <div class="menu-number" style="background: ${category.color}">
+                                        ${text.order}
+                                    </div>
+                                    <div class="menu-text">
+                                        <span class="menu-jp">${text.title.jp}</span>
+                                        <span class="menu-reading">${text.title.reading}</span>
+                                    </div>
                                 </div>
                             `).join('')}
                         </div>
                     </div>
-                </div>
-            `).join('');
+                `;
+            });
+            
+            menuList.innerHTML = html;
         }
 
-        // Setup Scroll Spy untuk update menu aktif saat scroll
+        // Render Content dengan Kategori Headers
+        function renderContentWithCategories() {
+            const container = document.getElementById('mainContent');
+            
+            let html = '';
+            categoriesData.forEach(category => {
+                // Category Divider
+                html += `
+                    <div class="category-divider" id="category-divider-${category.id}" 
+                         style="border-left-color: ${category.color}">
+                        <div class="category-badge" style="background: ${category.color}">
+                            ${category.icon}
+                        </div>
+                        <div class="category-title-group">
+                            <h2 class="category-title-jp">${category.name.jp}</h2>
+                            <span class="category-title-reading">${category.name.reading} — ${category.name.id}</span>
+                            <p class="category-description">${category.description}</p>
+                        </div>
+                        <div class="category-count">${category.textCount} Percakapan</div>
+                    </div>
+                `;
+                
+                // Texts dalam category
+                html += category.texts.map(text => `
+                    <div class="reading-card" id="text-${text.id}" 
+                         data-category="${category.id}"
+                         data-global-index="${text.globalIndex}"
+                         style="--category-color: ${category.color}">
+                        
+                        <div class="text-header">
+                            <h2 class="text-title">
+                                <span class="text-number">${text.order}</span>
+                                ${text.title.jp}（${text.title.reading}）
+                            </h2>
+                            <div class="audio-controls">
+                                <div class="speed-control">
+                                    <label>Kecepatan:</label>
+                                    <select id="speed-${text.id}" onchange="changeSpeed(${text.id})">
+                                        <option value="0.7">0.7x</option>
+                                        <option value="1" selected>1x</option>
+                                        <option value="1.2">1.2x</option>
+                                    </select>
+                                </div>
+                                <button class="btn-play" id="play-${text.id}" onclick="toggleAudio('${text.id}')">
+                                    <span id="icon-${text.id}">▶</span>
+                                    <span id="text-btn-${text.id}">Dengarkan</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="chat-participants">
+                            <div class="participant a">
+                                <div class="participant-dot"></div>
+                                <span>Pihak A (Biru)</span>
+                            </div>
+                            <div class="participant b">
+                                <div class="participant-dot"></div>
+                                <span>Pihak B (Ungu)</span>
+                            </div>
+                        </div>
+
+                        <div class="japanese-text" id="text-content-${text.id}">
+                            ${text.dialogues.map((dialogue, dIndex) => `
+                                <div class="chat-bubble speaker-${dialogue.speaker.toLowerCase()}" data-index="${dIndex}">
+                                    <div class="speaker-label">${dialogue.speaker}</div>
+                                    <div class="chat-message" onclick="speakSingleDialogue('${text.id}', ${dIndex})">
+                                        ${dialogue.html}
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+
+                        <div class="translation">
+                            <h3>📝 Terjemahan</h3>
+                            ${text.translation}
+                        </div>
+
+                        <div class="vocab-section">
+                            <h3>📚 Kosakata Penting</h3>
+                            <div class="vocab-grid">
+                                ${text.vocabulary.map(vocab => `
+                                    <div class="vocab-item" onclick="speakWord('${vocab.reading}')">
+                                        <div class="vocab-jp">${vocab.word}</div>
+                                        <div class="vocab-reading">${vocab.reading} (${vocab.romaji})</div>
+                                        <div class="vocab-meaning">${vocab.meaning}</div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            });
+            
+            container.innerHTML = html;
+        }
+
+        // Setup Scroll Spy
         function setupScrollSpy() {
             const options = {
                 root: null,
@@ -1011,8 +1514,10 @@
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        const index = parseInt(entry.target.dataset.index);
-                        updateActiveMenu(index);
+                        const globalIndex = parseInt(entry.target.dataset.globalIndex);
+                        if (!isNaN(globalIndex)) {
+                            updateActiveMenu(globalIndex);
+                        }
                     }
                 });
             }, options);
@@ -1037,7 +1542,7 @@
             }
         }
 
-        // Play audio with highlighting
+        // Play audio dengan highlighting
         function playAudio(textId) {
             if (!window.speechSynthesis) {
                 alert('Browser Anda tidak mendukung fitur audio.');
@@ -1049,7 +1554,8 @@
             isPlaying = true;
             currentDialogueIndex = 0;
             
-            const text = textsData.find(t => t.id == textId);
+            const text = allTextsData.find(t => t.id === textId);
+            if (!text) return;
             
             // Update UI
             const btn = document.getElementById(`play-${textId}`);
@@ -1060,7 +1566,7 @@
             icon.textContent = '⏸';
             textBtn.textContent = 'Berhenti';
             
-            // Clear previous highlights
+            // Clear highlights
             document.querySelectorAll(`#text-content-${textId} .chat-message`).forEach(p => {
                 p.classList.remove('highlight');
             });
@@ -1084,13 +1590,14 @@
             utterance.rate = speechRate;
             utterance.pitch = 1;
             
-            // Highlight current dialogue bubble
+            // Highlight current bubble
             const dialogueElements = document.querySelectorAll(`#text-content-${textId} .chat-message`);
             if (dialogueElements[currentDialogueIndex]) {
                 dialogueElements[currentDialogueIndex].classList.add('highlight');
                 dialogueElements[currentDialogueIndex].scrollIntoView({ 
                     behavior: 'smooth', 
-                    block: 'center' 
+                    block: 'center',
+                    inline: 'nearest'
                 });
             }
             
@@ -1113,8 +1620,11 @@
         function speakSingleDialogue(textId, dialogueIndex) {
             if (!window.speechSynthesis) return;
             
-            const text = textsData.find(t => t.id == textId);
+            const text = allTextsData.find(t => t.id === textId);
+            if (!text) return;
+            
             const dialogue = text.dialogues[dialogueIndex];
+            if (!dialogue) return;
             
             const utterance = new SpeechSynthesisUtterance(dialogue.reading);
             utterance.lang = 'ja-JP';
@@ -1123,10 +1633,12 @@
             
             // Visual feedback
             const element = document.querySelector(`#text-content-${textId} .chat-bubble[data-index="${dialogueIndex}"] .chat-message`);
-            element.style.transform = 'scale(1.05)';
-            setTimeout(() => {
-                element.style.transform = '';
-            }, 200);
+            if (element) {
+                element.style.transform = 'scale(1.05)';
+                setTimeout(() => {
+                    element.style.transform = '';
+                }, 200);
+            }
         }
 
         // Stop audio
@@ -1135,26 +1647,26 @@
             isPlaying = false;
             currentTextId = null;
             
-            textsData.forEach(text => {
-                const btn = document.getElementById(`play-${text.id}`);
-                const icon = document.getElementById(`icon-${text.id}`);
-                const textBtn = document.getElementById(`text-btn-${text.id}`);
-                
-                if (btn) {
-                    btn.classList.remove('playing');
-                    icon.textContent = '▶';
-                    textBtn.textContent = 'Dengarkan';
-                }
-                
-                document.querySelectorAll(`#text-content-${text.id} .chat-message`).forEach(p => {
-                    p.classList.remove('highlight');
-                });
+            document.querySelectorAll('.btn-play').forEach(btn => {
+                btn.classList.remove('playing');
+            });
+            
+            document.querySelectorAll('[id^="icon-"]').forEach(icon => {
+                icon.textContent = '▶';
+            });
+            
+            document.querySelectorAll('[id^="text-btn-"]').forEach(btn => {
+                btn.textContent = 'Dengarkan';
+            });
+            
+            document.querySelectorAll('.chat-message').forEach(p => {
+                p.classList.remove('highlight');
             });
         }
 
         // Speak individual word
         function speakWord(reading) {
-            if (!window.speechSynthesis) return;
+            if (!window.speechSynthesis || !reading) return;
             
             const utterance = new SpeechSynthesisUtterance(reading);
             utterance.lang = 'ja-JP';
@@ -1171,14 +1683,15 @@
             }
         });
 
-        // Initialize
-        document.addEventListener('DOMContentLoaded', loadXMLData);
-        
+        // Handle visibility change
         document.addEventListener('visibilitychange', () => {
             if (document.hidden && isPlaying) {
                 stopAudio();
             }
         });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', loadXMLData);
     </script>
 </body>
 </html>

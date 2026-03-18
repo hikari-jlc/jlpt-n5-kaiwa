@@ -142,27 +142,418 @@
             <reading>おはようございます</reading>
             <id>Selamat Pagi</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                おはようございます！いい<segment><kanji>天気</kanji><furigana>てんき</furigana></segment>ですね。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                おはようございます！そうですね、<segment><kanji>今日</kanji><furigana>きょう</furigana></segment>はとても<segment><kanji>晴</kanji><furigana>は</furigana></segment>れていますね。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>昨日</kanji><furigana>きのう</furigana></segment>はよく<segment><kanji>眠</kanji><furigana>ねむ</furigana></segment>れましたか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、お<segment><kanji>陰様</kanji><furigana>かげさま</furigana></segment>でよく<segment><kanji>眠</kanji><furigana>ねむ</furigana></segment>れました。<segment><kanji>田中</kanji><furigana>たなか</furigana></segment>さんはどうでしたか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                わたしも<segment><kanji>大丈夫</kanji><furigana>だいじょうぶ</furigana></segment>です。<segment><kanji>朝</kanji><furigana>あさ</furigana></segment>ご<segment><kanji>飯</kanji><furigana>はん</furigana></segment>はもう<segment><kanji>食</kanji><furigana>た</furigana></segment>べましたか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、もう<segment><kanji>食</kanji><furigana>た</furigana></segment>べました。<segment><kanji>田中</kanji><furigana>たなか</furigana></segment>さんは。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                いいえ、まだです。ちょっと<segment><kanji>忙</kanji><furigana>いそが</furigana></segment>しいので、<segment><kanji>後</kanji><furigana>あと</furigana></segment>で<segment><kanji>食</kanji><furigana>た</furigana></segment>べます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                そうですか。じゃあ、きょうもいちにちがんばりましょう！
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、がんばりましょう！では、また<segment><kanji>後</kanji><furigana>あと</furigana></segment>で。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Selamat pagi! Cuacanya bagus ya.</p>
+            <p><strong>B:</strong> Selamat pagi! Ya, hari ini cerah sekali.</p>
+            <p><strong>A:</strong> Apakah Anda tidur nyenyak semalam?</p>
+            <p><strong>B:</strong> Ya, berkat Anda saya tidur nyenyak. Bagaimana dengan Tanaka-san?</p>
+            <p><strong>A:</strong> Saya juga baik-baik saja. Apakah Anda sudah sarapan?</p>
+            <p><strong>B:</strong> Ya, sudah. Bagaimana dengan Tanaka-san?</p>
+            <p><strong>A:</strong> Belum. Karena sedikit sibuk, nanti saja saya makan.</p>
+            <p><strong>B:</strong> Oh begitu. Kalau begitu, semoga hari ini menyenangkan!</p>
+            <p><strong>A:</strong> Ya, semangat! Sampai jumpa nanti.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>おはようございます</word>
+              <reading>おはようございます</reading>
+              <romaji>ohayou gozaimasu</romaji>
+              <meaning>Selamat pagi (formal)</meaning>
+            </item>
+            <item>
+              <word>天気</word>
+              <reading>てんき</reading>
+              <romaji>tenki</romaji>
+              <meaning>Cuaca</meaning>
+            </item>
+            <item>
+              <word>今日</word>
+              <reading>きょう</reading>
+              <romaji>kyou</romaji>
+              <meaning>Hari ini</meaning>
+            </item>
+            <item>
+              <word>晴れ</word>
+              <reading>はれ</reading>
+              <romaji>hare</romaji>
+              <meaning>Cerah/ Cerahnya</meaning>
+            </item>
+            <item>
+              <word>昨日</word>
+              <reading>きのう</reading>
+              <romaji>kinou</romaji>
+              <meaning>Kemarin</meaning>
+            </item>
+            <item>
+              <word>眠れました</word>
+              <reading>ねむれました</reading>
+              <romaji>nemuremashita</romaji>
+              <meaning>Bisa tidur (lampau)</meaning>
+            </item>
+            <item>
+              <word>お陰様で</word>
+              <reading>おかげさまで</reading>
+              <romaji>okagesama de</romaji>
+              <meaning>Berkat Anda/Baik-baik saja</meaning>
+            </item>
+            <item>
+              <word>大丈夫</word>
+              <reading>だいじょうぶ</reading>
+              <romaji>daijoubu</romaji>
+              <meaning>Baik-baik saja/Tidak apa-apa</meaning>
+            </item>
+            <item>
+              <word>朝ご飯</word>
+              <reading>あさごはん</reading>
+              <romaji>asagohan</romaji>
+              <meaning>Sarapan</meaning>
+            </item>
+            <item>
+              <word>忙しい</word>
+              <reading>いそがしい</reading>
+              <romaji>isogashii</romaji>
+              <meaning>Sibuk</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="3" order="3">
           <title>
             <jp>こんにちは</jp>
             <reading>こんにちは</reading>
             <id>Selamat Siang</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                こんにちは！お<segment><kanji>昼</kanji><furigana>ひる</furigana></segment>ご<segment><kanji>飯</kanji><furigana>はん</furigana></segment>を<segment><kanji>食</kanji><furigana>た</furigana></segment>べに<segment><kanji>行</kanji><furigana>い</furigana></segment>きませんか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                こんにちは！いいですね。<segment><kanji>何</kanji><furigana>なに</furigana></segment>を<segment><kanji>食</kanji><furigana>た</furigana></segment>べたいですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>近</kanji><furigana>ちか</furigana></segment>くに<segment><kanji>美味</kanji><furigana>おい</furigana></segment>しいラーメン<segment><kanji>屋</kanji><furigana>や</furigana></segment>がありますよ。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                それはいいですね。<segment><kanji>私</kanji><furigana>わたし</furigana></segment>もラーメンが<segment><kanji>大好</kanji><furigana>だいす</furigana></segment>きです。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                じゃあ、いっしょに<segment><kanji>行</kanji><furigana>い</furigana></segment>きましょう。<segment><kanji>時間</kanji><furigana>じかん</furigana></segment>は<segment><kanji>大丈夫</kanji><furigana>だいじょうぶ</furigana></segment>ですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、<segment><kanji>午後</kanji><furigana>ごご</furigana></segment>の<segment><kanji>会議</kanji><furigana>かいぎ</furigana></segment>まで<segment><kanji>一時間</kanji><furigana>いちじかん</furigana></segment>あります。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                それでは、<segment><kanji>急</kanji><furigana>いそ</furigana></segment>ぎましょう。<segment><kanji>店</kanji><furigana>みせ</furigana></segment>はあまり<segment><kanji>遠</kanji><furigana>とお</furigana></segment>くありません。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                わかりました。あ、<segment><kanji>財布</kanji><furigana>さいふ</furigana></segment>を<segment><kanji>忘</kanji><furigana>わす</furigana></segment>れないでくださいね。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>心配</kanji><furigana>しんぱい</furigana></segment>しないでください。ちゃんと<segment><kanji>持</kanji><furigana>も</furigana></segment>っていますよ。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Selamat siang! Mau pergi makan siang bersama?</p>
+            <p><strong>B:</strong> Selamat siang! Baik. Mau makan apa?</p>
+            <p><strong>A:</strong> Di dekat sini ada kedai ramen yang enak lho.</p>
+            <p><strong>B:</strong> Itu bagus sekali. Saya juga sangat suka ramen.</p>
+            <p><strong>A:</strong> Kalau begitu, ayo pergi bersama. Apakah waktunya cukup?</p>
+            <p><strong>B:</strong> Ya, masih ada satu jam sebelum meeting sore.</p>
+            <p><strong>A:</strong> Kalau begitu, ayo cepat. Tokonya tidak terlalu jauh.</p>
+            <p><strong>B:</strong> Baiklah. Ah, jangan lupa dompet ya.</p>
+            <p><strong>A:</strong> Jangan khawatir. Saya bawa kok.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>こんにちは</word>
+              <reading>こんにちは</reading>
+              <romaji>konnichiwa</romaji>
+              <meaning>Selamat siang</meaning>
+            </item>
+            <item>
+              <word>お昼ご飯</word>
+              <reading>おひるごはん</reading>
+              <romaji>ohirugohan</romaji>
+              <meaning>Makan siang</meaning>
+            </item>
+            <item>
+              <word>行きませんか</word>
+              <reading>いきませんか</reading>
+              <romaji>ikimasen ka</romaji>
+              <meaning>Mau pergi? (ajakan)</meaning>
+            </item>
+            <item>
+              <word>近く</word>
+              <reading>ちかく</reading>
+              <romaji>chikaku</romaji>
+              <meaning>Dekat/Sekitar</meaning>
+            </item>
+            <item>
+              <word>美味しい</word>
+              <reading>おいしい</reading>
+              <romaji>oishii</romaji>
+              <meaning>Enak/Lezat</meaning>
+            </item>
+            <item>
+              <word>大好き</word>
+              <reading>だいすき</reading>
+              <romaji>daisuki</romaji>
+              <meaning>Sangat suka</meaning>
+            </item>
+            <item>
+              <word>一緒に</word>
+              <reading>いっしょに</reading>
+              <romaji>issho ni</romaji>
+              <meaning>Bersama-sama</meaning>
+            </item>
+            <item>
+              <word>午後</word>
+              <reading>ごご</reading>
+              <romaji>gogo</romaji>
+              <meaning>Sore</meaning>
+            </item>
+            <item>
+              <word>会議</word>
+              <reading>かいぎ</reading>
+              <romaji>kaigi</romaji>
+              <meaning>Meeting/Rapat</meaning>
+            </item>
+            <item>
+              <word>財布</word>
+              <reading>さいふ</reading>
+              <romaji>saifu</romaji>
+              <meaning>Dompet</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="4" order="4">
           <title>
             <jp>こんばんは</jp>
             <reading>こんばんは</reading>
             <id>Selamat Malam</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                こんばんは！<segment><kanji>今日</kanji><furigana>きょう</furigana></segment>は<segment><kanji>一日</kanji><furigana>いちにち</furigana></segment>お<segment><kanji>疲</kanji><furigana>つか</furigana></segment>れさまでした。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                こんばんは！<segment><kanji>田中</kanji><furigana>たなか</furigana></segment>さんこそ、お<segment><kanji>疲</kanji><furigana>つか</furigana></segment>れさまでした。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>仕事</kanji><furigana>しごと</furigana></segment>が<segment><kanji>終</kanji><furigana>お</furigana></segment>わって、やっと<segment><kanji>休</kanji><furigana>やす</furigana></segment>めますね。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、そうですね。<segment><kanji>夜</kanji><furigana>よる</furigana></segment>ご<segment><kanji>飯</kanji><furigana>はん</furigana></segment>はもう<segment><kanji>食</kanji><furigana>た</furigana></segment>べましたか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                いいえ、まだです。<segment><kanji>一緒</kanji><furigana>いっしょ</furigana></segment>に<segment><kanji>食</kanji><furigana>た</furigana></segment>べに<segment><kanji>行</kanji><furigana>い</furigana></segment>きませんか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                いいですね。どこに<segment><kanji>行</kanji><furigana>い</furigana></segment>きたいですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>駅</kanji><furigana>えき</furigana></segment>の<segment><kanji>近</kanji><furigana>ちか</furigana></segment>くに<segment><kanji>新</kanji><furigana>あたら</furigana></segment>しいイタリアン<segment><kanji>料理</kanji><furigana>りょうり</furigana></segment><segment><kanji>店</kanji><furigana>てん</furigana></segment>が<segment><kanji>開</kanji><furigana>あ</furigana></segment>きましたよ。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                それは<segment><kanji>楽</kanji><furigana>たの</furigana></segment>しみですね。<segment><kanji>予約</kanji><furigana>よやく</furigana></segment>は<segment><kanji>必要</kanji><furigana>ひつよう</furigana></segment>ですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>大丈夫</kanji><furigana>だいじょうぶ</furigana></segment>です。<segment><kanji>今</kanji><furigana>いま</furigana></segment>から<segment><kanji>電話</kanji><furigana>でんわ</furigana></segment>してみます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                わかりました。じゃあ、<segment><kanji>準備</kanji><furigana>じゅんび</furigana></segment>して<segment><kanji>待</kanji><furigana>ま</furigana></segment>っていますね。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Selamat malam! Terima kasih atas kerja kerasnya hari ini.</p>
+            <p><strong>B:</strong> Selamat malam! Tanaka-san juga, terima kasih atas kerja kerasnya.</p>
+            <p><strong>A:</strong> Kerja sudah selesai, akhirnya bisa istirahat ya.</p>
+            <p><strong>B:</strong> Ya, betul. Apakah Anda sudah makan malam?</p>
+            <p><strong>A:</strong> Belum. Mau pergi makan bersama?</p>
+            <p><strong>B:</strong> Baik. Mau ke mana?</p>
+            <p><strong>A:</strong> Di dekat stasiun ada restoran Italia baru yang buka lho.</p>
+            <p><strong>B:</strong> Itu menyenangkan. Apakah perlu reservasi?</p>
+            <p><strong>A:</strong> Tidak apa-apa. Saya akan coba telepon sekarang.</p>
+            <p><strong>B:</strong> Baiklah. Kalau begitu, saya siap-siap menunggu ya.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>こんばんは</word>
+              <reading>こんばんは</reading>
+              <romaji>konbanwa</romaji>
+              <meaning>Selamat malam</meaning>
+            </item>
+            <item>
+              <word>一日</word>
+              <reading>いちにち</reading>
+              <romaji>ichinichi</romaji>
+              <meaning>Sehari</meaning>
+            </item>
+            <item>
+              <word>お疲れさまでした</word>
+              <reading>おつかれさまでした</reading>
+              <romaji>otsukaresama deshita</romaji>
+              <meaning>Terima kasih atas kerja kerasnya</meaning>
+            </item>
+            <item>
+              <word>仕事</word>
+              <reading>しごと</reading>
+              <romaji>shigoto</romaji>
+              <meaning>Pekerjaan</meaning>
+            </item>
+            <item>
+              <word>終わって</word>
+              <reading>おわって</reading>
+              <romaji>owatte</romaji>
+              <meaning>Selesai</meaning>
+            </item>
+            <item>
+              <word>休めます</word>
+              <reading>やすめます</reading>
+              <romaji>yasumemasu</romaji>
+              <meaning>Bisa istirahat</meaning>
+            </item>
+            <item>
+              <word>夜ご飯</word>
+              <reading>よるごはん</reading>
+              <romaji>yorugohan</romaji>
+              <meaning>Makan malam</meaning>
+            </item>
+            <item>
+              <word>新しい</word>
+              <reading>あたらしい</reading>
+              <romaji>atarashii</romaji>
+              <meaning>Baru</meaning>
+            </item>
+            <item>
+              <word>料理店</word>
+              <reading>りょうりてん</reading>
+              <romaji>ryouriten</romaji>
+              <meaning>Restoran</meaning>
+            </item>
+            <item>
+              <word>予約</word>
+              <reading>よやく</reading>
+              <romaji>yoyaku</romaji>
+              <meaning>Reservasi</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="5" order="5">
           <title>
             <jp>お元気ですか</jp>

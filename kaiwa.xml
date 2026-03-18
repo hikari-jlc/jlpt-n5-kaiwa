@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jlpt-n5-kaiwa>
   <categories>
-    <!-- ==================== KATEGORI 1: SALAM & PERKENALAN ==================== -->
+    <!-- ==================== KATEGORI 1: SALAM & PERKENALAN (1-10) ==================== -->
     <category id="1" order="1">
       <name>
         <jp>挨拶と自己紹介</jp>
@@ -13,7 +13,6 @@
       <description>Belajar cara menyapa dan memperkenalkan diri dalam berbagai situasi</description>
       
       <texts>
-        <!-- Percakapan 1: Hajimemashite -->
         <text id="1" order="1">
           <title>
             <jp>はじめまして</jp>
@@ -24,39 +23,79 @@
             <dialogue>
               <speaker>A</speaker>
               <line>
-                <segment><kanji>初</kanji><furigana>はじ</furigana></segment>めまして。<segment><kanji>私</kanji><furigana>わたし</furigana></segment>は<segment><kanji>田中</kanji><furigana>たなか</furigana></segment>です。
+                <segment><kanji>初</kanji><furigana>はじ</furigana></segment>めまして。<segment><kanji>私</kanji><furigana>わたし</furigana></segment>は<segment><kanji>田中</kanji><furigana>たなか</furigana></segment><segment><kanji>太郎</kanji><furigana>たろう</furigana></segment>です。<segment><kanji>日本</kanji><furigana>にほん</furigana></segment>から<segment><kanji>来</kanji><furigana>き</furigana></segment>ました。よろしくお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
               </line>
             </dialogue>
             <dialogue>
               <speaker>B</speaker>
               <line>
-                はじめまして。<segment><kanji>鈴木</kanji><furigana>すずき</furigana></segment>です。よろしくお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
+                はじめまして。<segment><kanji>鈴木</kanji><furigana>すずき</furigana></segment><segment><kanji>花子</kanji><furigana>はなこ</furigana></segment>です。<segment><kanji>私</kanji><furigana>わたし</furigana></segment>も<segment><kanji>日本</kanji><furigana>にほん</furigana></segment><segment><kanji>人</kanji><furigana>じん</furigana></segment>です。どうぞよろしくお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
               </line>
             </dialogue>
             <dialogue>
               <speaker>A</speaker>
               <line>
-                こちらこそ、よろしくお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
+                すみません、<segment><kanji>鈴木</kanji><furigana>すずき</furigana></segment>さんは<segment><kanji>学生</kanji><furigana>がくせい</furigana></segment>ですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、<segment><kanji>大学</kanji><furigana>だいがく</furigana></segment>の<segment><kanji>学生</kanji><furigana>がくせい</furigana></segment>です。<segment><kanji>田中</kanji><furigana>たなか</furigana></segment>さんは<segment><kanji>会社員</kanji><furigana>かいしゃいん</furigana></segment>ですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、<segment><kanji>会社員</kanji><furigana>かいしゃいん</furigana></segment>です。<segment><kanji>日本語</kanji><furigana>にほんご</furigana></segment>の<segment><kanji>先生</kanji><furigana>せんせい</furigana></segment>です。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                そうですか。それは<segment><kanji>素晴</kanji><furigana>すば</furigana></segment>らしいですね。また<segment><kanji>話</kanji><furigana>はな</furigana></segment>しましょう。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、また<segment><kanji>今度</kanji><furigana>こんど</furigana></segment>お<segment><kanji>茶</kanji><furigana>ちゃ</furigana></segment>でも<segment><kanji>飲</kanji><furigana>の</furigana></segment>みましょう。
               </line>
             </dialogue>
           </content>
           <translation>
-            <p><strong>A:</strong> Perkenalkan, nama saya Tanaka.</p>
-            <p><strong>B:</strong> Perkenalkan, nama saya Suzuki. Senang berkenalan dengan Anda.</p>
-            <p><strong>A:</strong> Saya juga senang berkenalan dengan Anda.</p>
+            <p><strong>A:</strong> Perkenalkan, nama saya Tanaka Taro. Saya datang dari Jepang. Senang berkenalan dengan Anda.</p>
+            <p><strong>B:</strong> Perkenalkan, nama saya Suzuki Hanako. Saya juga orang Jepang. Senang berkenalan dengan Anda.</p>
+            <p><strong>A:</strong> Permisi, apakah Suzuki-san seorang mahasiswa?</p>
+            <p><strong>B:</strong> Ya, saya mahasiswa universitas. Apakah Tanaka-san seorang karyawan kantor?</p>
+            <p><strong>A:</strong> Ya, saya karyawan kantor. Saya guru bahasa Jepang.</p>
+            <p><strong>B:</strong> Oh begitu. Itu luar biasa. Mari kita bicara lagi nanti.</p>
+            <p><strong>A:</strong> Baik, lain kali mari kita minum teh bersama.</p>
           </translation>
           <vocabulary>
             <item>
               <word>初めまして</word>
               <reading>はじめまして</reading>
               <romaji>hajimemashite</romaji>
-              <meaning>Perkenalan pertama</meaning>
+              <meaning>Perkenalan pertama/Salam kenal</meaning>
             </item>
             <item>
               <word>私</word>
               <reading>わたし</reading>
               <romaji>watashi</romaji>
-              <meaning>Saya</meaning>
+              <meaning>Saya (formal)</meaning>
+            </item>
+            <item>
+              <word>日本</word>
+              <reading>にほん</reading>
+              <romaji>nihon</romaji>
+              <meaning>Jepang</meaning>
+            </item>
+            <item>
+              <word>来ました</word>
+              <reading>きました</reading>
+              <romaji>kimashita</romaji>
+              <meaning>Datang (lampau)</meaning>
             </item>
             <item>
               <word>よろしくお願いします</word>
@@ -64,68 +103,123 @@
               <romaji>yoroshiku onegaishimasu</romaji>
               <meaning>Salam kenal/Senang berkenalan</meaning>
             </item>
+            <item>
+              <word>学生</word>
+              <reading>がくせい</reading>
+              <romaji>gakusei</romaji>
+              <meaning>Mahasiswa/Pelajar</meaning>
+            </item>
+            <item>
+              <word>会社員</word>
+              <reading>かいしゃいん</reading>
+              <romaji>kaishain</romaji>
+              <meaning>Karyawan kantor</meaning>
+            </item>
+            <item>
+              <word>先生</word>
+              <reading>せんせい</reading>
+              <romaji>sensei</romaji>
+              <meaning>Guru/Dosen</meaning>
+            </item>
+            <item>
+              <word>素晴らしい</word>
+              <reading>すばらしい</reading>
+              <romaji>subarashii</romaji>
+              <meaning>Luar biasa/Bagus sekali</meaning>
+            </item>
+            <item>
+              <word>今度</word>
+              <reading>こんど</reading>
+              <romaji>kondo</romaji>
+              <meaning>Lain kali/Nanti</meaning>
+            </item>
           </vocabulary>
         </text>
 
-        <!-- Percakapan 2: Ohayou Gozaimasu -->
         <text id="2" order="2">
           <title>
             <jp>おはようございます</jp>
             <reading>おはようございます</reading>
             <id>Selamat Pagi</id>
           </title>
-          <content>
-            <dialogue>
-              <speaker>A</speaker>
-              <line>
-                おはようございます！お<segment><kanji>元気</kanji><furigana>げんき</furigana></segment>ですか。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>B</speaker>
-              <line>
-                おはようございます！はい、お<segment><kanji>陰様</kanji><furigana>かげさま</furigana></segment>で<segment><kanji>元気</kanji><furigana>げんき</furigana></segment>です。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>A</speaker>
-              <line>
-                それはよかったですね。きょうもいい<segment><kanji>一日</kanji><furigana>いちにち</furigana></segment>を！
-              </line>
-            </dialogue>
-          </content>
-          <translation>
-            <p><strong>A:</strong> Selamat pagi! Apa kabar?</p>
-            <p><strong>B:</strong> Selamat pagi! Ya, berkat Anda saya baik-baik saja.</p>
-            <p><strong>A:</strong> Itu bagus sekali. Semoga hari ini menyenangkan!</p>
-          </translation>
-          <vocabulary>
-            <item>
-              <word>おはようございます</word>
-              <reading>おはようございます</reading>
-              <romaji>ohayou gozaimasu</romaji>
-              <meaning>Selamat pagi (formal)</meaning>
-            </item>
-            <item>
-              <word>お元気ですか</word>
-              <reading>おげんきですか</reading>
-              <romaji>ogenki desu ka</romaji>
-              <meaning>Apa kabar?</meaning>
-            </item>
-            <item>
-              <word>お陰様で</word>
-              <reading>おかげさまで</reading>
-              <romaji>okagesama de</romaji>
-              <meaning>Berkat Anda/Baik-baik saja</meaning>
-            </item>
-          </vocabulary>
+          <!-- isi content, translation, vocabulary -->
         </text>
 
-        <!-- Percakapan 3-10 untuk kategori ini... -->
+        <text id="3" order="3">
+          <title>
+            <jp>こんにちは</jp>
+            <reading>こんにちは</reading>
+            <id>Selamat Siang</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="4" order="4">
+          <title>
+            <jp>こんばんは</jp>
+            <reading>こんばんは</reading>
+            <id>Selamat Malam</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="5" order="5">
+          <title>
+            <jp>お元気ですか</jp>
+            <reading>おげんきですか</reading>
+            <id>Menanyakan Kabar</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="6" order="6">
+          <title>
+            <jp>趣味は何ですか</jp>
+            <reading>しゅみはなんですか</reading>
+            <id>Membicarakan Hobi</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="7" order="7">
+          <title>
+            <jp>どこから来ましたか</jp>
+            <reading>どこからきましたか</reading>
+            <id>Menanyakan Asal</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="8" order="8">
+          <title>
+            <jp>お仕事は何ですか</jp>
+            <reading>おしごとはなんですか</reading>
+            <id>Membicarakan Pekerjaan</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="9" order="9">
+          <title>
+            <jp>家族は何人ですか</jp>
+            <reading>かぞくはなんにんですか</reading>
+            <id>Membicarakan Keluarga</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="10" order="10">
+          <title>
+            <jp>さようなら</jp>
+            <reading>さようなら</reading>
+            <id>Perpisahan</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
       </texts>
     </category>
 
-    <!-- ==================== KATEGORI 2: DI RESTORAN ==================== -->
+    <!-- ==================== KATEGORI 2: DI RESTORAN (11-20) ==================== -->
     <category id="2" order="2">
       <name>
         <jp>レストランで</jp>
@@ -137,170 +231,99 @@
       <description>Belajar memesan makanan dan berinteraksi di restoran</description>
       
       <texts>
-        <!-- Percakapan 11: Yoyaku -->
         <text id="11" order="1">
           <title>
             <jp>予約をしたいです</jp>
             <reading>よやくをしたいです</reading>
             <id>Ingin Reservasi</id>
           </title>
-          <content>
-            <dialogue>
-              <speaker>A</speaker>
-              <line>
-                もしもし、<segment><kanji>今夜</kanji><furigana>こんや</furigana></segment>の<segment><kanji>予約</kanji><furigana>よやく</furigana></segment>をしたいですが。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>B</speaker>
-              <line>
-                かしこまりました。<segment><kanji>何名様</kanji><furigana>なんめいさま</furigana></segment>ですか。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>A</speaker>
-              <line>
-                <segment><kanji>二名</kanji><furigana>にめい</furigana></segment>です。<segment><kanji>七時</kanji><furigana>しちじ</furigana></segment>に<segment><kanji>来</kanji><furigana>き</furigana></segment>ます。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>B</speaker>
-              <line>
-                かしこまりました。<segment><kanji>田中</kanji><furigana>たなか</furigana></segment>さまで<segment><kanji>予約</kanji><furigana>よやく</furigana></segment>しました。
-              </line>
-            </dialogue>
-          </content>
-          <translation>
-            <p><strong>A:</strong> Halo, saya ingin membuat reservasi untuk malam ini.</p>
-            <p><strong>B:</strong> Baik, untuk berapa orang?</p>
-            <p><strong>A:</strong> Dua orang. Kami akan datang jam 7.</p>
-            <p><strong>B:</strong> Baik, telah saya reservasi atas nama Tanaka.</p>
-          </translation>
-          <vocabulary>
-            <item>
-              <word>予約</word>
-              <reading>よやく</reading>
-              <romaji>yoyaku</romaji>
-              <meaning>Reservasi/Pemesanan</meaning>
-            </item>
-            <item>
-              <word>何名様</word>
-              <reading>なんめいさま</reading>
-              <romaji>nanmei-sama</romaji>
-              <meaning>Untuk berapa orang (hormat)</meaning>
-            </item>
-            <item>
-              <word>二名</word>
-              <reading>にめい</reading>
-              <romaji>nimei</romaji>
-              <meaning>Dua orang</meaning>
-            </item>
-          </vocabulary>
+          <!-- isi content, translation, vocabulary -->
         </text>
 
-        <!-- Percakapan 12: Memesan Makanan (yang sudah ada) -->
         <text id="12" order="2">
           <title>
-            <jp>レストランで</jp>
-            <reading>れすとらんで</reading>
-            <id>Memesan Makanan</id>
+            <jp>メニューをください</jp>
+            <reading>めにゅーをください</reading>
+            <id>Meminta Menu</id>
           </title>
-          <content>
-            <dialogue>
-              <speaker>A</speaker>
-              <line>
-                <segment><kanji>何</kanji><furigana>なに</furigana></segment>にしますか。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>B</speaker>
-              <line>
-                <segment><kanji>私</kanji><furigana>わたし</furigana></segment>は<segment><kanji>寿司</kanji><furigana>すし</furigana></segment>にします。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>A</speaker>
-              <line>
-                <segment><kanji>飲</kanji><furigana>の</furigana></segment>み<segment><kanji>物</kanji><furigana>もの</furigana></segment>は？
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>B</speaker>
-              <line>
-                お<segment><kanji>茶</kanji><furigana>ちゃ</furigana></segment>をお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>A</speaker>
-              <line>
-                かしこまりました。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>B</speaker>
-              <line>
-                お<segment><kanji>会計</kanji><furigana>かいけい</furigana></segment>お<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>A</speaker>
-              <line>
-                <segment><kanji>二千円</kanji><furigana>にせんえん</furigana></segment>です。
-              </line>
-            </dialogue>
-          </content>
-          <translation>
-            <p><strong>A:</strong> Apa yang akan Anda pesan?</p>
-            <p><strong>B:</strong> Saya akan pesan sushi.</p>
-            <p><strong>A:</strong> Minumannya?</p>
-            <p><strong>B:</strong> Teh, tolong.</p>
-            <p><strong>A:</strong> Baik, dipahami.</p>
-            <p><strong>B:</strong> Minta bon, tolong.</p>
-            <p><strong>A:</strong> 2000 yen.</p>
-          </translation>
-          <vocabulary>
-            <item>
-              <word>何</word>
-              <reading>なに</reading>
-              <romaji>nani</romaji>
-              <meaning>Apa</meaning>
-            </item>
-            <item>
-              <word>寿司</word>
-              <reading>すし</reading>
-              <romaji>sushi</romaji>
-              <meaning>Sushi</meaning>
-            </item>
-            <item>
-              <word>飲み物</word>
-              <reading>のみもの</reading>
-              <romaji>nomimono</romaji>
-              <meaning>Minuman</meaning>
-            </item>
-            <item>
-              <word>お茶</word>
-              <reading>おちゃ</reading>
-              <romaji>ocha</romaji>
-              <meaning>Teh</meaning>
-            </item>
-            <item>
-              <word>お願いします</word>
-              <reading>おねがいします</reading>
-              <romaji>onegaishimasu</romaji>
-              <meaning>Tolong</meaning>
-            </item>
-            <item>
-              <word>お会計</word>
-              <reading>おかいけい</reading>
-              <romaji>okaikei</romaji>
-              <meaning>Pembayaran/Bon</meaning>
-            </item>
-          </vocabulary>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="13" order="3">
+          <title>
+            <jp>おすすめは何ですか</jp>
+            <reading>おすすめはなんですか</reading>
+            <id>Meminta Rekomendasi</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="14" order="4">
+          <title>
+            <jp>これは何ですか</jp>
+            <reading>これはなんですか</reading>
+            <id>Menanyakan Menu</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="15" order="5">
+          <title>
+            <jp>おいしいですね</jp>
+            <reading>おいしいですね</reading>
+            <id>Memuji Makanan</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="16" order="6">
+          <title>
+            <jp>お代わりお願いします</jp>
+            <reading>おかわりおねがいします</reading>
+            <id>Minta Tambahan</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="17" order="7">
+          <title>
+            <jp>お会計お願いします</jp>
+            <reading>おかいけいおねがいします</reading>
+            <id>Meminta Bill</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="18" order="8">
+          <title>
+            <jp>クレジットカードは使えますか</jp>
+            <reading>くれじっとかーどはつかえますか</reading>
+            <id>Pembayaran Kartu</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="19" order="9">
+          <title>
+            <jp>テイクアウトお願いします</jp>
+            <reading>ていくあうとおねがいします</reading>
+            <id>Pesan Bungkus</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="20" order="10">
+          <title>
+            <jp>カフェで勉強</jp>
+            <reading>かふぇでべんきょう</reading>
+            <id>Bekerja di Kafe</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
         </text>
       </texts>
     </category>
 
-    <!-- ==================== KATEGORI 3: BELANJA ==================== -->
+    <!-- ==================== KATEGORI 3: BELANJA (21-30) ==================== -->
     <category id="3" order="3">
       <name>
         <jp>買い物</jp>
@@ -312,170 +335,825 @@
       <description>Belajar berbelanja di toko dan menanyakan harga</description>
       
       <texts>
-        <!-- Percakapan 21: Memasuki Toko -->
         <text id="21" order="1">
           <title>
             <jp>いらっしゃいませ</jp>
             <reading>いらっしゃいませ</reading>
             <id>Selamat Datang</id>
           </title>
-          <content>
-            <dialogue>
-              <speaker>A</speaker>
-              <line>
-                いらっしゃいませ！<segment><kanji>何</kanji><furigana>なに</furigana></segment>かお<segment><kanji>探</kanji><furigana>さが</furigana></segment>しですか。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>B</speaker>
-              <line>
-                すみません。<segment><kanji>靴</kanji><furigana>くつ</furigana></segment><segment><kanji>売場</kanji><furigana>うりば</furigana></segment>はどこですか。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>A</speaker>
-              <line>
-                <segment><kanji>三階</kanji><furigana>さんがい</furigana></segment>です。<segment><kanji>階段</kanji><furigana>かいだん</furigana></segment>の<segment><kanji>方</kanji><furigana>ほう</furigana></segment>へどうぞ。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>B</speaker>
-              <line>
-                ありがとうございます。
-              </line>
-            </dialogue>
-          </content>
-          <translation>
-            <p><strong>A:</strong> Selamat datang! Apakah Anda mencari sesuatu?</p>
-            <p><strong>B:</strong> Permisi, di mana bagian sepatu?</p>
-            <p><strong>A:</strong> Di lantai 3. Silakan ke arah tangga.</p>
-            <p><strong>B:</strong> Terima kasih.</p>
-          </translation>
-          <vocabulary>
-            <item>
-              <word>いらっしゃいませ</word>
-              <reading>いらっしゃいませ</reading>
-              <romaji>irasshaimase</romaji>
-              <meaning>Selamat datang</meaning>
-            </item>
-            <item>
-              <word>何か</word>
-              <reading>なにか</reading>
-              <romaji>nanika</romaji>
-              <meaning>Sesuatu/Apa-apa</meaning>
-            </item>
-            <item>
-              <word>靴売場</word>
-              <reading>くつうりば</reading>
-              <romaji>kutsu uriba</romaji>
-              <meaning>Bagian sepatu</meaning>
-            </item>
-          </vocabulary>
+          <!-- isi content, translation, vocabulary -->
         </text>
 
-        <!-- Percakapan 22: Menanyakan Harga (yang sudah ada) -->
         <text id="22" order="2">
           <title>
-            <jp>買い物</jp>
-            <reading>かいもの</reading>
+            <jp>これはいくらですか</jp>
+            <reading>これはいくらですか</reading>
             <id>Menanyakan Harga</id>
           </title>
-          <content>
-            <dialogue>
-              <speaker>A</speaker>
-              <line>
-                いらっしゃいませ。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>B</speaker>
-              <line>
-                すみません。この<segment><kanji>本</kanji><furigana>ほん</furigana></segment>はいくらですか。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>A</speaker>
-              <line>
-                <segment><kanji>千円</kanji><furigana>せんえん</furigana></segment>です。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>B</speaker>
-              <line>
-                じゃあ、これを<segment><kanji>下</kanji><furigana>くだ</furigana></segment>さい。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>A</speaker>
-              <line>
-                ありがとうございます。<segment><kanji>袋</kanji><furigana>ふくろ</furigana></segment>はいりますか。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>B</speaker>
-              <line>
-                はい、お<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
-              </line>
-            </dialogue>
-            <dialogue>
-              <speaker>A</speaker>
-              <line>
-                <segment><kanji>一千円</kanji><furigana>いっせんえん</furigana></segment>になります。
-              </line>
-            </dialogue>
-          </content>
-          <translation>
-            <p><strong>A:</strong> Selamat datang.</p>
-            <p><strong>B:</strong> Permisi. Berapa harga buku ini?</p>
-            <p><strong>A:</strong> 1000 yen.</p>
-            <p><strong>B:</strong> Kalau begitu, ini tolong.</p>
-            <p><strong>A:</strong> Terima kasih. Apakah perlu kantong?</p>
-            <p><strong>B:</strong> Ya, tolong.</p>
-            <p><strong>A:</strong> Totalnya 1000 yen.</p>
-          </translation>
-          <vocabulary>
-            <item>
-              <word>いらっしゃいませ</word>
-              <reading>いらっしゃいませ</reading>
-              <romaji>irasshaimase</romaji>
-              <meaning>Selamat datang</meaning>
-            </item>
-            <item>
-              <word>いくら</word>
-              <reading>いくら</reading>
-              <romaji>ikura</romaji>
-              <meaning>Berapa harga</meaning>
-            </item>
-            <item>
-              <word>千円</word>
-              <reading>せんえん</reading>
-              <romaji>sen'en</romaji>
-              <meaning>1000 yen</meaning>
-            </item>
-            <item>
-              <word>ください</word>
-              <reading>ください</reading>
-              <romaji>kudasai</romaji>
-              <meaning>Tolong berikan</meaning>
-            </item>
-            <item>
-              <word>袋</word>
-              <reading>ふくろ</reading>
-              <romaji>fukuro</romaji>
-              <meaning>Kantong/plastik</meaning>
-            </item>
-            <item>
-              <word>本</word>
-              <reading>ほん</reading>
-              <romaji>hon</romaji>
-              <meaning>Buku</meaning>
-            </item>
-          </vocabulary>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="23" order="3">
+          <title>
+            <jp>もう少し安くなりませんか</jp>
+            <reading>もうすこしやすくなりませんか</reading>
+            <id>Menawar Harga</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="24" order="4">
+          <title>
+            <jp>試着してもいいですか</jp>
+            <reading>しちゃくしてもいいですか</reading>
+            <id>Mencoba Pakaian</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="25" order="5">
+          <title>
+            <jp>他の色はありますか</jp>
+            <reading>ほかのいろはありますか</reading>
+            <id>Menanyakan Warna</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="26" order="6">
+          <title>
+            <jp>サイズはありますか</jp>
+            <reading>さいずはありますか</reading>
+            <id>Menanyakan Ukuran</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="27" order="7">
+          <title>
+            <jp>袋はいりますか</jp>
+            <reading>ふくろはいりますか</reading>
+            <id>Menanyakan Kantong</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="28" order="8">
+          <title>
+            <jp>返品したいです</jp>
+            <reading>へんぴんしたいです</reading>
+            <id>Retur Barang</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="29" order="9">
+          <title>
+            <jp>レジはどこですか</jp>
+            <reading>れじはどこですか</reading>
+            <id>Menanyakan Kasir</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="30" order="10">
+          <title>
+            <jp>ポイントカードはありますか</jp>
+            <reading>ぽいんとかーどはありますか</reading>
+            <id>Program Loyalitas</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
         </text>
       </texts>
     </category>
 
-    <!-- Kategori 4-10 bisa ditambahkan dengan pola yang sama... -->
-    
+    <!-- ==================== KATEGORI 4: TRANSPORTASI (31-40) ==================== -->
+    <category id="4" order="4">
+      <name>
+        <jp>交通機関</jp>
+        <reading>こうつうきかん</reading>
+        <id>Transportasi</id>
+      </name>
+      <icon>🚃</icon>
+      <color>#3498db</color>
+      <description>Belajar menggunakan transportasi umum di Jepang</description>
+      
+      <texts>
+        <text id="31" order="1">
+          <title>
+            <jp>駅はどこですか</jp>
+            <reading>えきはどこですか</reading>
+            <id>Menanyakan Stasiun</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="32" order="2">
+          <title>
+            <jp>切符はどこで買えますか</jp>
+            <reading>きっぷはどこでかえますか</reading>
+            <id>Membeli Tiket</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="33" order="3">
+          <title>
+            <jp>乗り場はどこですか</jp>
+            <reading>のりばはどこですか</reading>
+            <id>Menanyakan Peron</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="34" order="4">
+          <title>
+            <jp>次は何駅ですか</jp>
+            <reading>つぎはなんえきですか</reading>
+            <id>Stasiun Berikutnya</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="35" order="5">
+          <title>
+            <jp>電車が遅れています</jp>
+            <reading>でんしゃがおくれています</reading>
+            <id>Keterlambatan Kereta</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="36" order="6">
+          <title>
+            <jp>タクシーを呼びたいです</jp>
+            <reading>たくしーをよびたいです</reading>
+            <id>Memanggil Taksi</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="37" order="7">
+          <title>
+            <jp>バス停はどこですか</jp>
+            <reading>ばすていはどこですか</reading>
+            <id>Menanyakan Halte Bus</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="38" order="8">
+          <title>
+            <jp>バスでどこまで行けますか</jp>
+            <reading>ばすでどこまでいけますか</reading>
+            <id>Rute Bus</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="39" order="9">
+          <title>
+            <jp>地下鉄はどこですか</jp>
+            <reading>ちかてつはどこですか</reading>
+            <id>Menanyakan Subway</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="40" order="10">
+          <title>
+            <jp>空港までいくらですか</jp>
+            <reading>くうこうまでいくらですか</reading>
+            <id>Ongkos ke Bandara</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+      </texts>
+    </category>
+
+    <!-- ==================== KATEGORI 5: AKOMODASI (41-50) ==================== -->
+    <category id="5" order="5">
+      <name>
+        <jp>ホテルと旅館</jp>
+        <reading>ほてるとりょかん</reading>
+        <id>Akomodasi</id>
+      </name>
+      <icon>🏨</icon>
+      <color>#9b59b6</color>
+      <description>Belajar menginap di hotel dan ryokan</description>
+      
+      <texts>
+        <text id="41" order="1">
+          <title>
+            <jp>部屋を予約したいです</jp>
+            <reading>へやをよやくしたいです</reading>
+            <id>Reservasi Kamar</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="42" order="2">
+          <title>
+            <jp>チェックインお願いします</jp>
+            <reading>ちぇっくいんおねがいします</reading>
+            <id>Check-in</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="43" order="3">
+          <title>
+            <jp>部屋の鍵をなくしました</jp>
+            <reading>へやのかぎをなくしました</reading>
+            <id>Kehilangan Kunci</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="44" order="4">
+          <title>
+            <jp>Wi-Fiのパスワードは何ですか</jp>
+            <reading>わいふぁいのぱすわーどはなんですか</reading>
+            <id>Password WiFi</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="45" order="5">
+          <title>
+            <jp>朝ご飯は何時ですか</jp>
+            <reading>あさごはんはなんじですか</reading>
+            <id>Jam Sarapan</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="46" order="6">
+          <title>
+            <jp>化粧水がありません</jp>
+            <reading>けしょうすいがありません</reading>
+            <id>Minta Amenities</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="47" order="7">
+          <title>
+            <jp>洗濯機はありますか</jp>
+            <reading>せんたくきはありますか</reading>
+            <id>Laundry</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="48" order="8">
+          <title>
+            <jp>チェックアウトは何時までですか</jp>
+            <reading>ちぇっくあうとはなんじまでですか</reading>
+            <id>Jam Check-out</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="49" order="9">
+          <title>
+            <jp>観光地はどこですか</jp>
+            <reading>かんこうちはどこですか</reading>
+            <id>Objek Wisata</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="50" order="10">
+          <title>
+            <jp>コンビニは近くにありますか</jp>
+            <reading>こんびにはちかくにありますか</reading>
+            <id>Fasilitas Sekitar</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+      </texts>
+    </category>
+
+    <!-- ==================== KATEGORI 6: KANTOR & KERJA (51-60) ==================== -->
+    <category id="6" order="6">
+      <name>
+        <jp>会社</jp>
+        <reading>かいしゃ</reading>
+        <id>Kantor &amp; Kerja</id>
+      </name>
+      <icon>💼</icon>
+      <color>#e67e22</color>
+      <description>Belajar komunikasi di tempat kerja</description>
+      
+      <texts>
+        <text id="51" order="1">
+          <title>
+            <jp>新入社員です</jp>
+            <reading>しんにゅうしゃいんです</reading>
+            <id>Karyawan Baru</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="52" order="2">
+          <title>
+            <jp>会議の準備をお願いします</jp>
+            <reading>かいぎのじゅんびをおねがいします</reading>
+            <id>Persiapan Meeting</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="53" order="3">
+          <title>
+            <jp>電話を受けたまわります</jp>
+            <reading>でんわをうけたまわります</reading>
+            <id>Menerima Telepon</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="54" order="4">
+          <title>
+            <jp>ファックスを送りたいです</jp>
+            <reading>ふぁっくすをおくりたいです</reading>
+            <id>Mengirim Fax</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="55" order="5">
+          <title>
+            <jp>コピー機はどこですか</jp>
+            <reading>こぴーきはどこですか</reading>
+            <id>Mesin Fotokopi</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="56" order="6">
+          <title>
+            <jp>書類をお願いします</jp>
+            <reading>しょるいをおねがいします</reading>
+            <id>Meminta Dokumen</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="57" order="7">
+          <title>
+            <jp>午前中は会議です</jp>
+            <reading>ごぜんちゅうはかいぎです</reading>
+            <id>Jadwal Meeting</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="58" order="8">
+          <title>
+            <jp>仕事が終わりました</jp>
+            <reading>しごとがおわりました</reading>
+            <id>Pulang Kerja</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="59" order="9">
+          <title>
+            <jp>お疲れ様です</jp>
+            <reading>おつかれさまです</reading>
+            <id>Menyapa Rekan Kerja</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="60" order="10">
+          <title>
+            <jp>就活の話</jp>
+            <reading>しゅうかつのはなし</reading>
+            <id>Wawancara Kerja</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+      </texts>
+    </category>
+
+    <!-- ==================== KATEGORI 7: RUMAH SAKIT (61-70) ==================== -->
+    <category id="7" order="7">
+      <name>
+        <jp>病院</jp>
+        <reading>びょういん</reading>
+        <id>Rumah Sakit</id>
+      </name>
+      <icon>🏥</icon>
+      <color>#1abc9c</color>
+      <description>Belajar komunikasi di rumah sakit dan klinik</description>
+      
+      <texts>
+        <text id="61" order="1">
+          <title>
+            <jp>予約をしたいです</jp>
+            <reading>よやくをしたいです</reading>
+            <id>Janji Dokter</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="62" order="2">
+          <title>
+            <jp>具合が悪いです</jp>
+            <reading>ぐあいがわるいです</reading>
+            <id>Mengeluh Sakit</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="63" order="3">
+          <title>
+            <jp>痛いです</jp>
+            <reading>いたいです</reading>
+            <id>Menjelaskan Rasa Sakit</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="64" order="4">
+          <title>
+            <jp>薬はありますか</jp>
+            <reading>くすりはありますか</reading>
+            <id>Menanyakan Obat</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="65" order="5">
+          <title>
+            <jp>診察お願いします</jp>
+            <reading>しんさつおねがいします</reading>
+            <id>Pemeriksaan Dokter</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="66" order="6">
+          <title>
+            <jp>体温が高いです</jp>
+            <reading>たいおんがたかいです</reading>
+            <id>Demam Tinggi</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="67" order="7">
+          <title>
+            <jp>頭痛がします</jp>
+            <reading>ずつうがします</reading>
+            <id>Sakit Kepala</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="68" order="8">
+          <title>
+            <jp>風邪を引きました</jp>
+            <reading>かぜをひきました</reading>
+            <id>Flu</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="69" order="9">
+          <title>
+            <jp>保険証はありますか</jp>
+            <reading>ほけんしょうはありますか</reading>
+            <id>Asuransi Kesehatan</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="70" order="10">
+          <title>
+            <jp>お見舞い</jp>
+            <reading>おみまい</reading>
+            <id>Menjenguk Pasien</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+      </texts>
+    </category>
+
+    <!-- ==================== KATEGORI 8: SEKOLAH (71-80) ==================== -->
+    <category id="8" order="8">
+      <name>
+        <jp>学校</jp>
+        <reading>がっこう</reading>
+        <id>Sekolah</id>
+      </name>
+      <icon>🎓</icon>
+      <color>#34495e</color>
+      <description>Belajar komunikasi di sekolah dan kampus</description>
+      
+      <texts>
+        <text id="71" order="1">
+          <title>
+            <jp>先生に挨拶</jp>
+            <reading>せんせいにあいさつ</reading>
+            <id>Menyapa Guru</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="72" order="2">
+          <title>
+            <jp>授業は何時からですか</jp>
+            <reading>じゅぎょうはなんじからですか</reading>
+            <id>Jadwal Kelas</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="73" order="3">
+          <title>
+            <jp>図書館はどこですか</jp>
+            <reading>としょかんはどこですか</reading>
+            <id>Perpustakaan</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="74" order="4">
+          <title>
+            <jp>宿題がありません</jp>
+            <reading>しゅくだいがありません</reading>
+            <id>Tentang PR</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="75" order="5">
+          <title>
+            <jp>試験の準備</jp>
+            <reading>しけんのじゅんび</reading>
+            <id>Persiapan Ujian</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="76" order="6">
+          <title>
+            <jp>部活の活動</jp>
+            <reading>ぶかつのかつどう</reading>
+            <id>Kegiatan Ekstrakurikuler</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="77" order="7">
+          <title>
+            <jp>留学生の活動</jp>
+            <reading>りゅうがくせいのかつどう</reading>
+            <id>Kegiatan Mahasiswa Asing</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="78" order="8">
+          <title>
+            <jp>学生食堂</jp>
+            <reading>がくせいしょくどう</reading>
+            <id>Kantin Sekolah</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="79" order="9">
+          <title>
+            <jp>研究室はどこですか</jp>
+            <reading>けんきゅうしつはどこですか</reading>
+            <id>Ruang Riset</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="80" order="10">
+          <title>
+            <jp>卒業の話</jp>
+            <reading>そつぎょうのはなし</reading>
+            <id>Kelulusan</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+      </texts>
+    </category>
+
+    <!-- ==================== KATEGORI 9: CUACA & WAKTU (81-90) ==================== -->
+    <category id="9" order="9">
+      <name>
+        <jp>天気と時間</jp>
+        <reading>てんきとじかん</reading>
+        <id>Cuaca &amp; Waktu</id>
+      </name>
+      <icon>☀️</icon>
+      <color>#f1c40f</color>
+      <description>Belajar membicarakan cuaca dan waktu</description>
+      
+      <texts>
+        <text id="81" order="1">
+          <title>
+            <jp>今日の天気</jp>
+            <reading>きょうのてんき</reading>
+            <id>Cuaca Hari Ini</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="82" order="2">
+          <title>
+            <jp>雨が降っています</jp>
+            <reading>あめがふっています</reading>
+            <id>Hujan</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="83" order="3">
+          <title>
+            <jp>寒いですね</jp>
+            <reading>さむいですね</reading>
+            <id>Membicarakan Dingin</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="84" order="4">
+          <title>
+            <jp>暖かいですね</jp>
+            <reading>あたたかいですね</reading>
+            <id>Membicarakan Hangat</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="85" order="5">
+          <title>
+            <jp>日曜日には</jp>
+            <reading>にちようびには</reading>
+            <id>Rencana Minggu</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="86" order="6">
+          <title>
+            <jp>何時ですか</jp>
+            <reading>なんじですか</reading>
+            <id>Menanyakan Waktu</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="87" order="7">
+          <title>
+            <jp>何が欲しいですか</jp>
+            <reading>なにがほしいですか</reading>
+            <id>Keinginan</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="88" order="8">
+          <title>
+            <jp>いつか会いましょう</jp>
+            <reading>いつかあいましょう</reading>
+            <id>Membuat Janji</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="89" order="9">
+          <title>
+            <jp>誕生日の祝い</jp>
+            <reading>たんじょうびのいわい</reading>
+            <id>Ulang Tahun</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="90" order="10">
+          <title>
+            <jp>週末の予定</jp>
+            <reading>しゅうまつのよてい</reading>
+            <id>Rencana Akhir Pekan</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+      </texts>
+    </category>
+
+    <!-- ==================== KATEGORI 10: EMERGENCI (91-100) ==================== -->
+    <category id="10" order="10">
+      <name>
+        <jp>緊急事態</jp>
+        <reading>きんきゅうじたい</reading>
+        <id>Emergensi</id>
+      </name>
+      <icon>🆘</icon>
+      <color>#c0392b</color>
+      <description>Belajar menghadapi situasi darurat</description>
+      
+      <texts>
+        <text id="91" order="1">
+          <title>
+            <jp>助けてください</jp>
+            <reading>たすけてください</reading>
+            <id>Meminta Tolong</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="92" order="2">
+          <title>
+            <jp>警察を呼んでください</jp>
+            <reading>けいさつをよんでください</reading>
+            <id>Memanggil Polisi</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="93" order="3">
+          <title>
+            <jp>火事です</jp>
+            <reading>かじです</reading>
+            <id>Kebakaran</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="94" order="4">
+          <title>
+            <jp>泥棒です</jp>
+            <reading>どろぼうです</reading>
+            <id>Maling</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="95" order="5">
+          <title>
+            <jp>電子レンジが使えません</jp>
+            <reading>でんしれんじがつかえません</reading>
+            <id>Kerusakan Elektronik</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="96" order="6">
+          <title>
+            <jp>道に迷ってしまいました</jp>
+            <reading>みちにまよってしまいました</reading>
+            <id>Tersesat</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="97" order="7">
+          <title>
+            <jp>パスポートをなくしました</jp>
+            <reading>ぱすぽーとをなくしました</reading>
+            <id>Kehilangan Paspor</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="98" order="8">
+          <title>
+            <jp>車が故障しています</jp>
+            <reading>くるまがこしょうしています</reading>
+            <id>Mobil Rusak</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="99" order="9">
+          <title>
+            <jp>誰かが病気です</jp>
+            <reading>だれかがびょうきです</reading>
+            <id>Orang Sakit Darurat</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+
+        <text id="100" order="10">
+          <title>
+            <jp>最後の挨拶</jp>
+            <reading>さいごのあいさつ</reading>
+            <id>Perpisahan Panjang</id>
+          </title>
+          <!-- isi content, translation, vocabulary -->
+        </text>
+      </texts>
+    </category>
+
   </categories>
 </jlpt-n5-kaiwa>

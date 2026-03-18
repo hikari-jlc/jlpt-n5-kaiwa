@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JLPT N5 Kaiwa - Chat Style</title>
+    <title>JLPT N5 Kaiwa</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+Indonesian:wght@400;600;700&display=swap');
         
@@ -422,15 +422,19 @@
         
         /* Speaker A - Left aligned */
         .chat-bubble.speaker-a {
-            align-self: flex-start;
-            align-items: flex-start;
-        }
+			align-self: flex-start;
+			display: flex;
+			flex-direction: row;
+			align-items: flex-end;
+		}
         
         /* Speaker B - Right aligned */
         .chat-bubble.speaker-b {
-            align-self: flex-end;
-            align-items: flex-end;
-        }
+			align-self: flex-end;
+			align-items: flex-end;
+			display: flex;
+			flex-direction: row-reverse;
+		}		
         
         /* Speaker Label */
         .speaker-label {
@@ -500,7 +504,7 @@
             align-items: center;
             vertical-align: bottom;
             line-height: 1;
-            margin: 2px 1px;
+            margin: -5px 1px;
         }
         
         rb {
@@ -718,7 +722,7 @@
             }
             
             .reading-card { padding: 1.5rem; }
-            .japanese-text { padding: 1rem; }
+            .japanese-text { padding: 0.5rem; }
             .text-header { flex-direction: column; align-items: flex-start; }
             
             .sidebar {
@@ -765,7 +769,7 @@
 
     <header>
         <h1>💬 JLPT N5 会話</h1>
-        <p>Belajar Percakapan Bahasa Jepang dengan Furigana</p>
+        <p>Belajar Percakapan Bahasa Jepang</p>
     </header>
 
     <div class="main-content" id="mainContent">

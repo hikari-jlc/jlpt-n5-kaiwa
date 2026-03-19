@@ -1303,7 +1303,7 @@
             <dialogue>
               <speaker>A</speaker>
               <line>
-                はい、<segment><kanji>私</kanji><furigana>わたし</furigana></span>もです。<segment><kanji>来週</kanji><furigana>らいしゅう</furigana></segment>の<segment><kanji>週末</kanji><furigana>しゅうまつ</furigana></segment>、<segment><kanji>一緒</kanji><furigana>いっしょ</furigana></segment>に<segment><kanji>映画</kanji><furigana>えいが</furigana></segment>を<segment><kanji>見</kanji><furigana>み</furigana></segment>に<segment><kanji>行</kanji><furigana>い</furigana></segment>きませんか。
+                はい、<segment><kanji>私</kanji><furigana>わたし</furigana></segment>>もです。<segment><kanji>来週</kanji><furigana>らいしゅう</furigana></segment>の<segment><kanji>週末</kanji><furigana>しゅうまつ</furigana></segment>、<segment><kanji>一緒</kanji><furigana>いっしょ</furigana></segment>に<segment><kanji>映画</kanji><furigana>えいが</furigana></segment>を<segment><kanji>見</kanji><furigana>み</furigana></segment>に<segment><kanji>行</kanji><furigana>い</furigana></segment>きませんか。
               </line>
             </dialogue>
             <dialogue>
@@ -1439,96 +1439,1475 @@
       <color>#f39c12</color>
       <description>Belajar memesan makanan dan berinteraksi di restoran</description>
       
-      <texts>
+	  <texts>
         <text id="11" order="1">
           <title>
             <jp>予約をしたいです</jp>
             <reading>よやくをしたいです</reading>
             <id>Ingin Reservasi</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                もしもし、<segment><kanji>鈴木</kanji><furigana>すずき</furigana></segment><segment><kanji>料理店</kanji><furigana>りょうりてん</furigana></segment>ですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、<segment><kanji>鈴木</kanji><furigana>すずき</furigana></segment><segment><kanji>料理店</kanji><furigana>りょうりてん</furigana></segment>でございます。いらっしゃいませ。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>今週</kanji><furigana>こんしゅう</furigana></segment>の<segment><kanji>土曜日</kanji><furigana>どようび</furigana></segment>の<segment><kanji>夜</kanji><furigana>よる</furigana></segment>、<segment><kanji>予約</kanji><furigana>よやく</furigana></segment>をしたいのですが。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                かしこまりました。<segment><kanji>何名様</kanji><furigana>なんめいさま</furigana></segment>でいらっしゃいますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>四名</kanji><furigana>よんめい</furigana></segment>です。<segment><kanji>七時</kanji><furigana>しちじ</furigana></segment>ごろ<segment><kanji>予約</kanji><furigana>よやく</furigana></segment>できますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、<segment><kanji>七時</kanji><furigana>しちじ</furigana></segment>でしたら<segment><kanji>大丈夫</kanji><furigana>だいじょうぶ</furigana></segment>でございます。<segment><kanji>お名前</kanji><furigana>おなまえ</furigana></segment>を<segment><kanji>伺</kanji><furigana>うかが</furigana></segment>ってもよろしいでしょうか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>田中</kanji><furigana>たなか</furigana></segment>と<segment><kanji>申</kanji><furigana>もう</furigana></segment>します。<segment><kanji>喫煙</kanji><furigana>きつえん</furigana></segment><segment><kanji>席</kanji><furigana>せき</furigana></segment>と<segment><kanji>禁煙</kanji><furigana>きんえん</furigana></segment><segment><kanji>席</kanji><furigana>せき</furigana></segment>、どちらがありますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>禁煙</kanji><furigana>きんえん</furigana></segment><segment><kanji>席</kanji><furigana>せき</furigana></segment>でしたら<segment><kanji>窓際</kanji><furigana>まどぎわ</furigana></segment>の<segment><kanji>席</kanji><furigana>せき</furigana></segment>がございますが、よろしいでしょうか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、ぜひお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。<segment><kanji>駐車場</kanji><furigana>ちゅうしゃじょう</furigana></segment>はありますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、<segment><kanji>無料</kanji><furigana>むりょう</furigana></segment>の<segment><kanji>駐車場</kanji><furigana>ちゅうしゃじょう</furigana></segment>がございます。<segment><kanji>田中</kanji><furigana>たなか</furigana></segment>さま、<segment><kanji>土曜日</kanji><furigana>どようび</furigana></segment><segment><kanji>夜</kanji><furigana>よる</furigana></segment><segment><kanji>七時</kanji><furigana>しちじ</furigana></segment>、<segment><kanji>四名様</kanji><furigana>よんめいさま</furigana></segment>で<segment><kanji>予約</kanji><furigana>よやく</furigana></segment>を<segment><kanji>承</kanji><furigana>うけたまわ</furigana></segment>りました。<segment><kanji>当日</kanji><furigana>とうじつ</furigana></segment>お<segment><kanji>待</kanji><furigana>ま</furigana></segment>ちしております。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Halo, apakah ini Restoran Suzuki?</p>
+            <p><strong>B:</strong> Ya, ini Restoran Suzuki. Selamat datang.</p>
+            <p><strong>A:</strong> Saya ingin membuat reservasi untuk malam hari Sabtu minggu ini.</p>
+            <p><strong>B:</strong> Baik, untuk berapa orang?</p>
+            <p><strong>A:</strong> Empat orang. Bisa reservasi untuk jam tujuh?</p>
+            <p><strong>B:</strong> Ya, jam tujuh bisa. Boleh saya tahu nama Anda?</p>
+            <p><strong>A:</strong> Nama saya Tanaka. Apakah ada meja smoking atau non-smoking?</p>
+            <p><strong>B:</strong> Kalau non-smoking, ada meja di dekat jendela, apakah boleh?</p>
+            <p><strong>A:</strong> Ya, silakan. Apakah ada tempat parkir?</p>
+            <p><strong>B:</strong> Ya, ada tempat parkir gratis. Tanaka-sama, reservasi untuk empat orang Sabtu malam jam tujuh sudah kami catat. Kami tunggu kehadirannya.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>予約</word>
+              <reading>よやく</reading>
+              <romaji>yoyaku</romaji>
+              <meaning>Reservasi</meaning>
+            </item>
+            <item>
+              <word>今週</word>
+              <reading>こんしゅう</reading>
+              <romaji>konshuu</romaji>
+              <meaning>Minggu ini</meaning>
+            </item>
+            <item>
+              <word>何名様</word>
+              <reading>なんめいさま</reading>
+              <romaji>nanmei-sama</romaji>
+              <meaning>Berapa orang (hormat)</meaning>
+            </item>
+            <item>
+              <word>四名</word>
+              <reading>よんめい</reading>
+              <romaji>yonmei</romaji>
+              <meaning>Empat orang</meaning>
+            </item>
+            <item>
+              <word>七時</word>
+              <reading>しちじ</reading>
+              <romaji>shichiji</romaji>
+              <meaning>Jam tujuh</meaning>
+            </item>
+            <item>
+              <word>お名前</word>
+              <reading>おなまえ</reading>
+              <romaji>onamae</romaji>
+              <meaning>Nama (hormat)</meaning>
+            </item>
+            <item>
+              <word>禁煙席</word>
+              <reading>きんえんせき</reading>
+              <romaji>kinenseki</romaji>
+              <meaning>Meja non-smoking</meaning>
+            </item>
+            <item>
+              <word>窓際</word>
+              <reading>まどぎわ</reading>
+              <romaji>madogiwa</romaji>
+              <meaning>Dekat jendela</meaning>
+            </item>
+            <item>
+              <word>駐車場</word>
+              <reading>ちゅうしゃじょう</reading>
+              <romaji>chuushajou</romaji>
+              <meaning>Tempat parkir</meaning>
+            </item>
+            <item>
+              <word>無料</word>
+              <reading>むりょう</reading>
+              <romaji>muryou</romaji>
+              <meaning>Gratis</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="12" order="2">
           <title>
             <jp>メニューをください</jp>
             <reading>めにゅーをください</reading>
             <id>Meminta Menu</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                いらっしゃいませ。<segment><kanji>何</kanji><furigana>なに</furigana></segment>かお<segment><kanji>飲</kanji><furigana>の</furigana></segment>み<segment><kanji>物</kanji><furigana>もの</furigana></segment>はいかがですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                すみません、まずメニューをください。<segment><kanji>日本語</kanji><furigana>にほんご</furigana></segment>のメニューと<segment><kanji>英語</kanji><furigana>えいご</furigana></segment>のメニュー、どちらもありますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、どちらもございます。<segment><kanji>写真</kanji><furigana>しゃしん</furigana></segment>つきのメニューもありますが、いかがでしょうか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                ぜひ<segment><kanji>写真</kanji><furigana>しゃしん</furigana></segment>つきのメニューをください。<segment><kanji>見</kanji><furigana>み</furigana></segment>やすいですから。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                かしこまりました。こちらがメニューでございます。<segment><kanji>本日</kanji><furigana>ほんじつ</furigana></segment>のおすすめは<segment><kanji>海鮮</kanji><furigana>かいせん</furigana></segment><segment><kanji>丼</kanji><furigana>どん</furigana></segment>と<segment><kanji>季節</kanji><furigana>きせつ</furigana></segment>の<segment><kanji>天婦羅</kanji><furigana>てんぷら</furigana></segment>でございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                ありがとうございます。<segment><kanji>少</kanji><furigana>すこ</furigana></segment>し<segment><kanji>考</kanji><furigana>かんが</furigana></segment>えますので、<segment><kanji>待</kanji><furigana>ま</furigana></segment>ってください。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                かしこまりました。お<segment><kanji>決</kanji><furigana>き</furigana></segment>まりになりましたら、お<segment><kanji>呼</kanji><furigana>よ</furigana></segment>びください。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                あのう、すみません。この<segment><kanji>料理</kanji><furigana>りょうり</furigana></segment>は<segment><kanji>辛</kanji><furigana>から</furigana></segment>いですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                いいえ、<segment><kanji>辛</kanji><furigana>から</furigana></segment>くないです。<segment><kanji>甘</kanji><furigana>あま</furigana></segment>くて<segment><kanji>優</kanji><furigana>やさ</furigana></segment>しい<segment><kanji>味</kanji><furigana>あじ</furigana></segment>でございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                わかりました。じゃあ、それにします。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Selamat datang. Bagaimana dengan minuman?</p>
+            <p><strong>B:</strong> Permisi, tolong menu dulu. Apakah ada menu bahasa Jepang dan bahasa Inggris?</p>
+            <p><strong>A:</strong> Ya, keduanya ada. Ada juga menu dengan foto, bagaimana?</p>
+            <p><strong>B:</strong> Tolong menu dengan foto. Lebih mudah dilihat.</p>
+            <p><strong>A:</strong> Baik, ini menunya. Rekomendasi hari ini adalah kaisen don dan tempura musiman.</p>
+            <p><strong>B:</strong> Terima kasih. Saya pikir-pikir dulu, mohon tunggu.</p>
+            <p><strong>A:</strong> Baik, kalau sudah memutuskan silakan panggil saya.</p>
+            <p><strong>B:</strong> Permisi, apakah masakan ini pedas?</p>
+            <p><strong>A:</strong> Tidak, tidak pedas. Rasanya manis dan lembut.</p>
+            <p><strong>B:</strong> Baiklah, kalau begitu saya pesan itu.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>メニュー</word>
+              <reading>めにゅー</reading>
+              <romaji>menyuu</romaji>
+              <meaning>Menu</meaning>
+            </item>
+            <item>
+              <word>英語</word>
+              <reading>えいご</reading>
+              <romaji>eigo</romaji>
+              <meaning>Bahasa Inggris</meaning>
+            </item>
+            <item>
+              <word>写真つき</word>
+              <reading>しゃしんつき</reading>
+              <romaji>shashin-tsuki</romaji>
+              <meaning>Dengan foto</meaning>
+            </item>
+            <item>
+              <word>見やすい</word>
+              <reading>みやすい</reading>
+              <romaji>miyasui</romaji>
+              <meaning>Mudah dilihat</meaning>
+            </item>
+            <item>
+              <word>本日</word>
+              <reading>ほんじつ</reading>
+              <romaji>honjitsu</romaji>
+              <meaning>Hari ini (formal)</meaning>
+            </item>
+            <item>
+              <word>海鮮丼</word>
+              <reading>かいせんどん</reading>
+              <romaji>kaisendon</romaji>
+              <meaning>Nasi seafood</meaning>
+            </item>
+            <item>
+              <word>季節</word>
+              <reading>きせつ</reading>
+              <romaji>kisetsu</romaji>
+              <meaning>Musim</meaning>
+            </item>
+            <item>
+              <word>天婦羅</word>
+              <reading>てんぷら</reading>
+              <romaji>tenpura</romaji>
+              <meaning>Tempura</meaning>
+            </item>
+            <item>
+              <word>辛い</word>
+              <reading>からい</reading>
+              <romaji>karai</romaji>
+              <meaning>Pedas</meaning>
+            </item>
+            <item>
+              <word>甘い</word>
+              <reading>あまい</reading>
+              <romaji>amai</romaji>
+              <meaning>Manis</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="13" order="3">
           <title>
             <jp>おすすめは何ですか</jp>
             <reading>おすすめはなんですか</reading>
             <id>Meminta Rekomendasi</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                いらっしゃいませ。<segment><kanji>何</kanji><furigana>なに</furigana></segment>かお<segment><kanji>飲</kanji><furigana>の</furigana></segment>み<segment><kanji>物</kanji><furigana>もの</furigana></segment>はいかがですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                すみません、<segment><kanji>初</kanji><furigana>はじ</furigana></segment>めて<segment><kanji>来</kanji><furigana>き</furigana></segment>たので、おすすめは<segment><kanji>何</kanji><furigana>なに</furigana></segment>ですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                そうでしたら、<segment><kanji>当店</kanji><furigana>とうてん</furigana></segment><segment><kanji>自慢</kanji><furigana>じまん</furigana></segment>の<segment><kanji>特製</kanji><furigana>とくせい</furigana></segment><segment><kanji>寿司</kanji><furigana>すし</furigana></segment>セットはいかがでしょうか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                それは<segment><kanji>何人前</kanji><furigana>なんにんまえ</furigana></segment>ですか。<segment><kanji>一人</kanji><furigana>ひとり</furigana></segment>で<segment><kanji>来</kanji><furigana>き</furigana></segment>ましたが、<segment><kanji>食</kanji><furigana>た</furigana></segment>べられますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、<segment><kanji>一人前</kanji><furigana>ひとりまえ</furigana></segment>からご<segment><kanji>注文</kanji><furigana>ちゅうもん</furigana></segment>いただけます。<segment><kanji>新鮮</kanji><furigana>しんせん</furigana></segment>な<segment><kanji>魚</kanji><furigana>さかな</furigana></segment>を<segment><kanji>毎朝</kanji><furigana>まいあさ</furigana></segment><segment><kanji>市場</kanji><furigana>いちば</furigana></segment>から<segment><kanji>直接</kanji><furigana>ちょくせつ</furigana></segment><segment><kanji>仕入</kanji><furigana>しい</furigana></segment>れております。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                それは<segment><kanji>美味</kanji><furigana>おい</furigana></segment>しそうですね。<segment><kanji>値段</kanji><furigana>ねだん</furigana></segment>はいくらですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>税込</kanji><furigana>ぜいこみ</furigana></segment>みで<segment><kanji>二千五百円</kanji><furigana>にせんごひゃくえん</furigana></segment>でございます。<segment><kanji>味噌汁</kanji><furigana>みそしる</furigana></segment>と<segment><kanji>茶碗蒸</kanji><furigana>ちゃわんむし</furigana></segment>も<segment><kanji>付</kanji><furigana>つ</furigana></segment>いております。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                わかりました。じゃあ、そのセットにします。<segment><kanji>飲</kanji><furigana>の</furigana></segment>み<segment><kanji>物</kanji><furigana>もの</furigana></segment>は<segment><kanji>緑茶</kanji><furigana>りょくちゃ</furigana></segment>がありますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、<segment><kanji>静岡</kanji><furigana>しずおか</furigana></segment>の<segment><kanji>高級</kanji><furigana>こうきゅう</furigana></segment><segment><kanji>緑茶</kanji><furigana>りょくちゃ</furigana></segment>もございます。セットに<segment><kanji>追加</kanji><furigana>ついか</furigana></segment>で<segment><kanji>三百円</kanji><furigana>さんびゃくえん</furigana></segment>でございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                ぜひお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Selamat datang. Bagaimana dengan minuman?</p>
+            <p><strong>B:</strong> Permisi, ini pertama kali saya kesini, apa yang direkomendasikan?</p>
+            <p><strong>A:</strong> Kalau begitu, bagaimana dengan set sushi spesial kebanggaan restoran kami?</p>
+            <p><strong>B:</strong> Itu untuk berapa orang? Saya datang sendiri, bisakah dimakan?</p>
+            <p><strong>A:</strong> Ya, bisa dipesan untuk satu orang. Kami mendapatkan ikan segar langsung dari pasar setiap pagi.</p>
+            <p><strong>B:</strong> Itu kelihatan enak. Berapa harganya?</p>
+            <p><strong>A:</strong> Termasuk pajak 2.500 yen. Termasuk sup miso dan chawanmushi.</p>
+            <p><strong>B:</strong> Baiklah, saya pesan set itu. Apakah ada teh hijau?</p>
+            <p><strong>A:</strong> Ya, ada teh hijau premium dari Shizuoka. Tambahan 300 yen untuk set.</p>
+            <p><strong>B:</strong> Silakan.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>おすすめ</word>
+              <reading>おすすめ</reading>
+              <romaji>osusume</romaji>
+              <meaning>Rekomendasi</meaning>
+            </item>
+            <item>
+              <word>当店</word>
+              <reading>とうてん</reading>
+              <romaji>touten</romaji>
+              <meaning>Restoran ini</meaning>
+            </item>
+            <item>
+              <word>自慢</word>
+              <reading>じまん</reading>
+              <romaji>jiman</romaji>
+              <meaning>Kebanggaan</meaning>
+            </item>
+            <item>
+              <word>特製</word>
+              <reading>とくせい</reading>
+              <romaji>tokusei</romaji>
+              <meaning>Spesial</meaning>
+            </item>
+            <item>
+              <word>寿司</word>
+              <reading>すし</reading>
+              <romaji>sushi</romaji>
+              <meaning>Sushi</meaning>
+            </item>
+            <item>
+              <word>一人前</word>
+              <reading>ひとりまえ</reading>
+              <romaji>hitorimae</romaji>
+              <meaning>Porsi satu orang</meaning>
+            </item>
+            <item>
+              <word>新鮮</word>
+              <reading>しんせん</reading>
+              <romaji>shinsen</romaji>
+              <meaning>Segar</meaning>
+            </item>
+            <item>
+              <word>税込み</word>
+              <reading>ぜいこみ</reading>
+              <romaji>zeikomi</romaji>
+              <meaning>Termasuk pajak</meaning>
+            </item>
+            <item>
+              <word>二千五百円</word>
+              <reading>にせんごひゃくえん</reading>
+              <romaji>nisengohyakuen</romaji>
+              <meaning>2.500 yen</meaning>
+            </item>
+            <item>
+              <word>追加</word>
+              <reading>ついか</reading>
+              <romaji>tsuika</romaji>
+              <meaning>Tambahan</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="14" order="4">
           <title>
             <jp>これは何ですか</jp>
             <reading>これはなんですか</reading>
             <id>Menanyakan Menu</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                いらっしゃいませ。<segment><kanji>注文</kanji><furigana>ちゅうもん</furigana></segment>はお<segment><kanji>決</kanji><furigana>き</furigana></segment>まりですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                すみません、この<segment><kanji>料理</kanji><furigana>りょうり</furigana></segment>は<segment><kanji>何</kanji><furigana>なん</furigana></segment>という<segment><kanji>名前</kanji><furigana>なまえ</furigana></segment>ですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                あれは<segment><kanji>豚肉</kanji><furigana>ぶたにく</furigana></segment>の<segment><kanji>生姜焼</kanji><furigana>しょうがや</furigana></segment>きでございます。<segment><kanji>日本</kanji><furigana>にほん</furigana></segment>の<segment><kanji>家庭</kanji><furigana>かてい</furigana></segment><segment><kanji>料理</kanji><furigana>りょうり</furigana></segment>で<segment><kanji>人気</kanji><furigana>にんき</furigana></segment>があります。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>生姜</kanji><furigana>しょうが</furigana></segment>は<segment><kanji>辛</kanji><furigana>から</furigana></segment>いですか。<segment><kanji>苦手</kanji><furigana>にがて</furigana></segment>なんですが。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                いいえ、<segment><kanji>生姜</kanji><furigana>しょうが</furigana></segment>の<segment><kanji>香</kanji><furigana>かお</furigana></segment>りが<segment><kanji>効</kanji><furigana>き</furigana></segment>いていて、<segment><kanji>辛</kanji><furigana>から</furigana></segment>すぎません。<segment><kanji>甘</kanji><furigana>あま</furigana></segment>じょっぱい<segment><kanji>味付</kanji><furigana>あじつ</furigana></segment>けで<segment><kanji>食</kanji><furigana>た</furigana></segment>べやすいですよ。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                わかりました。じゃあ、それにします。<segment><kanji>定食</kanji><furigana>ていしょく</furigana></segment>ですか、<segment><kanji>単品</kanji><furigana>たんぴん</furigana></segment>ですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>定食</kanji><furigana>ていしょく</furigana></segment>でしたら<segment><kanji>ご飯</kanji><furigana>ごはん</furigana></segment>と<segment><kanji>味噌汁</kanji><furigana>みそしる</furigana></segment>と<segment><kanji>漬物</kanji><furigana>つけもの</furigana></segment>が<segment><kanji>付</kanji><furigana>つ</furigana></segment>きます。<segment><kanji>単品</kanji><furigana>たんぴん</furigana></segment>はお<segment><kanji>皿</kanji><furigana>さら</furigana></segment>だけです。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>定食</kanji><furigana>ていしょく</furigana></segment>でお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。<segment><kanji>ご飯</kanji><furigana>ごはん</furigana></segment>は<segment><kanji>大盛</kanji><furigana>おおも</furigana></segment>りできますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、<segment><kanji>大盛</kanji><furigana>おおも</furigana></segment>りも<segment><kanji>普通</kanji><furigana>ふつう</furigana></segment>も<segment><kanji>同</kanji><furigana>おな</furigana></segment>じ<segment><kanji>値段</kanji><furigana>ねだん</furigana></segment>です。<segment><kanji>大盛</kanji><furigana>おおも</furigana></segment>りでよろしいですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、<segment><kanji>大盛</kanji><furigana>おおも</furigana></segment>りでお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Selamat datang. Sudah memutuskan pesanan?</p>
+            <p><strong>B:</strong> Permisi, masakan ini namanya apa?</p>
+            <p><strong>A:</strong> Itu adalah shogayaki daging babi. Populer sebagai masakan rumahan Jepang.</p>
+            <p><strong>B:</strong> Apakah jahe-nya pedas? Saya tidak suka jahe.</p>
+            <p><strong>A:</strong> Tidak, aromanya terasa jahe tapi tidak terlalu pedas. Bumbunya manis-asin dan mudah dimakan.</p>
+            <p><strong>B:</strong> Baiklah, saya pesan itu. Set menu atau satuan?</p>
+            <p><strong>A:</strong> Kalau set menu termasuk nasi, sup miso, dan acar. Satuan hanya piring saja.</p>
+            <p><strong>B:</strong> Set menu silakan. Bisa nasi besar?</p>
+            <p><strong>A:</strong> Ya, nasi besar dan nasi biasa harganya sama. Nasi besar ya?</p>
+            <p><strong>B:</strong> Ya, nasi besar silakan.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>豚肉</word>
+              <reading>ぶたにく</reading>
+              <romaji>butaniku</romaji>
+              <meaning>Daging babi</meaning>
+            </item>
+            <item>
+              <word>生姜焼き</word>
+              <reading>しょうがやき</reading>
+              <romaji>shougayaki</romaji>
+              <meaning>Tumis jahe</meaning>
+            </item>
+            <item>
+              <word>家庭料理</word>
+              <reading>かていりょうり</reading>
+              <romaji>kateiryouri</romaji>
+              <meaning>Masakan rumahan</meaning>
+            </item>
+            <item>
+              <word>人気</word>
+              <reading>にんき</reading>
+              <romaji>ninki</romaji>
+              <meaning>Populer</meaning>
+            </item>
+            <item>
+              <word>苦手</word>
+              <reading>にがて</reading>
+              <romaji>nigate</romaji>
+              <meaning>Tidak suka/Tidak pandai</meaning>
+            </item>
+            <item>
+              <word>香り</word>
+              <reading>かおり</reading>
+              <romaji>kaori</romaji>
+              <meaning>Aroma</meaning>
+            </item>
+            <item>
+              <word>定食</word>
+              <reading>ていしょく</reading>
+              <romaji>teishoku</romaji>
+              <meaning>Set menu</meaning>
+            </item>
+            <item>
+              <word>単品</word>
+              <reading>たんぴん</reading>
+              <romaji>tanpin</romaji>
+              <meaning>Satuan</meaning>
+            </item>
+            <item>
+              <word>漬物</word>
+              <reading>つけもの</reading>
+              <romaji>tsukemono</romaji>
+              <meaning>Acar</meaning>
+            </item>
+            <item>
+              <word>大盛り</word>
+              <reading>おおもり</reading>
+              <romaji>oomori</romaji>
+              <meaning>Porsi besar</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="15" order="5">
           <title>
             <jp>おいしいですね</jp>
             <reading>おいしいですね</reading>
             <id>Memuji Makanan</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                いらっしゃいませ。<segment><kanji>注文</kanji><furigana>ちゅうもん</furigana></segment>の<segment><kanji>料理</kanji><furigana>りょうり</furigana></segment>が<segment><kanji>揃</kanji><furigana>そろ</furigana></segment>いました。こちらが<segment><kanji>特製</kanji><furigana>とくせい</furigana></segment>の<segment><kanji>海鮮</kanji><furigana>かいせん</furigana></segment><segment><kanji>丼</kanji><furigana>どんぶり</furigana></segment>でございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                わあ、<segment><kanji>見</kanji><furigana>み</furigana></segment>た<segment><kanji>目</kanji><furigana>め</furigana></segment>がとても<segment><kanji>綺麗</kanji><furigana>きれい</furigana></segment>ですね。<segment><kanji>新鮮</kanji><furigana>しんせん</furigana></segment>そうです。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                ありがとうございます。<segment><kanji>本日</kanji><furigana>ほんじつ</furigana></segment><segment><kanji>朝</kanji><furigana>あさ</furigana></segment>に<segment><kanji>取</kanji><furigana>と</furigana></segment>れた<segment><kanji>魚</kanji><furigana>さかな</furigana></segment>を<segment><kanji>使</kanji><furigana>つか</furigana></segment>っております。どうぞお<segment><kanji>召</kanji><furigana>め</furigana></segment>し<segment><kanji>上</kanji><furigana>あ</furigana></segment>がりください。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                いただきます。…うん、とても<segment><kanji>美味</kanji><furigana>おい</furigana></segment>しいですね！<segment><kanji>刺身</kanji><furigana>さしみ</furigana></segment>がとろけます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                ありがとうございます。<segment><kanji>特製</kanji><furigana>とくせい</furigana></segment>の<segment><kanji>醤油</kanji><furigana>しょうゆ</furigana></segment>でお<segment><kanji>召</kanji><furigana>め</furigana></segment>し<segment><kanji>上</kanji><furigana>あ</furigana></segment>がりください。<segment><kanji>甘</kanji><furigana>あま</furigana></segment>みが<segment><kanji>強</kanji><furigana>つよ</furigana></segment>くて<segment><kanji>魚</kanji><furigana>さかな</furigana></segment>の<segment><kanji>味</kanji><furigana>あじ</furigana></segment>を<segment><kanji>引</kanji><furigana>ひ</furigana></segment>き<segment><kanji>立</kanji><furigana>た</furigana></segment>てます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                ほんとうですね。この<segment><kanji>醤油</kanji><furigana>しょうゆ</furigana></segment>も<segment><kanji>美味</kanji><furigana>おい</furigana></segment>しいです。<segment><kanji>店</kanji><furigana>みせ</furigana></segment>で<segment><kanji>作</kanji><furigana>つく</furigana></segment>っているんですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、<segment><kanji>店主</kanji><furigana>てんしゅ</furigana></segment>が<segment><kanji>毎日</kanji><furigana>まいにち</furigana></segment><segment><kanji>仕込</kanji><furigana>しこ</furigana></segment>んでいます。<segment><kanji>隠</kanji><furigana>かく</furigana></segment>し<segment><kanji>味</kanji><furigana>あじ</furigana></segment>です。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                そうですか。<segment><kanji>全部</kanji><furigana>ぜんぶ</furigana></segment><segment><kanji>美味</kanji><furigana>おい</furigana></segment>しくて<segment><kanji>感動</kanji><furigana>かんどう</furigana></segment>しました。また<segment><kanji>来</kanji><furigana>き</furigana></segment>たいです。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                ありがとうございます。<segment><kanji>次</kanji><furigana>つぎ</furigana></segment>も<segment><kanji>来</kanji><furigana>らっしゃ</furigana></segment>いましたら、<segment><kanji>新</kanji><furigana>あたら</furigana></segment>しいメニューもご<segment><kanji>用意</kanji><furigana>ようい</furigana></segment>しております。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                ぜひ<segment><kanji>楽</kanji><furigana>たの</furigana></segment>しみにしています。ごちそうさまでした。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Selamat datang. Pesanan Anda sudah lengkap. Ini adalah kaisendon spesial kami.</p>
+            <p><strong>B:</strong> Wah, penampilannya sangat indah. Kelihatan segar.</p>
+            <p><strong>A:</strong> Terima kasih. Kami menggunakan ikan yang ditangkap pagi ini. Silakan dinikmati.</p>
+            <p><strong>B:</strong> Saya makan dulu. …Mmm, sangat enak! Sashiminya meleleh di mulut.</p>
+            <p><strong>A:</strong> Terima kasih. Silakan coba dengan kecap spesial kami. Manisnya kuat dan menonjolkan rasa ikan.</p>
+            <p><strong>B:</strong> Benar sekali. Kecapnya juga enak. Apakah dibuat di restoran?</p>
+            <p><strong>A:</strong> Ya, pemilik toko membuatnya setiap hari. Itu resep rahasia.</p>
+            <p><strong>B:</strong> Oh begitu. Semuanya enak dan saya terkesan. Saya ingin datang lagi.</p>
+            <p><strong>A:</strong> Terima kasih. Kalau datang lagi, kami juga menyiapkan menu baru.</p>
+            <p><strong>B:</strong> Saya tunggu dengan senang hati. Terima kasih atas makanannya.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>揃う</word>
+              <reading>そろう</reading>
+              <romaji>sorou</romaji>
+              <meaning>Lengkap</meaning>
+            </item>
+            <item>
+              <word>見た目</word>
+              <reading>みため</reading>
+              <romaji>mitame</romaji>
+              <meaning>Penampilan</meaning>
+            </item>
+            <item>
+              <word>新鮮</word>
+              <reading>しんせん</reading>
+              <romaji>shinsen</romaji>
+              <meaning>Segar</meaning>
+            </item>
+            <item>
+              <word>召し上がる</word>
+              <reading>めしあがる</reading>
+              <romaji>meshiagaru</romaji>
+              <meaning>Makan/Minum (hormat)</meaning>
+            </item>
+            <item>
+              <word>刺身</word>
+              <reading>さしみ</reading>
+              <romaji>sashimi</romaji>
+              <meaning>Ikan mentah</meaning>
+            </item>
+            <item>
+              <word>とろける</word>
+              <reading>とろける</reading>
+              <romaji>torokeru</romaji>
+              <meaning>Meleleh</meaning>
+            </item>
+            <item>
+              <word>醤油</word>
+              <reading>しょうゆ</reading>
+              <romaji>shouyu</romaji>
+              <meaning>Kecap</meaning>
+            </item>
+            <item>
+              <word>引き立てる</word>
+              <reading>ひきたてる</reading>
+              <romaji>hikitate</romaji>
+              <meaning>Menonjolkan</meaning>
+            </item>
+            <item>
+              <word>店主</word>
+              <reading>てんしゅ</reading>
+              <romaji>tenshu</romaji>
+              <meaning>Pemilik toko</meaning>
+            </item>
+            <item>
+              <word>隠し味</word>
+              <reading>かくしあじ</reading>
+              <romaji>kakushi aji</romaji>
+              <meaning>Resep rahasia</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="16" order="6">
           <title>
             <jp>お代わりお願いします</jp>
             <reading>おかわりおねがいします</reading>
             <id>Minta Tambahan</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                こちらの<segment><kanji>定食</kanji><furigana>ていしょく</furigana></segment>はいかがでしょうか。<segment><kanji>お代</kanji><furigana>おかわ</furigana></segment>りは<segment><kanji>無料</kanji><furigana>むりょう</furigana></segment>でございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                そうですか。じゃあ、<segment><kanji>最初</kanji><furigana>さいしょ</furigana></segment>は<segment><kanji>普通</kanji><furigana>ふつう</furigana></segment>の<segment><kanji>盛</kanji><furigana>も</furigana></segment>りでお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                かしこまりました。<segment><kanji>少々</kanji><furigana>しょうしょう</furigana></segment>お<segment><kanji>待</kanji><furigana>ま</furigana></segment>ちください。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                すみません、<segment><kanji>ご飯</kanji><furigana>ごはん</furigana></segment>をお<segment><kanji>代</kanji><furigana>かわ</furigana></segment>りしたいのですが。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、かしこまりました。<segment><kanji>大盛</kanji><furigana>おおも</furigana></segment>りと<segment><kanji>普通</kanji><furigana>ふつう</furigana></segment>、どちらになさいますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>普通</kanji><furigana>ふつう</furigana></segment>で<segment><kanji>大丈夫</kanji><furigana>だいじょうぶ</furigana></segment>です。<segment><kanji>味噌汁</kanji><furigana>みそしる</furigana></segment>もお<segment><kanji>代</kanji><furigana>かわ</furigana></segment>りできますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、こちらも<segment><kanji>無料</kanji><furigana>むりょう</furigana></segment>でございます。<segment><kanji>具</kanji><furigana>ぐ</furigana></segment>だくさんの<segment><kanji>味噌汁</kanji><furigana>みそしる</furigana></segment>でございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                ありがとうございます。<segment><kanji>漬物</kanji><furigana>つけもの</furigana></segment>ももう<segment><kanji>少</kanji><furigana>すこ</furigana></segment>し<segment><kanji>欲</kanji><furigana>ほ</furigana></segment>しいです。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                かしこまりました。お<segment><kanji>漬物</kanji><furigana>つけもの</furigana></segment>をお<segment><kanji>持</kanji><furigana>も</furigana></segment>ちしますね。<segment><kanji>他</kanji><furigana>ほか</furigana></segment>に<segment><kanji>何</kanji><furigana>なに</furigana></segment>かご<segment><kanji>注文</kanji><furigana>ちゅうもん</furigana></segment>はございますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                いいえ、これで<segment><kanji>十分</kanji><furigana>じゅうぶん</furigana></segment>です。ごちそうさまでした。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Bagaimana dengan set menu ini? Tambahan nasi gratis.</p>
+            <p><strong>B:</strong> Oh begitu. Kalau begitu, porsi biasa dulu.</p>
+            <p><strong>A:</strong> Baik, mohon tunggu sebentar.</p>
+            <p><strong>B:</strong> Permisi, saya ingin tambah nasi.</p>
+            <p><strong>A:</strong> Baik, porsi besar atau biasa?</p>
+            <p><strong>B:</strong> Porsi biasa saja. Apakah sup miso juga bisa ditambah?</p>
+            <p><strong>A:</strong> Ya, ini juga gratis. Sup miso dengan banyak isian.</p>
+            <p><strong>B:</strong> Terima kasih. Acarnya juga mau sedikit lagi.</p>
+            <p><strong>A:</strong> Baik, saya bawakan acarnya. Ada pesanan lain?</p>
+            <p><strong>B:</strong> Tidak, ini sudah cukup. Terima kasih atas makanannya.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>お代わり</word>
+              <reading>おかわり</reading>
+              <romaji>okawari</romaji>
+              <meaning>Tambahan/Kedua kalinya</meaning>
+            </item>
+            <item>
+              <word>無料</word>
+              <reading>むりょう</reading>
+              <romaji>muryou</romaji>
+              <meaning>Gratis</meaning>
+            </item>
+            <item>
+              <word>最初</word>
+              <reading>さいしょ</reading>
+              <romaji>saisho</romaji>
+              <meaning>Pertama</meaning>
+            </item>
+            <item>
+              <word>普通</word>
+              <reading>ふつう</reading>
+              <romaji>futsuu</romaji>
+              <meaning>Normal/Biasa</meaning>
+            </item>
+            <item>
+              <word>盛り</word>
+              <reading>もり</reading>
+              <romaji>mori</romaji>
+              <meaning>Porsi/Sajian</meaning>
+            </item>
+            <item>
+              <word>少々</word>
+              <reading>しょうしょう</reading>
+              <romaji>shoushou</romaji>
+              <meaning>Sebentar/Sedikit</meaning>
+            </item>
+            <item>
+              <word>具</word>
+              <reading>ぐ</reading>
+              <romaji>gu</romaji>
+              <meaning>Isian</meaning>
+            </item>
+            <item>
+              <word>だくさん</word>
+              <reading>だくさん</reading>
+              <romaji>dakusan</romaji>
+              <meaning>Banyak</meaning>
+            </item>
+            <item>
+              <word>漬物</word>
+              <reading>つけもの</reading>
+              <romaji>tsukemono</romaji>
+              <meaning>Acar</meaning>
+            </item>
+            <item>
+              <word>十分</word>
+              <reading>じゅうぶん</reading>
+              <romaji>juubun</romaji>
+              <meaning>Cukup</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="17" order="7">
           <title>
             <jp>お会計お願いします</jp>
             <reading>おかいけいおねがいします</reading>
             <id>Meminta Bill</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                すみません、お<segment><kanji>会計</kanji><furigana>かいけい</furigana></segment>お<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、かしこまりました。<segment><kanji>別々</kanji><furigana>べつべつ</furigana></segment>に<segment><kanji>払</kanji><furigana>はら</furigana></segment>いますか、<segment><kanji>一緒</kanji><furigana>いっしょ</furigana></segment>に<segment><kanji>払</kanji><furigana>はら</furigana></segment>いますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>一緒</kanji><furigana>いっしょ</furigana></segment>でお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。<segment><kanji>領収書</kanji><furigana>りょうしゅうしょ</furigana></segment>は<segment><kanji>貰</kanji><furigana>もら</furigana></segment>えますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、かしこまりました。<segment><kanji>合計</kanji><furigana>ごうけい</furigana></segment>は<segment><kanji>三千二百円</kanji><furigana>さんぜんにひゃくえん</furigana></segment>でございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>五千円札</kanji><furigana>ごせんえんさつ</furigana></segment>で<segment><kanji>払</kanji><furigana>はら</furigana></segment>います。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>五千円</kanji><furigana>ごせんえん</furigana></segment>お<segment><kanji>預</kanji><furigana>あず</furigana></segment>かりします。<segment><kanji>千八百円</kanji><furigana>せんはっぴゃくえん</furigana></segment>のお<segment><kanji>釣</kanji><furigana>つ</furigana></segment>りでございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                ありがとうございます。<segment><kanji>小銭</kanji><furigana>こぜに</furigana></segment>は<segment><kanji>入</kanji><furigana>い</furigana></segment>りません。<segment><kanji>残</kanji><furigana>のこ</furigana></segment>りは<segment><kanji>全部</kanji><furigana>ぜんぶ</furigana></segment><segment><kanji>小費</kanji><furigana>チップ</furigana></segment>です。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                ありがとうございます。<segment><kanji>本日</kanji><furigana>ほんじつ</furigana></segment>はご<segment><kanji>来店</kanji><furigana>らいてん</furigana></segment>ありがとうございました。またのお<segment><kanji>越</kanji><furigana>こ</furigana></segment>しをお<segment><kanji>待</kanji><furigana>ま</furigana></segment>ちしております。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                とても<segment><kanji>美味</kanji><furigana>おい</furigana></segment>しかったです。また<segment><kanji>来</kanji><furigana>き</furigana></segment>ますね。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                ありがとうございます。さようなら。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Permisi, minta bon.</p>
+            <p><strong>B:</strong> Baik, bayar terpisah atau bersama-sama?</p>
+            <p><strong>A:</strong> Bersama-sama. Boleh minta struk?</p>
+            <p><strong>B:</strong> Baik, totalnya 3.200 yen.</p>
+            <p><strong>A:</strong> Saya bayar dengan uang 5.000 yen.</p>
+            <p><strong>B:</strong> Terima 5.000 yen, kembaliannya 1.800 yen.</p>
+            <p><strong>A:</strong> Terima kasih. Uang recehnya tidak perlu. Sisanya tip.</p>
+            <p><strong>B:</strong> Terima kasih. Terima kasih sudah berkunjung hari ini. Kami tunggu kedatangan Anda lagi.</p>
+            <p><strong>A:</strong> Sangat enak. Saya akan datang lagi.</p>
+            <p><strong>B:</strong> Terima kasih. Selamat tinggal.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>お会計</word>
+              <reading>おかいけい</reading>
+              <romaji>okaikei</romaji>
+              <meaning>Pembayaran/Bon</meaning>
+            </item>
+            <item>
+              <word>別々</word>
+              <reading>べつべつ</reading>
+              <romaji>betsubetsu</romaji>
+              <meaning>Terpisah</meaning>
+            </item>
+            <item>
+              <word>払う</word>
+              <reading>はらう</reading>
+              <romaji>harau</romaji>
+              <meaning>Membayar</meaning>
+            </item>
+            <item>
+              <word>領収書</word>
+              <reading>りょうしゅうしょ</reading>
+              <romaji>ryoushuusho</romaji>
+              <meaning>Struk</meaning>
+            </item>
+            <item>
+              <word>合計</word>
+              <reading>ごうけい</reading>
+              <romaji>goukei</romaji>
+              <meaning>Total</meaning>
+            </item>
+            <item>
+              <word>三千二百円</word>
+              <reading>さんぜんにひゃくえん</reading>
+              <romaji>sanzennihyakuen</romaji>
+              <meaning>3.200 yen</meaning>
+            </item>
+            <item>
+              <word>五千円札</word>
+              <reading>ごせんえんさつ</reading>
+              <romaji>gosensatsu</romaji>
+              <meaning>Uang 5.000 yen</meaning>
+            </item>
+            <item>
+              <word>お釣り</word>
+              <reading>おつり</reading>
+              <romaji>otsuri</romaji>
+              <meaning>Kembalian</meaning>
+            </item>
+            <item>
+              <word>小銭</word>
+              <reading>こぜに</reading>
+              <romaji>kozeni</romaji>
+              <meaning>Uang receh</meaning>
+            </item>
+            <item>
+              <word>ご来店</word>
+              <reading>ごらいてん</reading>
+              <romaji>goraiten</romaji>
+              <meaning>Berkunjung (hormat)</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="18" order="8">
           <title>
             <jp>クレジットカードは使えますか</jp>
             <reading>くれじっとかーどはつかえますか</reading>
             <id>Pembayaran Kartu</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                すみません、クレジットカードは<segment><kanji>使</kanji><furigana>つか</furigana></segment>えますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、<segment><kanji>使</kanji><furigana>つか</furigana></segment>えます。<segment><kanji>VISA</kanji><furigana>びざ</furigana></segment>と<segment><kanji>MASTER</kanji><furigana>ますたー</furigana></segment>と<segment><kanji>JCB</kanji><furigana>じぇいしーびー</furigana></segment>が<segment><kanji>使</kanji><furigana>つか</furigana></segment>えます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                よかったです。<segment><kanji>現金</kanji><furigana>げんきん</furigana></segment>が<segment><kanji>足</kanji><furigana>た</furigana></segment>りなくて<segment><kanji>心配</kanji><furigana>しんぱい</furigana></segment>していました。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>電子</kanji><furigana>でんし</furigana></segment>マネーも<segment><kanji>使</kanji><furigana>つか</furigana></segment>えますよ。<segment><kanji>Suica</kanji><furigana>すいか</furigana></segment>や<segment><kanji>PayPay</kanji><furigana>ぺいぺい</furigana></segment>も<segment><kanji>大丈夫</kanji><furigana>だいじょうぶ</furigana></segment>です。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                そうですか。<segment><kanji>分割</kanji><furigana>ぶんかつ</furigana></segment><segment><kanji>払</kanji><furigana>ばら</furigana></segment>いもできますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、<segment><kanji>一回</kanji><furigana>いっかい</furigana></segment><segment><kanji>払</kanji><furigana>ばら</furigana></segment>いと<segment><kanji>二回</kanji><furigana>にかい</furigana></segment><segment><kanji>以上</kanji><furigana>いじょう</furigana></segment>の<segment><kanji>分割</kanji><furigana>ぶんかつ</furigana></segment>が<segment><kanji>選</kanji><furigana>えら</furigana></segment>べます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                じゃあ、<segment><kanji>三回</kanji><furigana>さんかい</furigana></segment><segment><kanji>分割</kanji><furigana>ぶんかつ</furigana></segment>でお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                かしこまりました。<segment><kanji>合計</kanji><furigana>ごうけい</furigana></segment><segment><kanji>九千円</kanji><furigana>きゅうせんえん</furigana></segment>で<segment><kanji>一回</kanji><furigana>いっかい</furigana></segment><segment><kanji>三千円</kanji><furigana>さんぜんえん</furigana></segment>ずつ<segment><kanji>払</kanji><furigana>はら</furigana></segment>います。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                わかりました。カードを<segment><kanji>差</kanji><furigana>さ</furigana></segment>し<segment><kanji>込</kanji><furigana>こ</furigana></segment>みます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                ありがとうございます。<segment><kanji>暗証</kanji><furigana>あんしょう</furigana></segment><segment><kanji>番号</kanji><furigana>ばんごう</furigana></segment>を<segment><kanji>押</kanji><furigana>お</furigana></segment>してください。<segment><kanji>領収書</kanji><furigana>りょうしゅうしょ</furigana></segment>はいりますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、お<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Permisi, apakah bisa pakai kartu kredit?</p>
+            <p><strong>B:</strong> Ya, bisa. VISA, MASTER, dan JCB bisa digunakan.</p>
+            <p><strong>A:</strong> Syukurlah. Saya khawatir uang tunai tidak cukup.</p>
+            <p><strong>B:</strong> Uang elektronik juga bisa. Suica dan PayPay juga oke.</p>
+            <p><strong>A:</strong> Oh begitu. Apakah bisa bayar cicilan?</p>
+            <p><strong>B:</strong> Ya, bisa pilih bayar sekali atau cicilan dua kali atau lebih.</p>
+            <p><strong>A:</strong> Kalau begitu, saya mau cicilan tiga kali.</p>
+            <p><strong>B:</strong> Baik, total 9.000 yen, dibayar 3.000 yen per kali.</p>
+            <p><strong>A:</strong> Baiklah. Saya masukkan kartunya.</p>
+            <p><strong>B:</strong> Terima kasih. Silakan masukkan PIN. Mau struk?</p>
+            <p><strong>A:</strong> Ya, silakan.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>クレジットカード</word>
+              <reading>くれじっとかーど</reading>
+              <romaji>kurejitto kaado</romaji>
+              <meaning>Kartu kredit</meaning>
+            </item>
+            <item>
+              <word>使える</word>
+              <reading>つかえる</reading>
+              <romaji>tsukaeru</romaji>
+              <meaning>Bisa digunakan</meaning>
+            </item>
+            <item>
+              <word>現金</word>
+              <reading>げんきん</reading>
+              <romaji>genkin</romaji>
+              <meaning>Uang tunai</meaning>
+            </item>
+            <item>
+              <word>足りない</word>
+              <reading>たりない</reading>
+              <romaji>tarinai</romaji>
+              <meaning>Tidak cukup</meaning>
+            </item>
+            <item>
+              <word>電子マネー</word>
+              <reading>でんしマネー</reading>
+              <romaji>denshi manee</romaji>
+              <meaning>Uang elektronik</meaning>
+            </item>
+            <item>
+              <word>分割払い</word>
+              <reading>ぶんかつばらい</reading>
+              <romaji>bunkatsubarai</romaji>
+              <meaning>Pembayaran cicilan</meaning>
+            </item>
+            <item>
+              <word>一回</word>
+              <reading>いっかい</reading>
+              <romaji>ikkai</romaji>
+              <meaning>Satu kali</meaning>
+            </item>
+            <item>
+              <word>以上</word>
+              <reading>いじょう</reading>
+              <romaji>ijou</romaji>
+              <meaning>Lebih dari</meaning>
+            </item>
+            <item>
+              <word>差し込む</word>
+              <reading>さしこむ</reading>
+              <romaji>sashikomu</romaji>
+              <meaning>Memasukkan</meaning>
+            </item>
+            <item>
+              <word>暗証番号</word>
+              <reading>あんしょうばんごう</reading>
+              <romaji>anshou bangou</romaji>
+              <meaning>PIN</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="19" order="9">
           <title>
             <jp>テイクアウトお願いします</jp>
             <reading>ていくあうとおねがいします</reading>
             <id>Pesan Bungkus</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                いらっしゃいませ。こちらでお<segment><kanji>召</kanji><furigana>め</furigana></segment>し<segment><kanji>上</kanji><furigana>あ</furigana></segment>がりですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                いえ、テイクアウトでお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                かしこまりました。テイクアウトのメニューはこちらでございます。<segment><kanji>弁当</kanji><furigana>べんとう</furigana></segment>と<segment><kanji>単品</kanji><furigana>たんぴん</furigana></segment>、どちらになさいますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>特製</kanji><furigana>とくせい</furigana></segment><segment><kanji>幕内</kanji><furigana>まくうち</furigana></segment><segment><kanji>弁当</kanji><furigana>べんとう</furigana></segment>を<segment><kanji>一</kanji><furigana>ひと</furigana></segment>つと、<segment><kanji>唐揚</kanji><furigana>からあ</furigana></segment>げ<segment><kanji>弁当</kanji><furigana>べんとう</furigana></segment>を<segment><kanji>二</kanji><furigana>ふた</furigana></segment>つお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、<segment><kanji>特製</kanji><furigana>とくせい</furigana></segment><segment><kanji>幕内</kanji><furigana>まくうち</furigana></segment><segment><kanji>弁当</kanji><furigana>べんとう</furigana></segment><segment><kanji>一</kanji><furigana>いっ</furigana></segment>つと<segment><kanji>唐揚</kanji><furigana>からあ</furigana></segment>げ<segment><kanji>弁当</kanji><furigana>べんとう</furigana></segment><segment><kanji>二</kanji><furigana>に</furigana></segment>つでございますね。<segment><kanji>お茶</kanji><furigana>おちゃ</furigana></segment>は<segment><kanji>付</kanji><furigana>つ</furigana></segment>いておりますが、よろしいでしょうか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、<segment><kanji>結構</kanji><furigana>けっこう</furigana></segment>です。<segment><kanji>箸</kanji><furigana>はし</furigana></segment>と<segment><kanji>湿</kanji><furigana>しめ</furigana></segment>し<segment><kanji>巾</kanji><furigana>きん</furigana></segment>は<segment><kanji>付</kanji><furigana>つ</furigana></segment>いていますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、お<segment><kanji>箸</kanji><furigana>はし</furigana></segment>とおしぼりと<segment><kanji>醤油</kanji><furigana>しょうゆ</furigana></segment>の<segment><kanji>小袋</kanji><furigana>こぶくろ</furigana></segment>もお<segment><kanji>入</kanji><furigana>い</furigana></segment>れします。<segment><kanji>待</kanji><furigana>ま</furigana></segment>ち<segment><kanji>時間</kanji><furigana>じかん</furigana></segment>は<segment><kanji>大体</kanji><furigana>だいたい</furigana></segment><segment><kanji>十五分</kanji><furigana>じゅうごふん</furigana></segment>でございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                わかりました。<segment><kanji>近</kanji><furigana>ちか</furigana></segment>くを<segment><kanji>散歩</kanji><furigana>さんぽ</furigana></segment>して<segment><kanji>待</kanji><furigana>ま</furigana></segment>ちます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                でき<segment><kanji>上</kanji><furigana>あ</furigana></segment>がりましたら、お<segment><kanji>電話</kanji><furigana>でんわ</furigana></segment>させていただきます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                ありがとうございます。<segment><kanji>合計</kanji><furigana>ごうけい</furigana></segment>はいくらですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>三千四百円</kanji><furigana>さんぜんよんひゃくえん</furigana></segment>でございます。<segment><kanji>袋</kanji><furigana>ふくろ</furigana></segment>は<segment><kanji>有料</kanji><furigana>ゆうりょう</furigana></segment>ですが、よろしいでしょうか。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Selamat datang. Makan di sini?</p>
+            <p><strong>B:</strong> Tidak, bungkus bawa pulang.</p>
+            <p><strong>A:</strong> Baik, menu bawa pulang di sini. Bento atau satuan?</p>
+            <p><strong>B:</strong> Satu bento makunouchi spesial, dan dua bento ayam goreng.</p>
+            <p><strong>A:</strong> Baik, satu bento makunouchi spesial dan dua bento ayam goreng. Sudah termasuk teh, apakah oke?</p>
+            <p><strong>B:</strong> Ya, sudah cukup. Apakah sudah termasuk sumpit dan tisu basah?</p>
+            <p><strong>A:</strong> Ya, kami sertakan sumpit, tisu basah, dan kecap sachet. Waktu tunggu sekitar 15 menit.</p>
+            <p><strong>B:</strong> Baiklah. Saya jalan-jalan di dekat sini sambil menunggu.</p>
+            <p><strong>A:</strong> Kalau sudah selesai, kami akan telepon.</p>
+            <p><strong>B:</strong> Terima kasih. Berapa totalnya?</p>
+            <p><strong>A:</strong> 3.400 yen. Kantong berbayar, apakah oke?</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>テイクアウト</word>
+              <reading>ていくあうと</reading>
+              <romaji>teikuauto</romaji>
+              <meaning>Bungkus bawa pulang</meaning>
+            </item>
+            <item>
+              <word>弁当</word>
+              <reading>べんとう</reading>
+              <romaji>bentou</romaji>
+              <meaning>Bento/kotak makan</meaning>
+            </item>
+            <item>
+              <word>幕内弁当</word>
+              <reading>まくうちべんとう</reading>
+              <romaji>makunouchi bentou</romaji>
+              <meaning>Bento tradisional Jepang</meaning>
+            </item>
+            <item>
+              <word>唐揚げ</word>
+              <reading>からあげ</reading>
+              <romaji>karaage</romaji>
+              <meaning>Ayam goreng Jepang</meaning>
+            </item>
+            <item>
+              <word>結構</word>
+              <reading>けっこう</reading>
+              <romaji>kekkou</romaji>
+              <meaning>Sudah cukup/Tidak perlu</meaning>
+            </item>
+            <item>
+              <word>箸</word>
+              <reading>はし</reading>
+              <romaji>hashi</romaji>
+              <meaning>Sumpit</meaning>
+            </item>
+            <item>
+              <word>湿し巾</word>
+              <reading>しめしきん</reading>
+              <romaji>shimejikin</romaji>
+              <meaning>Tisu basah</meaning>
+            </item>
+            <item>
+              <word>小袋</word>
+              <reading>こぶくろ</reading>
+              <romaji>kobukuro</romaji>
+              <meaning>Kantong kecil/sachet</meaning>
+            </item>
+            <item>
+              <word>散歩</word>
+              <reading>さんぽ</reading>
+              <romaji>sanpo</romaji>
+              <meaning>Jalan-jalan</meaning>
+            </item>
+            <item>
+              <word>有料</word>
+              <reading>ゆうりょう</reading>
+              <romaji>yuuryou</romaji>
+              <meaning>Berbayar</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="20" order="10">
           <title>
             <jp>カフェで勉強</jp>
             <reading>かふぇでべんきょう</reading>
             <id>Bekerja di Kafe</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                いらっしゃいませ。<segment><kanji>店内</kanji><furigana>てんない</furigana></segment>でお<segment><kanji>召</kanji><furigana>め</furigana></segment>し<segment><kanji>上</kanji><furigana>あ</furigana></segment>がりですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、<segment><kanji>二時間</kanji><furigana>にじかん</furigana></segment>ほど<segment><kanji>勉強</kanji><furigana>べんきょう</furigana></segment>させていただきたいのですが。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                かしこまりました。<segment><kanji>電源</kanji><furigana>でんげん</furigana></segment>の<segment><kanji>使</kanji><furigana>つか</furigana></segment>える<segment><kanji>席</kanji><furigana>せき</furigana></segment>はこちらでございます。<segment><kanji>Wi-Fi</kanji><furigana>わいふぁい</furigana></segment>も<segment><kanji>無料</kanji><furigana>むりょう</furigana></segment>でご<segment><kanji>利用</kanji><furigana>りよう</furigana></segment>いただけます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                ありがとうございます。<segment><kanji>喫煙</kanji><furigana>きつえん</furigana></segment><segment><kanji>席</kanji><furigana>せき</furigana></segment>ではないですよね。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、こちらは<segment><kanji>全席</kanji><furigana>ぜんせき</furigana></segment><segment><kanji>禁煙</kanji><furigana>きんえん</furigana></segment>でございます。<segment><kanji>何</kanji><furigana>なに</furigana></segment>かお<segment><kanji>飲</kanji><furigana>の</furigana></segment>み<segment><kanji>物</kanji><furigana>もの</furigana></segment>はいかがでしょうか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>期間</kanji><furigana>きかん</furigana></segment><segment><kanji>限定</kanji><furigana>げんてい</furigana></segment>の<segment><kanji>抹茶</kanji><furigana>まっちゃ</furigana></segment>ラテをお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。<segment><kanji>アイス</kanji><furigana>あいす</furigana></segment>で。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                かしこまりました。<segment><kanji>サイズ</kanji><furigana>さいず</furigana></segment>はいかがいたしましょうか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>中</kanji><furigana>ちゅう</furigana></segment>でお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。あと、<segment><kanji>軽</kanji><furigana>かる</furigana></segment>い<segment><kanji>食</kanji><furigana>た</furigana></segment>べ<segment><kanji>物</kanji><furigana>もの</furigana></segment>はありますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>本日</kanji><furigana>ほんじつ</furigana></segment>の<segment><kanji>日替</kanji><furigana>ひが</furigana></segment>わりサンドイッチや<segment><kanji>季節</kanji><furigana>きせつ</furigana></segment>の<segment><kanji>ケーキ</kanji><furigana>けーき</furigana></segment>がございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                じゃあ、<segment><kanji>日替</kanji><furigana>ひが</furigana></segment>わりサンドイッチもお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                かしこまりました。<segment><kanji>お客様</kanji><furigana>おきゃくさま</furigana></segment>、<segment><kanji>長時間</kanji><furigana>ちょうじかん</furigana></segment>のご<segment><kanji>利用</kanji><furigana>りよう</furigana></segment>の<segment><kanji>場合</kanji><furigana>ばあい</furigana></segment>、<segment><kanji>一杯目</kanji><furigana>いっぱいめ</furigana></segment>から<segment><kanji>注文</kanji><furigana>ちゅうもん</furigana></segment>をお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いしております。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                わかりました。<segment><kanji>二時間</kanji><furigana>にじかん</furigana></segment>ごとに<segment><kanji>追加</kanji><furigana>ついか</furigana></segment>で<segment><kanji>注文</kanji><furigana>ちゅうもん</furigana></segment>しますね。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Selamat datang. Makan di sini?</p>
+            <p><strong>B:</strong> Ya, saya ingin belajar sekitar dua jam.</p>
+            <p><strong>A:</strong> Baik, tempat dengan colokan listrik di sini. Wi-Fi juga gratis.</p>
+            <p><strong>B:</strong> Terima kasih. Ini bukan area smoking kan?</p>
+            <p><strong>A:</strong> Ya, semua tempat non-smoking. Ada minuman yang diinginkan?</p>
+            <p><strong>B:</strong> Matcha latte edisi terbatas, yang dingin.</p>
+            <p><strong>A:</strong> Baik, ukuran apa?</p>
+            <p><strong>B:</strong> Sedang. Ada makanan ringan?</p>
+            <p><strong>A:</strong> Ada sandwich hari ini dan kue musiman.</p>
+            <p><strong>B:</strong> Kalau begitu, sandwich hari ini juga.</p>
+            <p><strong>A:</strong> Baik, untuk penggunaan lama, kami minta pesanan dari minuman pertama.</p>
+            <p><strong>B:</strong> Baiklah. Saya pesan tambahan setiap dua jam.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>店内</word>
+              <reading>てんない</reading>
+              <romaji>tennai</romaji>
+              <meaning>Di dalam toko</meaning>
+            </item>
+            <item>
+              <word>電源</word>
+              <reading>でんげん</reading>
+              <romaji>dengen</romaji>
+              <meaning>Colokan listrik</meaning>
+            </item>
+            <item>
+              <word>利用</word>
+              <reading>りよう</reading>
+              <romaji>riyou</romaji>
+              <meaning>Penggunaan</meaning>
+            </item>
+            <item>
+              <word>全席</word>
+              <reading>ぜんせき</reading>
+              <romaji>zenseki</romaji>
+              <meaning>Semua tempat duduk</meaning>
+            </item>
+            <item>
+              <word>期間限定</word>
+              <reading>きかんげんてい</reading>
+              <romaji>kikan gentei</romaji>
+              <meaning>Edisi terbatas</meaning>
+            </item>
+            <item>
+              <word>抹茶</word>
+              <reading>まっちゃ</reading>
+              <romaji>matcha</romaji>
+              <meaning>Teh hijau Jepang</meaning>
+            </item>
+            <item>
+              <word>アイス</word>
+              <reading>あいす</reading>
+              <romaji>aisu</romaji>
+              <meaning>Dingin/Es</meaning>
+            </item>
+            <item>
+              <word>日替わり</word>
+              <reading>ひがわり</reading>
+              <romaji>higawari</romaji>
+              <meaning>Hari ini/menu harian</meaning>
+            </item>
+            <item>
+              <word>長時間</word>
+              <reading>ちょうじかん</reading>
+              <romaji>choujikan</romaji>
+              <meaning>Lama/Lama waktu</meaning>
+            </item>
+            <item>
+              <word>一杯目</word>
+              <reading>いっぱいめ</reading>
+              <romaji>ippaime</romaji>
+              <meaning>Minuman pertama</meaning>
+            </item>
+          </vocabulary>
         </text>
+		
       </texts>
     </category>
 

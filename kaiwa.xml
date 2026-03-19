@@ -560,53 +560,871 @@
             <reading>おげんきですか</reading>
             <id>Menanyakan Kabar</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                あ、<segment><kanji>山田</kanji><furigana>やまだ</furigana></segment>さん！お<segment><kanji>久</kanji><furigana>ひさ</furigana></segment>しぶりです。お<segment><kanji>元気</kanji><furigana>げんき</furigana></segment>でしたか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                わあ、<segment><kanji>佐藤</kanji><furigana>さとう</furigana></segment>さん！ほんとうにお<segment><kanji>久</kanji><furigana>ひさ</furigana></segment>しぶりです。お<segment><kanji>陰様</kanji><furigana>かげさま</furigana></segment>で<segment><kanji>元気</kanji><furigana>げんき</furigana></segment>でした。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                よかったです。<segment><kanji>何年</kanji><furigana>なんねん</furigana></segment>ぶりでしょうか。<segment><kanji>三年前</kanji><furigana>さんねんまえ</furigana></segment>でしたっけ。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、そうですね。<segment><kanji>大学</kanji><furigana>だいがく</furigana></segment>を<segment><kanji>卒業</kanji><furigana>そつぎょう</furigana></segment>してから、<segment><kanji>一度</kanji><furigana>いちど</furigana></segment>も<segment><kanji>会</kanji><furigana>あ</furigana></segment>っていませんでしたね。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                そうですね。<segment><kanji>今</kanji><furigana>いま</furigana></segment>、どこで<segment><kanji>働</kanji><furigana>はたら</furigana></segment>いていますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>東京</kanji><furigana>とうきょう</furigana></segment>の<segment><kanji>会社</kanji><furigana>かいしゃ</furigana></segment>で<segment><kanji>働</kanji><furigana>はたら</furigana></segment>いています。<segment><kanji>佐藤</kanji><furigana>さとう</furigana></segment>さんはどうですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>私</kanji><furigana>わたし</furigana></segment>は<segment><kanji>大阪</kanji><furigana>おおさか</furigana></segment>に<segment><kanji>住</kanji><furigana>す</furigana></segment>んでいます。<segment><kanji>銀行</kanji><furigana>ぎんこう</furigana></segment>で<segment><kanji>働</kanji><furigana>はたら</furigana></segment>いています。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                そうですか。<segment><kanji>家族</kanji><furigana>かぞく</furigana></segment>は<segment><kanji>皆</kanji><furigana>みな</furigana></segment>さん<segment><kanji>元気</kanji><furigana>げんき</furigana></segment>ですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、<segment><kanji>両親</kanji><furigana>りょうしん</furigana></segment>も<segment><kanji>元気</kanji><furigana>げんき</furigana></segment>です。また<segment><kanji>連絡</kanji><furigana>れんらく</furigana></segment>してくださいね。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、ぜひ<segment><kanji>今度</kanji><furigana>こんど</furigana></segment><segment><kanji>一緒</kanji><furigana>いっしょ</furigana></segment>に<segment><kanji>食事</kanji><furigana>しょくじ</furigana></segment>しましょう。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Ah, Yamada-san! Lama tidak bertemu. Apa kabar?</p>
+            <p><strong>B:</strong> Wah, Sato-san! Benar-benar lama tidak bertemu. Berkat Anda saya baik-baik saja.</p>
+            <p><strong>A:</strong> Syukurlah. Sudah berapa tahun ya? Tiga tahun yang lalu, bukan?</p>
+            <p><strong>B:</strong> Ya, betul. Sejak lulus universitas, kita belum pernah bertemu lagi.</p>
+            <p><strong>A:</strong> Betul. Sekarang, di mana Anda bekerja?</p>
+            <p><strong>B:</strong> Saya bekerja di perusahaan di Tokyo. Bagaimana dengan Sato-san?</p>
+            <p><strong>A:</strong> Saya tinggal di Osaka. Saya bekerja di bank.</p>
+            <p><strong>B:</strong> Oh begitu. Apakah semua keluarga Anda sehat?</p>
+            <p><strong>A:</strong> Ya, orang tua saya juga sehat. Silakan hubungi saya lagi ya.</p>
+            <p><strong>B:</strong> Ya, lain kali mari kita makan bersama.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>お久しぶりです</word>
+              <reading>おひさしぶりです</reading>
+              <romaji>ohisashiburi desu</romaji>
+              <meaning>Lama tidak bertemu</meaning>
+            </item>
+            <item>
+              <word>お元気でしたか</word>
+              <reading>おげんきでしたか</reading>
+              <romaji>ogenki deshita ka</romaji>
+              <meaning>Apa kabar? (lampau)</meaning>
+            </item>
+            <item>
+              <word>何年</word>
+              <reading>なんねん</reading>
+              <romaji>nannen</romaji>
+              <meaning>Berapa tahun</meaning>
+            </item>
+            <item>
+              <word>三年前</word>
+              <reading>さんねんまえ</reading>
+              <romaji>sannen mae</romaji>
+              <meaning>Tiga tahun yang lalu</meaning>
+            </item>
+            <item>
+              <word>卒業</word>
+              <reading>そつぎょう</reading>
+              <romaji>sotsugyou</romaji>
+              <meaning>Kelulusan</meaning>
+            </item>
+            <item>
+              <word>一度も</word>
+              <reading>いちども</reading>
+              <romaji>ichido mo</romaji>
+              <meaning>Sama sekali tidak pernah</meaning>
+            </item>
+            <item>
+              <word>東京</word>
+              <reading>とうきょう</reading>
+              <romaji>tokyou</romaji>
+              <meaning>Tokyo</meaning>
+            </item>
+            <item>
+              <word>大阪</word>
+              <reading>おおさか</reading>
+              <romaji>oosaka</romaji>
+              <meaning>Osaka</meaning>
+            </item>
+            <item>
+              <word>銀行</word>
+              <reading>ぎんこう</reading>
+              <romaji>ginkou</romaji>
+              <meaning>Bank</meaning>
+            </item>
+            <item>
+              <word>両親</word>
+              <reading>りょうしん</reading>
+              <romaji>ryoushin</romaji>
+              <meaning>Kedua orang tua</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="6" order="6">
           <title>
             <jp>趣味は何ですか</jp>
             <reading>しゅみはなんですか</reading>
             <id>Membicarakan Hobi</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>週末</kanji><furigana>しゅうまつ</furigana></segment>はいつも<segment><kanji>何</kanji><furigana>なに</furigana></segment>をしていますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>趣味</kanji><furigana>しゅみ</furigana></segment>の<segment><kanji>写真</kanji><furigana>しゃしん</furigana></segment>を<segment><kanji>撮</kanji><furigana>と</furigana></segment>ったり、<segment><kanji>本</kanji><furigana>ほん</furigana></segment>を<segment><kanji>読</kanji><furigana>よ</furigana></segment>んだりしています。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                それは<segment><kanji>素敵</kanji><furigana>すてき</furigana></segment>ですね。<segment><kanji>私</kanji><furigana>わたし</furigana></segment>も<segment><kanji>写真</kanji><furigana>しゃしん</furigana></segment>が<segment><kanji>好</kanji><furigana>す</furigana></segment>きです。どんな<segment><kanji>写真</kanji><furigana>しゃしん</furigana></segment>を<segment><kanji>撮</kanji><furigana>と</furigana></segment>りますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>主</kanji><furigana>おも</furigana></segment>に<segment><kanji>風景</kanji><furigana>ふうけい</furigana></segment>や<segment><kanji>花</kanji><furigana>はな</furigana></segment>の<segment><kanji>写真</kanji><furigana>しゃしん</furigana></segment>です。<segment><kanji>山</kanji><furigana>やま</furigana></segment>に<segment><kanji>登</kanji><furigana>のぼ</furigana></segment>るのも<segment><kanji>好</kanji><furigana>す</furigana></segment>きなので、<segment><kanji>自然</kanji><furigana>しぜん</furigana></segment>の<segment><kanji>写真</kanji><furigana>しゃしん</furigana></segment>が<segment><kanji>多</kanji><furigana>おお</furigana></segment>いです。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                わあ、いいですね。<segment><kanji>私</kanji><furigana>わたし</furigana></segment>は<segment><kanji>運動</kanji><furigana>うんどう</furigana></segment>が<segment><kanji>好</kanji><furigana>す</furigana></segment>きです。<segment><kanji>特</kanji><furigana>とく</furigana></segment>にテニスが<segment><kanji>得意</kanji><furigana>とくい</furigana></segment>です。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                テニスですか！<segment><kanji>私</kanji><furigana>わたし</furigana></segment>も<segment><kanji>去年</kanji><furigana>きょねん</furigana></segment>から<segment><kanji>始</kanji><furigana>はじ</furigana></segment>めました。<segment><kanji>一緒</kanji><furigana>いっしょ</furigana></segment>に<segment><kanji>練習</kanji><furigana>れんしゅう</furigana></segment>しませんか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                ぜひ！<segment><kanji>今度</kanji><furigana>こんど</furigana></segment>の<segment><kanji>日曜日</kanji><furigana>にちようび</furigana></segment>はどうですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>日曜日</kanji><furigana>にちようび</furigana></segment>はちょっと…。<segment><kanji>土曜日</kanji><furigana>どようび</furigana></segment>なら<segment><kanji>大丈夫</kanji><furigana>だいじょうぶ</furigana></segment>です。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                わかりました。<segment><kanji>土曜日</kanji><furigana>どようび</furigana></segment>の<segment><kanji>午後</kanji><furigana>ごご</furigana></segment>はどうですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                ぜひお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。たのしみにしています。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Akhir pekan biasanya Anda melakukan apa?</p>
+            <p><strong>B:</strong> Saya mengambil foto hobi dan membaca buku.</p>
+            <p><strong>A:</strong> Itu bagus sekali. Saya juga suka fotografi. Foto apa yang Anda ambil?</p>
+            <p><strong>B:</strong> Terutama pemandangan dan bunga. Saya juga suka mendaki gunung, jadi banyak foto alam.</p>
+            <p><strong>A:</strong> Wah, bagus sekali. Saya suka olahraga. Terutama tenis.</p>
+            <p><strong>B:</strong> Tenis ya! Saya juga mulai belajar tahun lalu. Mau latihan bersama?</p>
+            <p><strong>A:</strong> Tentu! Bagaimana hari Minggu ini?</p>
+            <p><strong>B:</strong> Hari Minggu agak... Kalau hari Sabtu bisa.</p>
+            <p><strong>A:</strong> Baiklah. Bagaimana dengan sore hari Sabtu?</p>
+            <p><strong>B:</strong> Silakan, saya tunggu dengan senang hati.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>週末</word>
+              <reading>しゅうまつ</reading>
+              <romaji>shuumatsu</romaji>
+              <meaning>Akhir pekan</meaning>
+            </item>
+            <item>
+              <word>趣味</word>
+              <reading>しゅみ</reading>
+              <romaji>shumi</romaji>
+              <meaning>Hobi</meaning>
+            </item>
+            <item>
+              <word>写真</word>
+              <reading>しゃしん</reading>
+              <romaji>shashin</romaji>
+              <meaning>Foto</meaning>
+            </item>
+            <item>
+              <word>撮る</word>
+              <reading>とる</reading>
+              <romaji>toru</romaji>
+              <meaning>Mengambil (foto)</meaning>
+            </item>
+            <item>
+              <word>風景</word>
+              <reading>ふうけい</reading>
+              <romaji>fuukei</romaji>
+              <meaning>Pemandangan</meaning>
+            </item>
+            <item>
+              <word>山</word>
+              <reading>やま</reading>
+              <romaji>yama</romaji>
+              <meaning>Gunung</meaning>
+            </item>
+            <item>
+              <word>登る</word>
+              <reading>のぼる</reading>
+              <romaji>noboru</romaji>
+              <meaning>Mendaki</meaning>
+            </item>
+            <item>
+              <word>自然</word>
+              <reading>しぜん</reading>
+              <romaji>shizen</romaji>
+              <meaning>Alam</meaning>
+            </item>
+            <item>
+              <word>運動</word>
+              <reading>うんどう</reading>
+              <romaji>undou</romaji>
+              <meaning>Olahraga</meaning>
+            </item>
+            <item>
+              <word>得意</word>
+              <reading>とくい</reading>
+              <romaji>tokui</romaji>
+              <meaning>Pandai/Mahir</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="7" order="7">
           <title>
             <jp>どこから来ましたか</jp>
             <reading>どこからきましたか</reading>
             <id>Menanyakan Asal</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                こんにちは。<segment><kanji>初</kanji><furigana>はじ</furigana></segment>めて<segment><kanji>日本</kanji><furigana>にほん</furigana></segment>に<segment><kanji>来</kanji><furigana>き</furigana></segment>ました。どこから<segment><kanji>来</kanji><furigana>き</furigana></segment>ましたか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                こんにちは。<segment><kanji>私</kanji><furigana>わたし</furigana></segment>はインドネシアから<segment><kanji>来</kanji><furigana>き</furigana></segment>ました。<segment><kanji>先月</kanji><furigana>せんげつ</furigana></segment><segment><kanji>東京</kanji><furigana>とうきょう</furigana></segment>に<segment><kanji>着</kanji><furigana>つ</furigana></segment>きました。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                そうですか。インドネシアは<segment><kanji>暖</kanji><furigana>あたた</furigana></segment>かいですよね。<segment><kanji>日本</kanji><furigana>にほん</furigana></segment>の<segment><kanji>冬</kanji><furigana>ふゆ</furigana></segment>は<segment><kanji>寒</kanji><furigana>さむ</furigana></segment>くて<segment><kanji>大変</kanji><furigana>たいへん</furigana></segment>でしょう。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、とても<segment><kanji>寒</kanji><furigana>さむ</furigana></segment>いですが、<segment><kanji>雪</kanji><furigana>ゆき</furigana></segment>が<segment><kanji>綺麗</kanji><furigana>きれい</furigana></segment>で<segment><kanji>好</kanji><furigana>す</furigana></segment>きになりました。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                それはよかったですね。<segment><kanji>日本語</kanji><furigana>にほんご</furigana></segment>はいつから<segment><kanji>勉強</kanji><furigana>べんきょう</furigana></segment>しましたか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>二年前</kanji><furigana>にねんまえ</furigana></segment>から<segment><kanji>勉強</kanji><furigana>べんきょう</furigana></segment>しました。まだまだ<segment><kanji>上手</kanji><furigana>じょうず</furigana></segment>じゃありませんが、<segment><kanji>毎日</kanji><furigana>まいにち</furigana></segment><segment><kanji>頑張</kanji><furigana>がんば</furigana></segment>っています。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                たいへんですね。<segment><kanji>何</kanji><furigana>なに</furigana></segment>で<segment><kanji>日本</kanji><furigana>にほん</furigana></segment>に<segment><kanji>来</kanji><furigana>き</furigana></segment>ましたか。<segment><kanji>留学</kanji><furigana>りゅうがく</furigana></segment>ですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、<segment><kanji>大学</kanji><furigana>だいがく</furigana></segment>で<segment><kanji>経済</kanji><furigana>けいざい</furigana></segment>を<segment><kanji>勉強</kanji><furigana>べんきょう</furigana></segment>しに<segment><kanji>来</kanji><furigana>き</furigana></segment>ました。<segment><kanji>二年間</kanji><furigana>にねんかん</furigana></segment><segment><kanji>日本</kanji><furigana>にほん</furigana></segment>に<segment><kanji>滞在</kanji><furigana>たいざい</furigana></segment>します。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                それは<segment><kanji>素晴</kanji><furigana>すば</furigana></segment>らしいですね。<segment><kanji>日本</kanji><furigana>にほん</furigana></segment>の<segment><kanji>生活</kanji><furigana>せいかつ</furigana></segment>に<segment><kanji>慣</kanji><furigana>な</furigana></segment>れましたか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                まだ<segment><kanji>少</kanji><furigana>すこ</furigana></segment>し<segment><kanji>難</kanji><furigana>むずか</furigana></segment>しいですが、<segment><kanji>友達</kanji><furigana>ともだち</furigana></segment>が<segment><kanji>沢山</kanji><furigana>たくさん</furigana></segment><segment><kanji>出来</kanji><furigana>でき</furigana></segment>て<segment><kanji>楽</kanji><furigana>たの</furigana></segment>しいです。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Selamat siang. Ini pertama kali saya ke Jepang. Dari mana Anda berasal?</p>
+            <p><strong>B:</strong> Selamat siang. Saya dari Indonesia. Saya tiba di Tokyo bulan lalu.</p>
+            <p><strong>A:</strong> Oh begitu. Indonesia hangat ya. Musim dingin di Jepang pasti sulit.</p>
+            <p><strong>B:</strong> Ya, sangat dingin. Tapi saya jadi suka salju karena indah.</p>
+            <p><strong>A:</strong> Itu bagus. Sejak kapan Anda belajar bahasa Jepang?</p>
+            <p><strong>B:</strong> Saya belajar sejak dua tahun lalu. Masih belum mahir, tapi saya berusaha setiap hari.</p>
+            <p><strong>A:</strong> Hebat. Kenapa Anda datang ke Jepang? Studi?</p>
+            <p><strong>B:</strong> Ya, saya datang untuk belajar ekonomi di universitas. Saya akan tinggal di Jepang selama dua tahun.</p>
+            <p><strong>A:</strong> Itu luar biasa. Sudah terbiasa dengan kehidupan di Jepang?</p>
+            <p><strong>B:</strong> Masih sedikit sulit, tapi saya punya banyak teman jadi menyenangkan.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>初めて</word>
+              <reading>はじめて</reading>
+              <romaji>hajimete</romaji>
+              <meaning>Pertama kali</meaning>
+            </item>
+            <item>
+              <word>先月</word>
+              <reading>せんげつ</reading>
+              <romaji>sengetsu</romaji>
+              <meaning>Bulan lalu</meaning>
+            </item>
+            <item>
+              <word>着く</word>
+              <reading>つく</reading>
+              <romaji>tsuku</romaji>
+              <meaning>Tiba</meaning>
+            </item>
+            <item>
+              <word>暖かい</word>
+              <reading>あたたかい</reading>
+              <romaji>atatakai</romaji>
+              <meaning>Hangat</meaning>
+            </item>
+            <item>
+              <word>冬</word>
+              <reading>ふゆ</reading>
+              <romaji>fuyu</romaji>
+              <meaning>Musim dingin</meaning>
+            </item>
+            <item>
+              <word>雪</word>
+              <reading>ゆき</reading>
+              <romaji>yuki</romaji>
+              <meaning>Salju</meaning>
+            </item>
+            <item>
+              <word>綺麗</word>
+              <reading>きれい</reading>
+              <romaji>kirei</romaji>
+              <meaning>Indah/Bersih</meaning>
+            </item>
+            <item>
+              <word>上手</word>
+              <reading>じょうず</reading>
+              <romaji>jouzu</romaji>
+              <meaning>Pandai/Mahir</meaning>
+            </item>
+            <item>
+              <word>留学</word>
+              <reading>りゅうがく</reading>
+              <romaji>ryuugaku</romaji>
+              <meaning>Studi di luar negeri</meaning>
+            </item>
+            <item>
+              <word>経済</word>
+              <reading>けいざい</reading>
+              <romaji>keizai</romaji>
+              <meaning>Ekonomi</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="8" order="8">
           <title>
             <jp>お仕事は何ですか</jp>
             <reading>おしごとはなんですか</reading>
             <id>Membicarakan Pekerjaan</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                すみません、お<segment><kanji>仕事</kanji><furigana>しごと</furigana></segment>は<segment><kanji>何</kanji><furigana>なに</furigana></segment>をしていますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>私</kanji><furigana>わたし</furigana></segment>は<segment><kanji>病院</kanji><furigana>びょういん</furigana></segment>で<segment><kanji>看護師</kanji><furigana>かんごし</furigana></segment>として<segment><kanji>働</kanji><furigana>はたら</furigana></segment>いています。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                それは<segment><kanji>大変</kanji><furigana>たいへん</furigana></segment>そうですね。<segment><kanji>何年</kanji><furigana>なんねん</furigana></segment>ぐらい<segment><kanji>看護師</kanji><furigana>かんごし</furigana></segment>をしていますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                もう<segment><kanji>五年</kanji><furigana>ごねん</furigana></segment>になります。<segment><kanji>最初</kanji><furigana>さいしょ</furigana></segment>は<segment><kanji>大変</kanji><furigana>たいへん</furigana></segment>でしたが、いまはとても<segment><kanji>充実</kanji><furigana>じゅうじつ</furigana></segment>しています。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>私</kanji><furigana>わたし</furigana></segment>は<segment><kanji>営業</kanji><furigana>えいぎょう</furigana></segment>の<segment><kanji>仕事</kanji><furigana>しごと</furigana></segment>をしています。<segment><kanji>毎日</kanji><furigana>まいにち</furigana></segment><segment><kanji>色々</kanji><furigana>いろいろ</furigana></segment>な<segment><kanji>人</kanji><furigana>ひと</furigana></segment>と<segment><kanji>会</kanji><furigana>あ</furigana></segment>うので<segment><kanji>面白</kanji><furigana>おもしろ</furigana></segment>いです。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                そうですか。<segment><kanji>営業</kanji><furigana>えいぎょう</furigana></segment>も<segment><kanji>大変</kanji><furigana>たいへん</furigana></segment>そうですね。<segment><kanji>月</kanji><furigana>つき</furigana></segment>にどのくらい<segment><kanji>出張</kanji><furigana>しゅっちょう</furigana></segment>しますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>大体</kanji><furigana>だいたい</furigana></segment><segment><kanji>週</kanji><furigana>しゅう</furigana></segment>に<segment><kanji>二回</kanji><furigana>にかい</furigana></segment>ぐらいです。<segment><kanji>日本中</kanji><furigana>にほんじゅう</furigana></segment>を<segment><kanji>飛</kanji><furigana>と</furigana></segment>び<segment><kanji>回</kanji><furigana>まわ</furigana></segment>っています。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                それは<segment><kanji>疲</kanji><furigana>つか</furigana></segment>れますね。<segment><kanji>休</kanji><furigana>やす</furigana></segment>みの<segment><kanji>日</kanji><furigana>ひ</furigana></segment>は<segment><kanji>何</kanji><furigana>なに</furigana></segment>をしていますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>家</kanji><furigana>いえ</furigana></segment>でゆっくり<segment><kanji>寝</kanji><furigana>ね</furigana></segment>たり、<segment><kanji>時々</kanji><furigana>ときどき</furigana></segment><segment><kanji>温泉</kanji><furigana>おんせん</furigana></segment>に<segment><kanji>行</kanji><furigana>い</furigana></segment>ったりします。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                いいですね。<segment><kanji>私</kanji><furigana>わたし</furigana></segment>も<segment><kanji>温泉</kanji><furigana>おんせん</furigana></segment>が<segment><kanji>大好</kanji><furigana>だいす</furigana></segment>きです。<segment><kanji>今度</kanji><furigana>こんど</furigana></segment>おすすめの<segment><kanji>温泉</kanji><furigana>おんせん</furigana></segment>を<segment><kanji>教</kanji><furigana>おし</furigana></segment>えてください。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Permisi, pekerjaan Anda apa?</p>
+            <p><strong>B:</strong> Saya bekerja sebagai perawat di rumah sakit.</p>
+            <p><strong>A:</strong> Itu kelihatan berat. Sudah berapa tahun Anda menjadi perawat?</p>
+            <p><strong>B:</strong> Sudah lima tahun. Awalnya berat, tapi sekarang sangat memuaskan.</p>
+            <p><strong>A:</strong> Saya bekerja di bidang penjualan. Setiap hari bertemu berbagai orang jadi menyenangkan.</p>
+            <p><strong>B:</strong> Oh begitu. Penjualan juga kelihatan berat ya. Sebulan berapa kali dinas luar?</p>
+            <p><strong>A:</strong> Kira-kira dua kali seminggu. Saya berkeliling ke seluruh Jepang.</p>
+            <p><strong>B:</strong> Itu melelahkan ya. Hari libur Anda ngapain?</p>
+            <p><strong>A:</strong> Saya tidur nyenyak di rumah, kadang-kadang pergi ke pemandian air panas.</p>
+            <p><strong>B:</strong> Bagus sekali. Saya juga sangat suka pemandian air panas. Nanti kasih tahu pemandian air panas yang recommended ya.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>看護師</word>
+              <reading>かんごし</reading>
+              <romaji>kangoshi</romaji>
+              <meaning>Perawat</meaning>
+            </item>
+            <item>
+              <word>働く</word>
+              <reading>はたらく</reading>
+              <romaji>hataraku</romaji>
+              <meaning>Bekerja</meaning>
+            </item>
+            <item>
+              <word>五年</word>
+              <reading>ごねん</reading>
+              <romaji>gonen</romaji>
+              <meaning>Lima tahun</meaning>
+            </item>
+            <item>
+              <word>最初</word>
+              <reading>さいしょ</reading>
+              <romaji>saisho</romaji>
+              <meaning>Pertama/Awal</meaning>
+            </item>
+            <item>
+              <word>充実</word>
+              <reading>じゅうじつ</reading>
+              <romaji>juujitsu</romaji>
+              <meaning>Memuaskan/Penuh</meaning>
+            </item>
+            <item>
+              <word>営業</word>
+              <reading>えいぎょう</reading>
+              <romaji>eigyou</romaji>
+              <meaning>Penjualan/Marketing</meaning>
+            </item>
+            <item>
+              <word>出張</word>
+              <reading>しゅっちょう</reading>
+              <romaji>shucchou</romaji>
+              <meaning>Dinas luar</meaning>
+            </item>
+            <item>
+              <word>大体</word>
+              <reading>だいたい</reading>
+              <romaji>daitai</romaji>
+              <meaning>Kira-kira/Sekitar</meaning>
+            </item>
+            <item>
+              <word>二回</word>
+              <reading>にかい</reading>
+              <romaji>nikai</romaji>
+              <meaning>Dua kali</meaning>
+            </item>
+            <item>
+              <word>温泉</word>
+              <reading>おんせん</reading>
+              <romaji>onsen</romaji>
+              <meaning>Pemandian air panas</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="9" order="9">
           <title>
             <jp>家族は何人ですか</jp>
             <reading>かぞくはなんにんですか</reading>
             <id>Membicarakan Keluarga</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>家族</kanji><furigana>かぞく</furigana></segment>は<segment><kanji>何人</kanji><furigana>なんにん</furigana></segment>ですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>五人</kanji><furigana>ごにん</furigana></segment>です。<segment><kanji>父</kanji><furigana>ちち</furigana></segment>と<segment><kanji>母</kanji><furigana>はは</furigana></segment>と<segment><kanji>姉</kanji><furigana>あね</furigana></segment>と<segment><kanji>私</kanji><furigana>わたし</furigana></segment>です。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                お<segment><kanji>父</kanji><furigana>とう</furigana></segment>さんは<segment><kanji>何</kanji><furigana>なに</furigana></segment>をしていますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>銀行員</kanji><furigana>ぎんこういん</furigana></segment>です。<segment><kanji>毎日</kanji><furigana>まいにち</furigana></segment><segment><kanji>早</kanji><furigana>はや</furigana></segment>く<segment><kanji>出</kanji><furigana>で</furigana></segment>かけて、<segment><kanji>遅</kanji><furigana>おそ</furigana></segment>く<segment><kanji>帰</kanji><furigana>かえ</furigana></segment>ってきます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>大変</kanji><furigana>たいへん</furigana></segment>そうですね。お<segment><kanji>母</kanji><furigana>かあ</furigana></segment>さんは<segment><kanji>専業主婦</kanji><furigana>せんぎょうしゅふ</furigana></segment>ですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                いいえ、<segment><kanji>小学校</kanji><furigana>しょうがっこう</furigana></segment>の<segment><kanji>先生</kanji><furigana>せんせい</furigana></segment>です。<segment><kanji>生徒</kanji><furigana>せいと</furigana></segment>たちが<segment><kanji>大好</kanji><furigana>だいす</furigana></segment>きだと<segment><kanji>言</kanji><furigana>い</furigana></segment>っています。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                すごいですね。<segment><kanji>姉</kanji><furigana>あね</furigana></segment>さんは<segment><kanji>結婚</kanji><furigana>けっこん</furigana></segment>していますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、<segment><kanji>去年</kanji><furigana>きょねん</furigana></segment><segment><kanji>結婚</kanji><furigana>けっこん</furigana></segment>しました。<segment><kanji>今</kanji><furigana>いま</furigana></segment>は<segment><kanji>大阪</kanji><furigana>おおさか</furigana></segment>に<segment><kanji>住</kanji><furigana>す</furigana></segment>んでいます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>私</kanji><furigana>わたし</furigana></segment>の<segment><kanji>家族</kanji><furigana>かぞく</furigana></segment>は<segment><kanji>四人</kanji><furigana>よにん</furigana></segment>です。<segment><kanji>弟</kanji><furigana>おとうと</furigana></segment>が<segment><kanji>一人</kanji><furigana>ひとり</furigana></segment>います。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                そうですか。<segment><kanji>弟</kanji><furigana>おとうと</furigana></segment>さんは<segment><kanji>学生</kanji><furigana>がくせい</furigana></segment>ですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、<segment><kanji>大学</kanji><furigana>だいがく</furigana></segment>の<segment><kanji>三年生</kanji><furigana>さんねんせい</furigana></segment>です。<segment><kanji>医学部</kanji><furigana>いがくぶ</furigana></segment>で<segment><kanji>勉強</kanji><furigana>べんきょう</furigana></segment>しています。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Berapa orang keluarga Anda?</p>
+            <p><strong>B:</strong> Lima orang. Ayah, ibu, kakak perempuan, dan saya.</p>
+            <p><strong>A:</strong> Apa pekerjaan ayah Anda?</p>
+            <p><strong>B:</strong> Dia pegawai bank. Setiap hari berangkat pagi dan pulang malam.</p>
+            <p><strong>A:</strong> Kelihatan berat ya. Apakah ibu Anda ibu rumah tangga?</p>
+            <p><strong>B:</strong> Tidak, dia guru SD. Dia bilang murid-muridnya sangat disayanginya.</p>
+            <p><strong>A:</strong> Hebat sekali. Apakah kakak Anda sudah menikah?</p>
+            <p><strong>B:</strong> Ya, menikah tahun lalu. Sekarang tinggal di Osaka.</p>
+            <p><strong>A:</strong> Keluarga saya empat orang. Saya punya satu adik laki-laki.</p>
+            <p><strong>B:</strong> Oh begitu. Apakah adik Anda pelajar?</p>
+            <p><strong>A:</strong> Ya, mahasiswa tahun ketiga. Belajar di fakultas kedokteran.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>家族</word>
+              <reading>かぞく</reading>
+              <romaji>kazoku</romaji>
+              <meaning>Keluarga</meaning>
+            </item>
+            <item>
+              <word>五人</word>
+              <reading>ごにん</reading>
+              <romaji>gonin</romaji>
+              <meaning>Lima orang</meaning>
+            </item>
+            <item>
+              <word>父</word>
+              <reading>ちち</reading>
+              <romaji>chichi</romaji>
+              <meaning>Ayah (formal)</meaning>
+            </item>
+            <item>
+              <word>母</word>
+              <reading>はは</reading>
+              <romaji>haha</romaji>
+              <meaning>Ibu (formal)</meaning>
+            </item>
+            <item>
+              <word>姉</word>
+              <reading>あね</reading>
+              <romaji>ane</romaji>
+              <meaning>Kakak perempuan</meaning>
+            </item>
+            <item>
+              <word>銀行員</word>
+              <reading>ぎんこういん</reading>
+              <romaji>ginkouin</romaji>
+              <meaning>Pegawai bank</meaning>
+            </item>
+            <item>
+              <word>専業主婦</word>
+              <reading>せんぎょうしゅふ</reading>
+              <romaji>sengyou shufu</romaji>
+              <meaning>Ibu rumah tangga</meaning>
+            </item>
+            <item>
+              <word>結婚</word>
+              <reading>けっこん</reading>
+              <romaji>kekkon</romaji>
+              <meaning>Menikah</meaning>
+            </item>
+            <item>
+              <word>弟</word>
+              <reading>おとうと</reading>
+              <romaji>otouto</romaji>
+              <meaning>Adik laki-laki</meaning>
+            </item>
+            <item>
+              <word>医学部</word>
+              <reading>いがくぶ</reading>
+              <romaji>igakubu</romaji>
+              <meaning>Fakultas kedokteran</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="10" order="10">
           <title>
             <jp>さようなら</jp>
             <reading>さようなら</reading>
             <id>Perpisahan</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                もう<segment><kanji>時間</kanji><furigana>じかん</furigana></segment>ですね。<segment><kanji>今日</kanji><furigana>きょう</furigana></segment>はありがとうございました。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                こちらこそ、<segment><kanji>楽</kanji><furigana>たの</furigana></segment>しい<segment><kanji>一日</kanji><furigana>いちにち</furigana></segment>でした。また<segment><kanji>会</kanji><furigana>あ</furigana></segment>えると<segment><kanji>嬉</kanji><furigana>うれ</furigana></segment>しいです。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、<segment><kanji>私</kanji><furigana>わたし</furigana></span>もです。<segment><kanji>来週</kanji><furigana>らいしゅう</furigana></segment>の<segment><kanji>週末</kanji><furigana>しゅうまつ</furigana></segment>、<segment><kanji>一緒</kanji><furigana>いっしょ</furigana></segment>に<segment><kanji>映画</kanji><furigana>えいが</furigana></segment>を<segment><kanji>見</kanji><furigana>み</furigana></segment>に<segment><kanji>行</kanji><furigana>い</furigana></segment>きませんか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                いいですね！<segment><kanji>土曜日</kanji><furigana>どようび</furigana></segment>と<segment><kanji>日曜日</kanji><furigana>にちようび</furigana></segment>、どちらが<segment><kanji>都合</kanji><furigana>つごう</furigana></segment>がいいですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>土曜日</kanji><furigana>どようび</furigana></segment>の<segment><kanji>午後</kanji><furigana>ごご</furigana></segment>なら<segment><kanji>大丈夫</kanji><furigana>だいじょうぶ</furigana></segment>です。<segment><kanji>何時</kanji><furigana>なんじ</furigana></segment>に<segment><kanji>駅</kanji><furigana>えき</furigana></segment>で<segment><kanji>会</kanji><furigana>あ</furigana></segment>いましょうか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>二時</kanji><furigana>にじ</furigana></segment>はどうですか。<segment><kanji>映画館</kanji><furigana>えいがかん</furigana></segment>の<segment><kanji>前</kanji><furigana>まえ</furigana></segment>で<segment><kanji>待</kanji><furigana>ま</furigana></segment>ち<segment><kanji>合</kanji><furigana>あ</furigana></segment>わせましょう。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                わかりました。<segment><kanji>楽</kanji><furigana>たの</furigana></segment>しみにしています。じゃあ、また<segment><kanji>来週</kanji><furigana>らいしゅう</furigana></segment>。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、また<segment><kanji>来週</kanji><furigana>らいしゅう</furigana></segment>。<segment><kanji>気</kanji><furigana>き</furigana></segment>をつけて<segment><kanji>帰</kanji><furigana>かえ</furigana></segment>ってくださいね。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                ありがとうございます。さようなら。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                さようなら。お<segment><kanji>休</kanji><furigana>やす</furigana></segment>みなさい。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Sudah waktunya ya. Terima kasih banyak untuk hari ini.</p>
+            <p><strong>B:</strong> Sama-sama, hari yang menyenangkan. Saya senang bisa bertemu lagi.</p>
+            <p><strong>A:</strong> Ya, saya juga. Akhir pekan minggu depan, mau nonton film bersama?</p>
+            <p><strong>B:</strong> Bagus sekali! Sabtu atau Minggu, mana yang cocok?</p>
+            <p><strong>A:</strong> Kalau sore Sabtu bisa. Jam berapa kita bertemu di stasiun?</p>
+            <p><strong>B:</strong> Jam dua bagaimana? Kita janjian di depan bioskop.</p>
+            <p><strong>A:</strong> Baiklah. Saya tunggu dengan senang hati. Sampai jumpa minggu depan.</p>
+            <p><strong>B:</strong> Ya, sampai minggu depan. Hati-hati di jalan pulang ya.</p>
+            <p><strong>A:</strong> Terima kasih. Selamat tinggal.</p>
+            <p><strong>B:</strong> Selamat tinggal. Selamat beristirahat.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>さようなら</word>
+              <reading>さようなら</reading>
+              <romaji>sayounara</romaji>
+              <meaning>Selamat tinggal</meaning>
+            </item>
+            <item>
+              <word>一日</word>
+              <reading>いちにち</reading>
+              <romaji>ichinichi</romaji>
+              <meaning>Sehari</meaning>
+            </item>
+            <item>
+              <word>嬉しい</word>
+              <reading>うれしい</reading>
+              <romaji>ureshii</romaji>
+              <meaning>Senang/Gembira</meaning>
+            </item>
+            <item>
+              <word>来週</word>
+              <reading>らいしゅう</reading>
+              <romaji>raishuu</romaji>
+              <meaning>Minggu depan</meaning>
+            </item>
+            <item>
+              <word>映画</word>
+              <reading>えいが</reading>
+              <romaji>eiga</romaji>
+              <meaning>Film/Bioskop</meaning>
+            </item>
+            <item>
+              <word>都合</word>
+              <reading>つごう</reading>
+              <romaji>tsugou</romaji>
+              <meaning>Kesempatan/Keadaan</meaning>
+            </item>
+            <item>
+              <word>二時</word>
+              <reading>にじ</reading>
+              <romaji>niji</romaji>
+              <meaning>Jam dua</meaning>
+            </item>
+            <item>
+              <word>映画館</word>
+              <reading>えいがかん</reading>
+              <romaji>eigakan</romaji>
+              <meaning>Bioskop</meaning>
+            </item>
+            <item>
+              <word>待ち合わせ</word>
+              <reading>まちあわせ</reading>
+              <romaji>machiawase</romaji>
+              <meaning>Janjian/Bertemu</meaning>
+            </item>
+            <item>
+              <word>気をつけて</word>
+              <reading>きをつけて</reading>
+              <romaji>ki wo tsukete</romaji>
+              <meaning>Hati-hati</meaning>
+            </item>
+          </vocabulary>
         </text>
+		
       </texts>
     </category>
 

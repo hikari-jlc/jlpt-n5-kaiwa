@@ -2929,45 +2929,769 @@
             <reading>いらっしゃいませ</reading>
             <id>Selamat Datang</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                いらっしゃいませ！<segment><kanji>今日</kanji><furigana>きょう</furigana></segment>は<segment><kanji>特別</kanji><furigana>とくべつ</furigana></segment><segment><kanji>割引</kanji><furigana>わりびき</furigana></segment><segment><kanji>祭</kanji><furigana>さい</furigana></segment>を<segment><kanji>開催</kanji><furigana>かいさい</furigana></segment>しております。<segment><kanji>全品</kanji><furigana>ぜんぴん</furigana></segment><segment><kanji>二割引</kanji><furigana>にわりびき</furigana></segment>でございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                それは<segment><kanji>嬉</kanji><furigana>うれ</furigana></segment>しいですね。<segment><kanji>新</kanji><furigana>あたら</furigana></segment>しい<segment><kanji>靴</kanji><furigana>くつ</furigana></segment>を<segment><kanji>探</kanji><furigana>さが</furigana></segment>しているのですが。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                かしこまりました。<segment><kanji>靴</kanji><furigana>くつ</furigana></segment><segment><kanji>売場</kanji><furigana>うりば</furigana></segment>は<segment><kanji>三階</kanji><furigana>さんがい</furigana></segment>でございます。エスカレーターはこちらを<segment><kanji>左</kanji><furigana>ひだり</furigana></segment>に<segment><kanji>曲</kanji><furigana>ま</furigana></segment>がっていただきますと、すぐそこでございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                ありがとうございます。<segment><kanji>試着</kanji><furigana>しちゃく</furigana></segment>はできますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、もちろんでございます。<segment><kanji>三階</kanji><furigana>さんがい</furigana></segment>に<segment><kanji>試着室</kanji><furigana>しちゃくしつ</furigana></segment>が<segment><kanji>五</kanji><furigana>いつ</furigana></segment>つございます。<segment><kanji>靴</kanji><furigana>くつ</furigana></segment>の<segment><kanji>試着</kanji><furigana>しちゃく</furigana></segment>は<segment><kanji>絨毯</kanji><furigana>じゅうたん</furigana></segment>の<segment><kanji>上</kanji><furigana>うえ</furigana></segment>でお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                わかりました。<segment><kanji>私</kanji><furigana>わたし</furigana></segment>の<segment><kanji>靴</kanji><furigana>くつ</furigana></segment>の<segment><kanji>サイズ</kanji><furigana>さいず</furigana></segment>が<segment><kanji>分</kanji><furigana>わ</furigana></segment>からないのですが、<segment><kanji>測</kanji><furigana>はか</furigana></segment>っていただけますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、<segment><kanji>一階</kanji><furigana>いっかい</furigana></segment>の<segment><kanji>靴</kanji><furigana>くつ</furigana></segment><segment><kanji>売場</kanji><furigana>うりば</furigana></segment>に<segment><kanji>靴</kanji><furigana>くつ</furigana></segment>の<segment><kanji>採寸</kanji><furigana>さいすん</furigana></segment><segment><kanji>機</kanji><furigana>き</furigana></segment>がございます。そちらで<segment><kanji>測</kanji><furigana>はか</furigana></segment>ることもできますし、<segment><kanji>三階</kanji><furigana>さんがい</furigana></segment>の<segment><kanji>店員</kanji><furigana>てんいん</furigana></segment>さんに<segment><kanji>測</kanji><furigana>はか</furigana></segment>っていただくこともできます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                そうですか。じゃあ、<segment><kanji>三階</kanji><furigana>さんがい</furigana></segment>で<segment><kanji>測</kanji><furigana>はか</furigana></segment>ってもらいます。<segment><kanji>支払</kanji><furigana>しはら</furigana></segment>いは<segment><kanji>何階</kanji><furigana>なんかい</furigana></segment>でできますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>各階</kanji><furigana>かかい</furigana></segment>にレジがございますので、お<segment><kanji>買</kanji><furigana>か</furigana></segment>い<segment><kanji>上</kanji><furigana>あ</furigana></segment>げの<segment><kanji>階</kanji><furigana>かい</furigana></segment>でお<segment><kanji>支払</kanji><furigana>しはら</furigana></segment>いいただけます。<segment><kanji>免税</kanji><furigana>めんぜい</furigana></segment>カウンターも<segment><kanji>三階</kanji><furigana>さんがい</furigana></segment>にございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                ありがとうございます。<segment><kanji>免税</kanji><furigana>めんぜい</furigana></segment>で<segment><kanji>買</kanji><furigana>か</furigana></segment>えますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、<segment><kanji>パスポート</kanji><furigana>ぱすぽーと</furigana></segment>をお<segment><kanji>持</kanji><furigana>も</furigana></segment>ちでしたら<segment><kanji>免税</kanji><furigana>めんぜい</furigana></segment>でお<segment><kanji>買</kanji><furigana>か</furigana></segment>い<segment><kanji>求</kanji><furigana>もと</furigana></segment>めいただけます。<segment><kanji>免税</kanji><furigana>めんぜい</furigana></segment>カウンターでお<segment><kanji>手続</kanji><furigana>てつづ</furigana></segment>きください。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Selamat datang! Hari ini kami mengadakan festival diskon spesial. Semua barang diskon 20%.</p>
+            <p><strong>B:</strong> Itu menyenangkan. Saya sedang mencari sepatu baru.</p>
+            <p><strong>A:</strong> Baik, bagian sepatu di lantai 3. Eskalator belok kiri di sini, langsung sampai.</p>
+            <p><strong>B:</strong> Terima kasih. Bisa mencoba?</p>
+            <p><strong>A:</strong> Ya, tentu. Ada lima ruang fitting di lantai 3. Untuk mencoba sepatu, silakan di atas karpet.</p>
+            <p><strong>B:</strong> Baiklah. Saya tidak tahu ukuran sepatu saya, bisa ukur?</p>
+            <p><strong>A:</strong> Ya, di lantai 1 ada mesin pengukur sepatu. Bisa ukur di sana, atau minta tolong pegawai lantai 3.</p>
+            <p><strong>B:</strong> Oh begitu. Kalau begitu saya ukur di lantai 3. Di lantai berapa bisa bayar?</p>
+            <p><strong>A:</strong> Ada kasir di setiap lantai, jadi bisa bayar di lantai pembelian. Ada counter bebas pajak di lantai 3.</p>
+            <p><strong>B:</strong> Terima kasih. Bisa beli bebas pajak?</p>
+            <p><strong>A:</strong> Ya, kalau bawa paspor bisa beli bebas pajak. Silakan urus di counter bebas pajak.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>特別</word>
+              <reading>とくべつ</reading>
+              <romaji>tokubetsu</romaji>
+              <meaning>Spesial</meaning>
+            </item>
+            <item>
+              <word>割引</word>
+              <reading>わりびき</reading>
+              <romaji>waribiki</romaji>
+              <meaning>Diskon</meaning>
+            </item>
+            <item>
+              <word>全品</word>
+              <reading>ぜんぴん</reading>
+              <romaji>zenpin</romaji>
+              <meaning>Semua barang</meaning>
+            </item>
+            <item>
+              <word>二割引</word>
+              <reading>にわりびき</reading>
+              <romaji>niwaribiki</romaji>
+              <meaning>Diskon 20%</meaning>
+            </item>
+            <item>
+              <word>売場</word>
+              <reading>うりば</reading>
+              <romaji>uriba</romaji>
+              <meaning>Bagian penjualan</meaning>
+            </item>
+            <item>
+              <word>試着室</word>
+              <reading>しちゃくしつ</reading>
+              <romaji>shichakushitsu</romaji>
+              <meaning>Ruang fitting</meaning>
+            </item>
+            <item>
+              <word>採寸</word>
+              <reading>さいすん</reading>
+              <romaji>saisun</romaji>
+              <meaning>Pengukuran</meaning>
+            </item>
+            <item>
+              <word>支払い</word>
+              <reading>しはらい</reading>
+              <romaji>shiharai</romaji>
+              <meaning>Pembayaran</meaning>
+            </item>
+            <item>
+              <word>免税</word>
+              <reading>めんぜい</reading>
+              <romaji>menzei</romaji>
+              <meaning>Bebas pajak</meaning>
+            </item>
+            <item>
+              <word>手続き</word>
+              <reading>てつづき</reading>
+              <romaji>tetsuzuki</romaji>
+              <meaning>Prosedur/Urusan</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="22" order="2">
           <title>
             <jp>これはいくらですか</jp>
             <reading>これはいくらですか</reading>
             <id>Menanyakan Harga</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                いらっしゃいませ。<segment><kanji>何</kanji><furigana>なに</furigana></segment>かお<segment><kanji>探</kanji><furigana>さが</furigana></segment>しでしょうか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                すみません、この<segment><kanji>本</kanji><furigana>ほん</furigana></segment>はいくらですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                かしこまりました。<segment><kanji>少々</kanji><furigana>しょうしょう</furigana></segment>お<segment><kanji>待</kanji><furigana>ま</furigana></segment>ちください。…<segment><kanji>税込</kanji><furigana>ぜいこみ</furigana></segment>みで<segment><kanji>千五百円</kanji><furigana>せんごひゃくえん</furigana></segment>でございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                それは<segment><kanji>定価</kanji><furigana>ていか</furigana></segment>ですか。<segment><kanji>割引</kanji><furigana>わりびき</furigana></segment>はありませんか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                この<segment><kanji>本</kanji><furigana>ほん</furigana></segment>は<segment><kanji>新刊</kanji><furigana>しんかん</furigana></segment>なので、<segment><kanji>定価</kanji><furigana>ていか</furigana></segment><segment><kanji>販売</kanji><furigana>はんばい</furigana></segment>となっております。ただし、<segment><kanji>会員</kanji><furigana>かいいん</furigana></segment><segment><kanji>登録</kanji><furigana>とうろく</furigana></segment>していただければ<segment><kanji>百円</kanji><furigana>ひゃくえん</furigana></segment><segment><kanji>引</kanji><furigana>び</furigana></segment>きになります。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>会員</kanji><furigana>かいいん</furigana></segment>は<segment><kanji>無料</kanji><furigana>むりょう</furigana></segment>ですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、<segment><kanji>無料</kanji><furigana>むりょう</furigana></segment>で<segment><kanji>登録</kanji><furigana>とうろく</furigana></segment>できます。<segment><kanji>氏名</kanji><furigana>しめい</furigana></segment>と<segment><kanji>電話番号</kanji><furigana>でんわばんごう</furigana></segment>をいただければ、すぐに<segment><kanji>登録</kanji><furigana>とうろく</furigana></segment>できます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                じゃあ、<segment><kanji>会員</kanji><furigana>かいいん</furigana></segment><segment><kanji>登録</kanji><furigana>とうろく</furigana></segment>お<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。<segment><kanji>他</kanji><furigana>ほか</furigana></segment>にも<segment><kanji>二冊</kanji><furigana>にさつ</furigana></segment>ほしいのですが。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                かしこまりました。<segment><kanji>三冊</kanji><furigana>さんさつ</furigana></segment>で<segment><kanji>四千円</kanji><furigana>よんせんえん</furigana></segment>になります。<segment><kanji>千円</kanji><furigana>せんえん</furigana></segment><segment><kanji>以上</kanji><furigana>いじょう</furigana></segment>お<segment><kanji>買</kanji><furigana>か</furigana></segment>い<segment><kanji>上</kanji><furigana>あ</furigana></segment>げで<segment><kanji>袋</kanji><furigana>ふくろ</furigana></segment>も<segment><kanji>無料</kanji><furigana>むりょう</furigana></segment>でございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                それは<segment><kanji>助</kanji><furigana>たす</furigana></segment>かります。<segment><kanji>支払</kanji><furigana>しはら</furigana></segment>いは<segment><kanji>現金</kanji><furigana>げんきん</furigana></segment>と<segment><kanji>電子</kanji><furigana>でんし</furigana></segment>マネー、どちらでもいいですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、どちらでも<segment><kanji>大丈夫</kanji><furigana>だいじょうぶ</furigana></segment>でございます。<segment><kanji>クレジットカード</kanji><furigana>くれじっとかーど</furigana></segment>も<segment><kanji>使</kanji><furigana>つか</furigana></segment>えます。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Selamat datang. Apakah ada yang dicari?</p>
+            <p><strong>B:</strong> Permisi, berapa harga buku ini?</p>
+            <p><strong>A:</strong> Baik, mohon tunggu sebentar. Termasuk pajak 1.500 yen.</p>
+            <p><strong>B:</strong> Itu harga tetap? Tidak ada diskon?</p>
+            <p><strong>A:</strong> Buku ini terbitan baru, jadi harga tetap. Tapi kalau daftar member, diskon 100 yen.</p>
+            <p><strong>B:</strong> Apakah member gratis?</p>
+            <p><strong>A:</strong> Ya, gratis daftar. Kalau beri nama dan nomor telepon, langsung bisa daftar.</p>
+            <p><strong>B:</strong> Kalau begitu, saya daftar member. Saya juga mau dua buku lagi.</p>
+            <p><strong>A:</strong> Baik, tiga buku jadi 4.000 yen. Pembelian di atas 1.000 yen, kantong gratis.</p>
+            <p><strong>B:</strong> Itu membantu. Pembayaran tunai atau uang elektronik, mana saja boleh?</p>
+            <p><strong>A:</strong> Ya, keduanya boleh. Kartu kredit juga bisa.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>定価</word>
+              <reading>ていか</reading>
+              <romaji>teika</romaji>
+              <meaning>Harga tetap</meaning>
+            </item>
+            <item>
+              <word>新刊</word>
+              <reading>しんかん</reading>
+              <romaji>shinkan</romaji>
+              <meaning>Terbitan baru</meaning>
+            </item>
+            <item>
+              <word>販売</word>
+              <reading>はんばい</reading>
+              <romaji>hanbai</romaji>
+              <meaning>Penjualan</meaning>
+            </item>
+            <item>
+              <word>会員</word>
+              <reading>かいいん</reading>
+              <romaji>kaiin</romaji>
+              <meaning>Member</meaning>
+            </item>
+            <item>
+              <word>登録</word>
+              <reading>とうろく</reading>
+              <romaji>toroku</romaji>
+              <meaning>Pendaftaran</meaning>
+            </item>
+            <item>
+              <word>氏名</word>
+              <reading>しめい</reading>
+              <romaji>shimei</romaji>
+              <meaning>Nama lengkap</meaning>
+            </item>
+            <item>
+              <word>電話番号</word>
+              <reading>でんわばんごう</reading>
+              <romaji>denwa bangou</romaji>
+              <meaning>Nomor telepon</meaning>
+            </item>
+            <item>
+              <word>冊</word>
+              <reading>さつ</reading>
+              <romaji>satsu</romaji>
+              <meaning>Counter buku</meaning>
+            </item>
+            <item>
+              <word>以上</word>
+              <reading>いじょう</reading>
+              <romaji>ijou</romaji>
+              <meaning>Lebih dari</meaning>
+            </item>
+            <item>
+              <word>助かる</word>
+              <reading>たすかる</reading>
+              <romaji>tasukaru</romaji>
+              <meaning>Membantu/Menyelamatkan</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="23" order="3">
           <title>
             <jp>もう少し安くなりませんか</jp>
             <reading>もうすこしやすくなりませんか</reading>
             <id>Menawar Harga</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                いらっしゃいませ。この<segment><kanji>革</kanji><furigana>かわ</furigana></segment><segment><kanji>製品</kanji><furigana>せいひん</furigana></segment>は<segment><kanji>職人</kanji><furigana>しょくにん</furigana></segment>が<segment><kanji>一</kanji><furigana>ひと</furigana></segment>つ<segment><kanji>一</kanji><furigana>ひと</furigana></segment>つ<segment><kanji>手作</kanji><furigana>てづく</furigana></segment>りした<segment><kanji>商品</kanji><furigana>しょうひん</furigana></segment>でございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>素敵</kanji><furigana>すてき</furigana></segment>な<segment><kanji>財布</kanji><furigana>さいふ</furigana></segment>ですね。いくらですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                ありがとうございます。<segment><kanji>税込</kanji><furigana>ぜいこみ</furigana></segment>みで<segment><kanji>二万円</kanji><furigana>にまんえん</furigana></segment>でございます。<segment><kanji>上質</kanji><furigana>じょうしつ</furigana></segment>な<segment><kanji>牛革</kanji><furigana>ぎゅうかわ</furigana></segment>を<segment><kanji>使用</kanji><furigana>しよう</furigana></segment>しております。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                ちょっと<segment><kanji>高</kanji><furigana>たか</furigana></segment>いですね。もう<segment><kanji>少</kanji><furigana>すこ</furigana></segment>し<segment><kanji>安</kanji><furigana>やす</furigana></segment>くなりませんか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                そうですね…<segment><kanji>今</kanji><furigana>いま</furigana></segment>なら<segment><kanji>会員</kanji><furigana>かいいん</furigana></segment><segment><kanji>登録</kanji><furigana>とうろく</furigana></segment>で<segment><kanji>一割引</kanji><furigana>いちわりびき</furigana></segment>にできます。<segment><kanji>一万八千円</kanji><furigana>いちまんはっせんえん</furigana></segment>になります。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                それでもちょっと…。<segment><kanji>一万五千円</kanji><furigana>いちまんごせんえん</furigana></segment>でどうですか。<segment><kanji>現金</kanji><furigana>げんきん</furigana></segment>で<segment><kanji>払</kanji><furigana>はら</furigana></segment>います。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                <segment><kanji>申</kanji><furigana>もう</furigana></segment>し<segment><kanji>訳</kanji><furigana>わけ</furigana></segment>ございません。<segment><kanji>一割引</kanji><furigana>いちわりびき</furigana></segment>が<segment><kanji>限界</kanji><furigana>げんかい</furigana></segment>でございます。ただ、<segment><kanji>今</kanji><furigana>いま</furigana></segment>お<segment><kanji>買</kanji><furigana>か</furigana></segment>い<segment><kanji>上</kanji><furigana>あ</furigana></segment>げいただければ、<segment><kanji>名入</kanji><furigana>ないれ</furigana></segment>れを<segment><kanji>無料</kanji><furigana>むりょう</furigana></segment>で<segment><kanji>致</kanji><furigana>いた</furigana></segment>します。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>名入</kanji><furigana>ない</furigana></segment>れですか。それは<segment><kanji>魅力</kanji><furigana>みりょく</furigana></segment>的ですね。<segment><kanji>何</kanji><furigana>なに</furigana></segment><segment><kanji>文字</kanji><furigana>もじ</furigana></segment>まで<segment><kanji>入</kanji><furigana>い</furigana></segment>れられますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、<segment><kanji>英字</kanji><furigana>えいじ</furigana></segment>で<segment><kanji>十文字</kanji><furigana>じゅうもじ</furigana></segment>まで、<segment><kanji>漢字</kanji><furigana>かんじ</furigana></segment>で<segment><kanji>五文字</kanji><furigana>ごもじ</furigana></segment>まで<segment><kanji>可能</kanji><furigana>かのう</furigana></segment>でございます。<segment><kanji>三十分</kanji><furigana>さんじゅっぷん</furigana></segment>ほどお<segment><kanji>時間</kanji><furigana>じかん</furigana></segment>をいただきます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                わかりました。じゃあ、<segment><kanji>一万八千円</kanji><furigana>いちまんはっせんえん</furigana></segment>でお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。<segment><kanji>名入</kanji><furigana>ない</furigana></segment>れは「TAKASHI」でお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                かしこまりました。<segment><kanji>大切</kanji><furigana>たいせつ</furigana></segment>に<segment><kanji>仕上</kanji><furigana>しあ</furigana></segment>げます。<segment><kanji>少々</kanji><furigana>しょうしょう</furigana></segment>お<segment><kanji>待</kanji><furigana>ま</furigana></segment>ちください。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Selamat datang. Produk kulit ini dibuat handmade oleh pengrajin satu per satu.</p>
+            <p><strong>B:</strong> Dompet yang bagus. Berapa harganya?</p>
+            <p><strong>A:</strong> Terima kasih. Termasuk pajak 20.000 yen. Menggunakan kulit sapi premium.</p>
+            <p><strong>B:</strong> Agak mahal ya. Bisa lebih murah?</p>
+            <p><strong>A:</strong> Kalau begitu... Kalau daftar member sekarang, diskon 10%. Jadi 18.000 yen.</p>
+            <p><strong>B:</strong> Itu juga agak... Bagaimana 15.000 yen? Saya bayar tunai.</p>
+            <p><strong>A:</strong> Maaf, diskon 10% adalah batasnya. Tapi, kalau beli sekarang, gratis ukir nama.</p>
+            <p><strong>B:</strong> Ukir nama? Itu menarik. Berapa huruf bisa diukir?</p>
+            <p><strong>A:</strong> Huruf Inggris 10 huruf, kanji 5 huruf. Butuh waktu sekitar 30 menit.</p>
+            <p><strong>B:</strong> Baiklah. Kalau begitu 18.000 yen. Ukir nama "TAKASHI".</p>
+            <p><strong>A:</strong> Baik, akan saya kerjakan dengan baik. Mohon tunggu sebentar.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>革製品</word>
+              <reading>かわせいひん</reading>
+              <romaji>kawa seihin</romaji>
+              <meaning>Produk kulit</meaning>
+            </item>
+            <item>
+              <word>職人</word>
+              <reading>しょくにん</reading>
+              <romaji>shokunin</romaji>
+              <meaning>Pengrajin</meaning>
+            </item>
+            <item>
+              <word>手作り</word>
+              <reading>てづくり</reading>
+              <romaji>tezukuri</romaji>
+              <meaning>Buat tangan/handmade</meaning>
+            </item>
+            <item>
+              <word>上質</word>
+              <reading>じょうしつ</reading>
+              <romaji>joushitsu</romaji>
+              <meaning>Premium/Berkualitas tinggi</meaning>
+            </item>
+            <item>
+              <word>牛革</word>
+              <reading>ぎゅうかわ</reading>
+              <romaji>gyuukawa</romaji>
+              <meaning>Kulit sapi</meaning>
+            </item>
+            <item>
+              <word>使用</word>
+              <reading>しよう</reading>
+              <romaji>shiyou</romaji>
+              <meaning>Menggunakan</meaning>
+            </item>
+            <item>
+              <word>安い</word>
+              <reading>やすい</reading>
+              <romaji>yasui</romaji>
+              <meaning>Murah</meaning>
+            </item>
+            <item>
+              <word>限界</word>
+              <reading>げんかい</reading>
+              <romaji>genkai</romaji>
+              <meaning>Batas</meaning>
+            </item>
+            <item>
+              <word>名入れ</word>
+              <reading>ないれ</reading>
+              <romaji>naire</romaji>
+              <meaning>Ukir nama</meaning>
+            </item>
+            <item>
+              <word>魅力的</word>
+              <reading>みりょくてき</reading>
+              <romaji>miryokuteki</romaji>
+              <meaning>Menarik</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="24" order="4">
           <title>
             <jp>試着してもいいですか</jp>
             <reading>しちゃくしてもいいですか</reading>
             <id>Mencoba Pakaian</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                いらっしゃいませ。<segment><kanji>今日</kanji><furigana>きょう</furigana></segment>は<segment><kanji>新作</kanji><furigana>しんさく</furigana></segment>の<segment><kanji>春物</kanji><furigana>はるもの</furigana></segment>が<segment><kanji>入荷</kanji><furigana>にゅうか</furigana></segment>しました。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                この<segment><kanji>青</kanji><furigana>あお</furigana></segment>い<segment><kanji>ジャケット</kanji><furigana>じゃけっと</furigana></segment>はいくらですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                ありがとうございます。<segment><kanji>税込</kanji><furigana>ぜいこみ</furigana></segment>みで<segment><kanji>一万二千円</kanji><furigana>いちまんにせんえん</furigana></segment>でございます。<segment><kanji>綿</kanji><furigana>めん</furigana></segment><segment><kanji>百</kanji><furigana>ひゃく</furigana></segment><segment><kanji>百分</kanji><furigana>ひゃくぶん</furigana></segment>の<segment><kanji>天然</kanji><furigana>てんねん</furigana></segment><segment><kanji>素材</kanji><furigana>そざい</furigana></segment>でございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>素敵</kanji><furigana>すてき</furigana></segment>ですね。<segment><kanji>試着</kanji><furigana>しちゃく</furigana></segment>してもいいですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、どうぞ。<segment><kanji>試着室</kanji><furigana>しちゃくしつ</furigana></segment>はこちらでございます。<segment><kanji>サイズ</kanji><furigana>さいず</furigana></segment>はいかがでしょうか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>M</kanji><furigana>えむ</furigana></segment><segment><kanji>サイズ</kanji><furigana>さいず</furigana></segment>を<segment><kanji>持</kanji><furigana>も</furigana></segment>ってきていただけますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                かしこまりました。<segment><kanji>M</kanji><furigana>えむ</furigana></segment><segment><kanji>サイズ</kanji><furigana>さいず</furigana></segment>をお<segment><kanji>持</kanji><furigana>も</furigana></segment>ちします。<segment><kanji>試着室</kanji><furigana>しちゃくしつ</furigana></segment>の<segment><kanji>鍵</kanji><furigana>かぎ</furigana></segment>をお<segment><kanji>預</kanji><furigana>あず</furigana></segment>かりします。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                …すみません、ちょっと<segment><kanji>小</kanji><furigana>ちい</furigana></segment>さいですね。<segment><kanji>L</kanji><furigana>える</furigana></segment><segment><kanji>サイズ</kanji><furigana>さいず</furigana></segment>はありますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、ございます。<segment><kanji>L</kanji><furigana>える</furigana></segment><segment><kanji>サイズ</kanji><furigana>さいず</furigana></segment>もお<segment><kanji>持</kanji><furigana>も</furigana></segment>ちしますね。<segment><kanji>色</kanji><furigana>いろ</furigana></segment>は<segment><kanji>他</kanji><furigana>ほか</furigana></segment>に<segment><kanji>白</kanji><furigana>しろ</furigana></segment>と<segment><kanji>黒</kanji><furigana>くろ</furigana></segment>もございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>白</kanji><furigana>しろ</furigana></segment>も<segment><kanji>見</kanji><furigana>み</furigana></segment>せていただけますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、かしこまりました。<segment><kanji>白</kanji><furigana>しろ</furigana></segment>は<segment><kanji>人気</kanji><furigana>にんき</furigana></segment>で<segment><kanji>残</kanji><furigana>のこ</furigana></segment>り<segment><kanji>僅</kanji><furigana>わず</furigana></segment>かでございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                じゃあ、<segment><kanji>青</kanji><furigana>あお</furigana></segment>の<segment><kanji>L</kanji><furigana>える</furigana></segment><segment><kanji>サイズ</kanji><furigana>さいず</furigana></segment>をお<segment><kanji>願</kanji><furigana>ねが</furigana></segment>いします。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Selamat datang. Hari ini koleksi musim semi baru sudah masuk.</p>
+            <p><strong>B:</strong> Berapa harga jaket biru ini?</p>
+            <p><strong>A:</strong> Terima kasih. Termasuk pajak 12.000 yen. Bahan katun 100% alami.</p>
+            <p><strong>B:</strong> Bagus sekali. Boleh saya coba?</p>
+            <p><strong>A:</strong> Ya, silakan. Ruang fitting di sini. Ukuran berapa?</p>
+            <p><strong>B:</strong> Bisa ambilkan ukuran M?</p>
+            <p><strong>A:</strong> Baik, saya ambilkan ukuran M. Saya pegangi kunci ruang fitting.</p>
+            <p><strong>B:</strong> ...Permisi, agak kecil ya. Ada ukuran L?</p>
+            <p><strong>A:</strong> Ya, ada. Saya ambilkan ukuran L. Warna lain ada putih dan hitam.</p>
+            <p><strong>B:</strong> Bisa tunjukkan putih juga?</p>
+            <p><strong>A:</strong> Baik, putih populer dan tinggal sedikit.</p>
+            <p><strong>B:</strong> Kalau begitu, saya ambil yang biru ukuran L.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>新作</word>
+              <reading>しんさく</reading>
+              <romaji>shinsaku</romaji>
+              <meaning>Koleksi baru</meaning>
+            </item>
+            <item>
+              <word>春物</word>
+              <reading>はるもの</reading>
+              <romaji>harumono</romaji>
+              <meaning>Barang musim semi</meaning>
+            </item>
+            <item>
+              <word>入荷</word>
+              <reading>にゅうか</reading>
+              <romaji>nyuuka</romaji>
+              <meaning>Masuk/barang datang</meaning>
+            </item>
+            <item>
+              <word>ジャケット</word>
+              <reading>じゃけっと</reading>
+              <romaji>jaketto</romaji>
+              <meaning>Jaket</meaning>
+            </item>
+            <item>
+              <word>綿</word>
+              <reading>めん</reading>
+              <romaji>men</romaji>
+              <meaning>Katun</meaning>
+            </item>
+            <item>
+              <word>天然素材</word>
+              <reading>てんねんそざい</reading>
+              <romaji>tennen sozai</romaji>
+              <meaning>Bahan alami</meaning>
+            </item>
+            <item>
+              <word>試着室</word>
+              <reading>しちゃくしつ</reading>
+              <romaji>shichakushitsu</romaji>
+              <meaning>Ruang fitting</meaning>
+            </item>
+            <item>
+              <word>鍵</word>
+              <reading>かぎ</reading>
+              <romaji>kagi</romaji>
+              <meaning>Kunci</meaning>
+            </item>
+            <item>
+              <word>僅か</word>
+              <reading>わずか</reading>
+              <romaji>wazuka</romaji>
+              <meaning>Sedikit</meaning>
+            </item>
+            <item>
+              <word>人気</word>
+              <reading>にんき</reading>
+              <romaji>ninki</romaji>
+              <meaning>Populer/Laris</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="25" order="5">
           <title>
             <jp>他の色はありますか</jp>
             <reading>ほかのいろはありますか</reading>
             <id>Menanyakan Warna</id>
           </title>
-          <!-- isi content, translation, vocabulary -->
+          <content>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                いらっしゃいませ。<segment><kanji>傘</kanji><furigana>かさ</furigana></segment>をお<segment><kanji>探</kanji><furigana>さが</furigana></segment>しでしょうか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                はい、この<segment><kanji>赤</kanji><furigana>あか</furigana></segment>い<segment><kanji>傘</kanji><furigana>かさ</furigana></segment>はいくらですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                ありがとうございます。<segment><kanji>税込</kanji><furigana>ぜいこみ</furigana></segment>みで<segment><kanji>千八百円</kanji><furigana>せんはっぴゃくえん</furigana></segment>でございます。<segment><kanji>折</kanji><furigana>お</furigana></segment>りたたみで<segment><kanji>軽</kanji><furigana>かる</furigana></segment>くて<segment><kanji>持</kanji><furigana>も</furigana></segment>ち<segment><kanji>運</kanji><furigana>はこ</furigana></segment>びに<segment><kanji>便利</kanji><furigana>べんり</furigana></segment>でございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>他</kanji><furigana>ほか</furigana></segment>の<segment><kanji>色</kanji><furigana>いろ</furigana></segment>はありますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、<segment><kanji>同</kanji><furigana>おな</furigana></segment>じ<segment><kanji>商品</kanji><furigana>しょうひん</furigana></segment>で<segment><kanji>青</kanji><furigana>あお</furigana></segment>と<segment><kanji>黒</kanji><furigana>くろ</furigana></segment>と<segment><kanji>紺</kanji><furigana>こん</furigana></segment>がございます。<segment><kanji>人気</kanji><furigana>にんき</furigana></segment>は<segment><kanji>紺</kanji><furigana>こん</furigana></segment>でございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>紺</kanji><furigana>こん</furigana></segment>を<segment><kanji>見</kanji><furigana>み</furigana></segment>せていただけますか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                かしこまりました。こちらが<segment><kanji>紺</kanji><furigana>こん</furigana></segment>でございます。<segment><kanji>落</kanji><furigana>お</furigana></segment>ち<segment><kanji>着</kanji><furigana>つ</furigana></segment>いた<segment><kanji>色</kanji><furigana>いろ</furigana></segment>で、<segment><kanji>男女</kanji><furigana>だんじょ</furigana></segment><segment><kanji>問</kanji><furigana>と</furigana></segment>わずお<segment><kanji>使</kanji><furigana>つか</furigana></segment>いいただけます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                いい<segment><kanji>色</kanji><furigana>いろ</furigana></segment>ですね。<segment><kanji>値段</kanji><furigana>ねだん</furigana></segment>は<segment><kanji>赤</kanji><furigana>あか</furigana></segment>と<segment><kanji>同</kanji><furigana>おな</furigana></segment>じですか。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、<segment><kanji>色</kanji><furigana>いろ</furigana></segment>によって<segment><kanji>値段</kanji><furigana>ねだん</furigana></segment>は<segment><kanji>変</kanji><furigana>か</furigana></segment>わりません。ただ、<segment><kanji>限定</kanji><furigana>げんてい</furigana></segment><segment><kanji>色</kanji><furigana>いろ</furigana></segment>の<segment><kanji>黄</kanji><furigana>き</furigana></segment>だけは<segment><kanji>二千円</kanji><furigana>にせんえん</furigana></segment>でございます。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                <segment><kanji>黄</kanji><furigana>き</furigana></segment>も<segment><kanji>見</kanji><furigana>み</furigana></segment>せてください。<segment><kanji>目立</kanji><furigana>めだ</furigana></segment>ちそうで<segment><kanji>可愛</kanji><furigana>かわい</furigana></segment>いですね。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>A</speaker>
+              <line>
+                はい、こちらでございます。<segment><kanji>雨</kanji><furigana>あめ</furigana></segment>の<segment><kanji>日</kanji><furigana>ひ</furigana></segment>も<segment><kanji>明</kanji><furigana>あか</furigana></segment>るくて<segment><kanji>気分</kanji><furigana>きぶん</furigana></segment>が<segment><kanji>上</kanji><furigana>あ</furigana></segment>がります。
+              </line>
+            </dialogue>
+            <dialogue>
+              <speaker>B</speaker>
+              <line>
+                じゃあ、<segment><kanji>黄</kanji><furigana>き</furigana></segment>にします。<segment><kanji>目立</kanji><furigana>めだ</furigana></segment>つので<segment><kanji>紛失</kanji><furigana>ふんしつ</furigana></segment>しにくいですね。
+              </line>
+            </dialogue>
+          </content>
+          <translation>
+            <p><strong>A:</strong> Selamat datang. Apakah sedang mencari payung?</p>
+            <p><strong>B:</strong> Ya, berapa harga payung merah ini?</p>
+            <p><strong>A:</strong> Terima kasih. Termasuk pajak 1.800 yen. Lipat, ringan, dan mudah dibawa.</p>
+            <p><strong>B:</strong> Apakah ada warna lain?</p>
+            <p><strong>A:</strong> Ya, produk sama ada biru, hitam, dan navy. Yang populer adalah navy.</p>
+            <p><strong>B:</strong> Bisa tunjukkan navy?</p>
+            <p><strong>A:</strong> Baik, ini navy. Warna tenang, bisa digunakan pria maupun wanita.</p>
+            <p><strong>B:</strong> Warna bagus. Harganya sama dengan merah?</p>
+            <p><strong>A:</strong> Ya, harga sama untuk semua warna. Tapi warna terbatas kuning harganya 2.000 yen.</p>
+            <p><strong>B:</strong> Tunjukkan kuning juga. Kelihatan mencolok dan lucu.</p>
+            <p><strong>A:</strong> Ya, ini dia. Hari hujan pun terasa cerah dan mood naik.</p>
+            <p><strong>B:</strong> Kalau begitu, saya ambil kuning. Mencolok jadi sulit hilang.</p>
+          </translation>
+          <vocabulary>
+            <item>
+              <word>傘</word>
+              <reading>かさ</reading>
+              <romaji>kasa</romaji>
+              <meaning>Payung</meaning>
+            </item>
+            <item>
+              <word>折りたたみ</word>
+              <reading>おりたたみ</reading>
+              <romaji>oritatami</romaji>
+              <meaning>Lipat</meaning>
+            </item>
+            <item>
+              <word>持ち運び</word>
+              <reading>もちはこび</reading>
+              <romaji>mochihakobi</romaji>
+              <meaning>Membawa</meaning>
+            </item>
+            <item>
+              <word>便利</word>
+              <reading>べんり</reading>
+              <romaji>benri</romaji>
+              <meaning>Mudah/Nyaman</meaning>
+            </item>
+            <item>
+              <word>紺</word>
+              <reading>こん</reading>
+              <romaji>kon</romaji>
+              <meaning>Navy/biru tua</meaning>
+            </item>
+            <item>
+              <word>落ち着いた</word>
+              <reading>おちついた</reading>
+              <romaji>ochitsuita</romaji>
+              <meaning>Tenang/Dewasa</meaning>
+            </item>
+            <item>
+              <word>男女問わず</word>
+              <reading>だんじょとわず</reading>
+              <romaji>danjo towazu</romaji>
+              <meaning>Pria wanita bebas</meaning>
+            </item>
+            <item>
+              <word>限定色</word>
+              <reading>げんていしょく</reading>
+              <romaji>gentei shoku</romaji>
+              <meaning>Warna terbatas</meaning>
+            </item>
+            <item>
+              <word>目立つ</word>
+              <reading>めだつ</reading>
+              <romaji>medatsu</romaji>
+              <meaning>Mencolok</meaning>
+            </item>
+            <item>
+              <word>紛失</word>
+              <reading>ふんしつ</reading>
+              <romaji>funshitsu</romaji>
+              <meaning>Hilang</meaning>
+            </item>
+          </vocabulary>
         </text>
-
+		
         <text id="26" order="6">
           <title>
             <jp>サイズはありますか</jp>
